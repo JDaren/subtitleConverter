@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/HTML4.01/strict.dtd">
+<!-- saved from url=(0070)http://www.theneitherworld.com/mcpoodle/SCC_TOOLS/DOCS/SCC_FORMAT.HTML -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Closed Captions and the Scenarist Closed Caption Format</title>
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="author" content="McPoodle">
+<!--                  Designed for an 80-character display                   -->
+</head>
+<body>
+<h3 align="center">Closed Captions and the SCC Format</h3>
+<p>This page will hopefully cover everything you need to know to add closed
+captions during the DVD authoring process.</p>
+<p><b><u>An Introduction to Closed Captions</u></b></p>
+<p>Line 21 Closed Captions is the system used by North American television
+stations to encode information useful to the deaf and the hard of hearing in a
+format that can be turned on or off by the viewer (a <a href="http://teletext.mb21.co.uk/gallery/world/usa/index.shtml">page</a> on the
+Teletext Then and Now site shows what this actually looks like, for those of
+you from PAL or SECAM-broadcasting countries).  There are a handful of
+alternate formats for this purpose used by TV broadcasters in other parts of
+the world, but only Line 21 Closed Captions are supported for DVD's,
+so all non-Region 1 discs claiming to include "Captions for the Deaf and Hard
+of Hearing" actually use subtitles instead (the short difference between
+subtitles and closed captions: you turn subtitles on and off with your DVD
+remote, and you turn closed captions on and off with your TV remote).  The
+following explanation is derived from the <a href="http://www.robson.org/capfaq">Closed Caption FAQ</a>, maintained by Paul
+Robson, which does an excellent job of explaining what Line 21 Closed Captions
+are and how they work in a broadcast setting.</p>
+<p>The mechanism used for Line 21 Closed Captions allows the viewer to choose
+between a maximum of four different "channels" of simultaneous captions, plus
+four more "channels" of non-program related text.  In the years since the
+introduction of this system, it was discovered that channels CC1, CC2, and T1
+(the first and second closed-caption channels and the first text channel) were
+the only ones broadcasters ever used, so alternate uses were found for two of
+the remaining channels.  Channel T2 is now used to transmit Interactive TV
+(ITV) signals, which are used by MSN-TV to transmit the internet links for their
+service.  Channel CC3 is now used to transmit the eXtended Data Service (XDS).
+XDS contains a wide variety of information, but the two portions most commonly
+used are the time of day signal which newer VCR's use to program their clocks,
+and the rating signal which is used to control what content children are
+allowed to watch via the "V-Chip"s in newer TV's.</p>
+<p>Line 21 Closed Captions are transmitted on the last odd and even lines in
+the Vertical Broadcast Interval (VBI), the non-visible part of the TV signal
+used mostly for calibration purposes.  If you adjust the vertical hold on a
+North American television set, you should be able to see one or two lines above
+the normal "top" of the screen, each made up of sixteen rapidly-blinking
+segments.  These are Fields 1 and 2 of Scanline 21.  Each segment of each line
+is used as a bit to build up a total of four eight-bit bytes, two bytes in the
+odd field and two bytes in the even field.  Field 1 is used to transmit
+channels CC1, CC2, T1 and T2 (ITV), while Field 2 is used to transmit channels
+CC3 (XDS), CC4, T3 and T4.</p>
+<p><b><u>Closed Captions on Videotapes and DVD's</u></b></p>
+<p>One of the major benefits of the Line 21 Closed Caption system is that it is
+automatically recorded with the program when taped by a VCR and can then be
+displayed on playback.  Since Digital Versatile Discs only
+store the visible portion of the video signal, an alternate method had to be
+found in order to transmit Closed Captions and their related services,
+especially since there is a legal requirement in the United States to provide
+Closed Captions on every movie sold in the country.  For DVD's, this data is
+muxed into the MPEG elementary video files in the form of a special user data
+packet inside each GOP.  As far as I know, every DVD authoring program that
+supports Closed Captions (including Scenarist and Maestro) import them as one
+or two text files (one for Field 1, the other for Field 2) containing the raw
+hexidecimal data rather than expect them to already be muxed into the video
+source files.  I have never heard of a DVD that stored anything but closed
+captions in the user data packets (the DVD specification includes a superior
+alternative to the XDS ratings packet, PCFriendly is superior to ITV, and of
+course XDS time of day is useless on a DVD), so the rest of this discussion
+will focus on the Field 1 data and channels CC1 and CC2.</p>
+<p><b><u>Closed Caption Requirements</u></b></p>
+<ul><li>Closed Captions are displayed in a fixed-width font.  Personally, I
+have found that Lucida Console 16 pt Bold does the best job of representing
+this Closed Caption font in Windows.</li>
+<li>The grid for Closed Captions is 16 rows tall, but only 32 columns wide.
+This means that the vast majority of subtitles have to be reformatted to
+fit.</li></ul>
+
+<p><a name="style"><b><u>Closed Caption Style Guide</u></b></a></p>
+<p>The following are not required, but are followed by all Closed Captions I've
+seen either broadcast or on DVD's:</p>
+<ul><li>Closed Captions can be up to four lines long at any one time.</li>
+<li>Captions usually appear under the speaker.  If this would obscure something
+important, the caption is moved to the top of the screen, but still next to the
+speaker.</li>
+<li>Dialog is always in all-caps.  Older closed caption decoders only used
+upper-case (non-accented) letters, so make sure nothing is case-dependent.  A
+common exception is "Mc" or "Mac" for Scottish names.</li>
+<li>The older machines also only supported ordinary white text, so even though
+the Closed Caption specification allows flashing text, underlines, and seven
+different colors, don't make the understanding of any of your captions
+dependent on any of these features.  Every broadcast program I've seen closed
+captions for put everything in white until the very last caption, which gives
+credit to the caption company and therefore is the nicest-looking caption of
+the whole show.</li>
+<li>Italics are used for the usual reasons ("THE <i>QUEEN MARY</i>"), for
+emphasis, for singing, and for anything that occurs off-screen.</li>
+<li>Dialog always ends with some sort of punctuation, if only an ellipsis to
+indicate the dialog will be continued in the next caption.</li>
+<li>The special character "<img src="./Closed Captions and the Scenarist Closed Caption Format_files/note.gif">" (a musical note) is
+placed before and after all sung dialog.  Two notes with nothing between them
+means that music is playing.  Both of these rules are only used when knowledge
+of the lyrics or the fact that music is playing is important to the plot; most
+of the time, this sort of cue is left out of Closed Captions.</li>
+<li>Captions for sound effects usually appear centered at the top of the
+screen.  They are in lower case and surrounded by spaced parentheses or
+brackets (i.e. "( thump )" or "[ thump ]").  If a sound effect is localized, it
+should be positioned appropriately.</li>
+<li>Off-screen dialog is positioned close to the source, or centered at the
+top of the screen if the source cannot be placed.  If the viewer is supposed to
+be able to recognize the voice, the character's name appears in normal case
+before the dialog or else a standard screenplay format is used ("Bill: IT'S
+IN THE CABINET." or "[Tom] NO IT'S NOT.").</li>
+<li>There are situations where there is too much text to allow useful
+positioning.  In this case, a change in speaker is indicated by starting the
+line of dialog with "&gt;&gt; ".  For news broadcasts (which use this technique a
+lot), an additional convention is to start a change of topic with "&gt;&gt;&gt; ".
+I've also seen some captions use the subtitle standard of "-- " instead of
+"&gt;&gt; ".</li>
+<li>The timing of captions is important, especially if a piece of dialog or a
+sound effect is dramatically significant.  For this reason, closed caption
+dialog will often appear before the character starts speaking, to ensure that
+everyone using closed captions can read them in time to get the joke or
+jump when the killer shows up.</li>
+</ul>
+<p><b><u>SCC Format</u></b></p>
+<p>Both Sonic Scenarist and Spruce Maestro use the Scenarist Closed Caption
+format (extension .SCC) to import closed caption data.  Here is an example:</p>
+<p>
+</p><table border="1"><tbody><tr><td><pre>Scenarist_SCC V1.0
+
+01:02:53:14	94ae 94ae 9420 9420 947a 947a 97a2 97a2 a820 68ef f26e 2068 ef6e 6be9 6e67 2029 942c 942c 8080 8080 942f 942f
+
+01:02:55:14	942c 942c
+
+01:03:27:29	94ae 94ae 9420 9420 94f2 94f2 c845 d92c 2054 c845 5245 ae80 942c 942c 8080 8080 942f 942f
+
+</pre></td></tr></tbody></table><p></p>
+<p>The file is double-spaced, with data lines alternating with blank lines.
+The first line identifies the format and version--it needs to be exactly
+like this.  The third and subsequent alternating lines start with the
+timecode and are followed by the data.</p>
+<p>The timecode is in SMPTE format, which is either
+<code>hours:minutes:seconds:frames</code> for non-dropframe timebase or
+<code>hours:minutes:seconds;frames</code> for dropframe timebase.  Both
+are 29.97 frames per second, but dropframe timebase accomplishes the fractional
+framerate by using 30 frames per second and skipping the first two frames each
+minute for nine out of every ten minutes (non-dropframe timebase simply runs
+the clock at exactly 29.97 frames per second).  Use the same format you encoded
+your video with.  Here's a hint: if it came from a broadcast source, it's
+probably dropframe, while if you created it from scratch, it's probably
+non-dropframe.</p>
+<p>The data is made up of two-byte hexidecimal words, separated from each other
+by spaces and from the timecode by a tab character.  The data uses only seven
+out of every eight bits of each byte, with the high bit used to satisfy odd
+parity--adding up all the bits has to result in an odd number, or the closed
+caption decoder will reject the byte as corrupt data.  The major exception is
+ITV, which not only doesn't enforce odd parity, it also uses a slightly
+different character set than captions, text or XDS.</p>
+
+<p><b><u>Deciphering the bytes</u></b></p>
+<p>The full requirements for Closed Captions are contained in EIA/CEA standard
+608-B (there is also a 708-B standard for high-definition TV captions, but that
+is beyond the scope of this document).  CEA 608 can be purchased from <a href="http://global.ihs.com/">IHS Global</a> for $ 170, but luckily, the
+requirements are available for free in the Code of Federal Regulations, which
+can be obtained in PDF format from the <a href="http://www.access.gpo.gov/nara/cfr/index.html">Government
+Printing Office</a> (just click "Browse" on the screen that comes up).
+Specifically, the requirements are contained in 47CFR15.119: book 47 covers
+the Federal Communications Commission, section 15 covers broadcasting in radio
+frequencies (including television), and 119 is the specific subsection for
+analog closed caption decoder requirements.  The main adjustment you need to
+make to these requirements is for the odd parity: 00h (binary 00000000) is
+translated to 80h (10000000), but 07h (00000111) is left alone.</p>
+<p>Here is a translation matrix to turn a 7-bit hexidecimal number into the
+equivalent odd-parity 8-bit number:</p>
+<p></p><pre>  80, 01, 02, 83, 04, 85, 86, 07, 08, 89, 8a, 0b, 8c, 0d, 0e, 8f,
+  10, 91, 92, 13, 94, 15, 16, 97, 98, 19, 1a, 9b, 1c, 9d, 9e, 1f,
+  20, a1, a2, 23, a4, 25, 26, a7, a8, 29, 2a, ab, 2c, ad, ae, 2f,
+  b0, 31, 32, b3, 34, b5, b6, 37, 38, b9, ba, 3b, bc, 3d, 3e, bf,
+  40, c1, c2, 43, c4, 45, 46, c7, c8, 49, 4a, cb, 4c, cd, ce, 4f,
+  d0, 51, 52, d3, 54, d5, d6, 57, 58, d9, da, 5b, dc, 5d, 5e, df,
+  e0, 61, 62, e3, 64, e5, e6, 67, 68, e9, ea, 6b, ec, 6d, 6e, ef,
+  70, f1, f2, 73, f4, 75, 76, f7, f8, 79, 7a, fb, 7c, fd, fe, 7f
+</pre><p></p>
+<p>As explained in the Closed Caption FAQ, there are three different types of
+closed captions: roll-up, paint-on, and pop-on.  The only one of these used in
+DVD's are pop-on.  The requirements also cover using CC1 and CC2 to put
+two different closed caption channels on the DVD, but none of the software DVD
+players can support CC2, so I'll only explain how to create pop-on captions
+for channel CC1.</p>
+<p><b><u>Format of Pop-on Captions</u></b></p>
+
+<p>Pop-on captions have a set format, as described below, made up of commands
+(always 2-byte words) and characters (usually single bytes).  If the caption
+is to be broadcast, each of the commands are doubled up for redundancy in
+case the signal is garbled in transmission (garbled data is usually displayed
+as character 7f, the solid block).  The decoder is programmed to
+ignore a second command when it is the same as the first.  When writing captions
+for a DVD, you can choose whether you wish to double or not (if you look at the
+sample towards the top of the page, you will see a lot of doubling).</p>
+<ol><li>Pop-on captions are composed in an off-screen buffer before they are
+sent to the screen, so the first command is ENM, or Erase Non-displayed
+[buffer] Memory, with a code of 94ae.</li>
+<li>The second command is RCL, Resume Caption Loading, with a code of 9420.
+This formally tells the decoder that the next caption is of the pop-on
+type.</li>
+<li>The third command is known as a PAC, or Preamble Address Code.  It is used
+to position the cursor.  The grid for closed captions is the title safe area,
+384 pixels tall by 576 pixels wide, divided into 16 rows and 32 columns (see
+<a href="http://www.theneitherworld.com/mcpoodle/SCC_TOOLS/DOCS/cc_grid.gif" target="_blank">here</a>).  The PAC can position the
+cursor to any row and to any column divisible by 4.  Here is a table to find
+the PAC code for any position:</li>
+<p>Column 0 (can set color and underline):
+</p><table border="1"><tbody><tr><th align="right">Row:</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr>
+<tr><td align="right">High Byte:</td><td>91</td><td>91</td><td>92</td><td>92</td><td>15</td><td>15</td><td>16</td><td>16</td><td>97</td><td>97</td><td>10</td><td>13</td><td>13</td><td>94</td><td>94</td></tr>
+<tr><th>Low Byte by Column:</th></tr>
+<tr><td>0 (white)</td><td>d0</td><td>70</td><td>d0</td><td>70</td><td>d0</td><td>70</td><td>d0</td><td>70</td><td>d0</td><td>70</td><td>d0</td><td>d0</td><td>70</td><td>d0</td><td>70</td></tr>
+<tr><td>0 (white) underline</td><td>51</td><td>f1</td><td>51</td><td>f1</td><td>51</td><td>f1</td><td>51</td><td>f1</td><td>51</td><td>f1</td><td>51</td><td>51</td><td>f1</td><td>51</td><td>f1</td></tr>
+<tr><td>0 green</td><td>c2</td><td>62</td><td>c2</td><td>62</td><td>c2</td><td>62</td><td>c2</td><td>62</td><td>c2</td><td>62</td><td>c2</td><td>c2</td><td>62</td><td>c2</td><td>62</td></tr>
+<tr><td>0 green underline</td><td>43</td><td>e3</td><td>43</td><td>e3</td><td>43</td><td>e3</td><td>43</td><td>e3</td><td>43</td><td>e3</td><td>43</td><td>43</td><td>e3</td><td>43</td><td>e3</td></tr>
+<tr><td>0 blue</td><td>c4</td><td>64</td><td>c4</td><td>64</td><td>c4</td><td>64</td><td>c4</td><td>64</td><td>c4</td><td>64</td><td>c4</td><td>c4</td><td>64</td><td>c4</td><td>64</td></tr>
+<tr><td>0 blue underline</td><td>45</td><td>e5</td><td>45</td><td>e5</td><td>45</td><td>e5</td><td>45</td><td>e5</td><td>45</td><td>e5</td><td>45</td><td>45</td><td>e5</td><td>45</td><td>e5</td></tr>
+<tr><td>0 cyan</td><td>46</td><td>e6</td><td>46</td><td>e6</td><td>46</td><td>e6</td><td>46</td><td>e6</td><td>46</td><td>e6</td><td>46</td><td>46</td><td>e6</td><td>46</td><td>e6</td></tr>
+<tr><td>0 cyan underline</td><td>c7</td><td>67</td><td>c7</td><td>67</td><td>c7</td><td>67</td><td>c7</td><td>67</td><td>c7</td><td>67</td><td>c7</td><td>c7</td><td>67</td><td>c7</td><td>67</td></tr>
+<tr><td>0 red</td><td>c8</td><td>68</td><td>c8</td><td>68</td><td>c8</td><td>68</td><td>c8</td><td>68</td><td>c8</td><td>68</td><td>c8</td><td>c8</td><td>68</td><td>c8</td><td>68</td></tr>
+<tr><td>0 red underline</td><td>49</td><td>e9</td><td>49</td><td>e9</td><td>49</td><td>e9</td><td>49</td><td>e9</td><td>49</td><td>e9</td><td>49</td><td>49</td><td>e9</td><td>49</td><td>e9</td></tr>
+<tr><td>0 yellow</td><td>4a</td><td>ea</td><td>4a</td><td>ea</td><td>4a</td><td>ea</td><td>4a</td><td>ea</td><td>4a</td><td>ea</td><td>4a</td><td>4a</td><td>ea</td><td>4a</td><td>ea</td></tr>
+<tr><td>0 yellow underline</td><td>cb</td><td>6b</td><td>cb</td><td>6b</td><td>cb</td><td>6b</td><td>cb</td><td>6b</td><td>cb</td><td>6b</td><td>cb</td><td>cb</td><td>6b</td><td>cb</td><td>6b</td></tr>
+<tr><td>0 magenta</td><td>4c</td><td>ec</td><td>4c</td><td>ec</td><td>4c</td><td>ec</td><td>4c</td><td>ec</td><td>4c</td><td>ec</td><td>4c</td><td>4c</td><td>ec</td><td>4c</td><td>ec</td></tr>
+<tr><td>0 magenta underline</td><td>cd</td><td>6d</td><td>cd</td><td>6d</td><td>cd</td><td>6d</td><td>cd</td><td>6d</td><td>cd</td><td>6d</td><td>cd</td><td>cd</td><td>6d</td><td>cd</td><td>6d</td></tr>
+</tbody></table><p></p>
+<p>Columns 4 - 28 (color white, can set underline)
+</p><table border="1"><tbody><tr><th align="right">Row:</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr>
+<tr><td align="right">High Byte:</td><td>91</td><td>91</td><td>92</td><td>92</td><td>15</td><td>15</td><td>16</td><td>16</td><td>97</td><td>97</td><td>10</td><td>13</td><td>13</td><td>94</td><td>94</td></tr>
+<tr><th>Low Byte by Column:</th></tr>
+<tr><td>4</td><td>52</td><td>f2</td><td>52</td><td>f2</td><td>52</td><td>f2</td><td>52</td><td>f2</td><td>52</td><td>f2</td><td>52</td><td>52</td><td>f2</td><td>52</td><td>f2</td></tr>
+<tr><td>4 underline</td><td>d3</td><td>73</td><td>d3</td><td>73</td><td>d3</td><td>73</td><td>d3</td><td>73</td><td>d3</td><td>73</td><td>d3</td><td>d3</td><td>73</td><td>d3</td><td>73</td></tr>
+<tr><td>8</td><td>54</td><td>f4</td><td>54</td><td>f4</td><td>54</td><td>f4</td><td>54</td><td>f4</td><td>54</td><td>f4</td><td>54</td><td>54</td><td>f4</td><td>54</td><td>f4</td></tr>
+<tr><td>8 underline</td><td>d5</td><td>75</td><td>d5</td><td>75</td><td>d5</td><td>75</td><td>d5</td><td>75</td><td>d5</td><td>75</td><td>d5</td><td>d5</td><td>75</td><td>d5</td><td>75</td></tr>
+<tr><td>12</td><td>d6</td><td>76</td><td>d6</td><td>76</td><td>d6</td><td>76</td><td>d6</td><td>76</td><td>d6</td><td>76</td><td>d6</td><td>d6</td><td>76</td><td>d6</td><td>76</td></tr>
+<tr><td>12 underline</td><td>57</td><td>f7</td><td>57</td><td>f7</td><td>57</td><td>f7</td><td>57</td><td>f7</td><td>57</td><td>f7</td><td>57</td><td>57</td><td>f7</td><td>57</td><td>f7</td></tr>
+<tr><td>16</td><td>58</td><td>f8</td><td>58</td><td>f8</td><td>58</td><td>f8</td><td>58</td><td>f8</td><td>58</td><td>f8</td><td>58</td><td>58</td><td>f8</td><td>58</td><td>f8</td></tr>
+<tr><td>16 underline</td><td>d9</td><td>79</td><td>d9</td><td>79</td><td>d9</td><td>79</td><td>d9</td><td>79</td><td>d9</td><td>79</td><td>d9</td><td>d9</td><td>79</td><td>d9</td><td>79</td></tr>
+<tr><td>20</td><td>da</td><td>7a</td><td>da</td><td>7a</td><td>da</td><td>7a</td><td>da</td><td>7a</td><td>da</td><td>7a</td><td>da</td><td>da</td><td>7a</td><td>da</td><td>7a</td></tr>
+<tr><td>20 underline</td><td>5b</td><td>fb</td><td>5b</td><td>fb</td><td>5b</td><td>fb</td><td>5b</td><td>fb</td><td>5b</td><td>fb</td><td>5b</td><td>5b</td><td>fb</td><td>5b</td><td>fb</td></tr>
+<tr><td>24</td><td>dc</td><td>7c</td><td>dc</td><td>7c</td><td>dc</td><td>7c</td><td>dc</td><td>7c</td><td>dc</td><td>7c</td><td>dc</td><td>dc</td><td>7c</td><td>dc</td><td>7c</td></tr>
+<tr><td>24 underline</td><td>5d</td><td>fd</td><td>5d</td><td>fd</td><td>5d</td><td>fd</td><td>5d</td><td>fd</td><td>5d</td><td>fd</td><td>5d</td><td>5d</td><td>fd</td><td>5d</td><td>fd</td></tr>
+<tr><td>28</td><td>5e</td><td>fe</td><td>5e</td><td>fe</td><td>5e</td><td>fe</td><td>5e</td><td>fe</td><td>5e</td><td>fe</td><td>5e</td><td>5e</td><td>fe</td><td>5e</td><td>fe</td></tr>
+<tr><td>28 underline</td><td>df</td><td>7f</td><td>df</td><td>7f</td><td>df</td><td>7f</td><td>df</td><td>7f</td><td>df</td><td>7f</td><td>df</td><td>df</td><td>7f</td><td>df</td><td>7f</td></tr>
+</tbody></table><p></p>
+<li>If you wish to start the caption on a column not evenly divisible by four,
+then the PAC is followed by a TO (Tab Over) code: 97a1 to move over one column,
+97a2 to move over two columns, or 9723 to move over three columns.</li>
+<li>The text of the caption follows.  Most of the
+<a href="http://www.theneitherworld.com/mcpoodle/SCC_TOOLS/DOCS/cc_charset.gif" target="_blank">character set</a> is encoded in a
+single byte, so two characters are included in a single hexidecimal word.  The
+remaining characters require two bytes.  The byte 80h is used as filler and
+will not cause a space when the caption is displayed.  Note that 20h is an
+"opaque" space (it will wipe out any pre-existing text), while 91b9 is a
+transparent space.  Also note that the character set linked above is
+approximately the display size and typeface of screen captions.  Finally, the
+third set of characters (labeled "Extended Characters") are not supported by
+most PC DVD players or by older television sets.  ITV uses
+<a href="http://www.theneitherworld.com/mcpoodle/SCC_TOOLS/DOCS/iso_8859-1_charset.gif" target="_blank">ISO-8859-1</a>, the standard
+character set used by web browsers.</li>
+<li>The following mid-row commands can also be used for special effects ("no
+formatting" removes underline, italics, and flash; all PAC commands are assumed
+to be "no formatting"):</li>
+<p></p><table border="1"><tbody><tr><th>Code</th><th align="left">Meaning</th></tr>
+<tr><td>9120</td><td>change to white, no formatting</td></tr>
+<tr><td>91a1</td><td>change to white underline</td></tr>
+<tr><td>91a2</td><td>change to green, no formatting</td></tr>
+<tr><td>9123</td><td>change to green underline</td></tr>
+<tr><td>91a4</td><td>change to blue, no formatting</td></tr>
+<tr><td>9125</td><td>change to blue underline</td></tr>
+<tr><td>9126</td><td>change to cyan, no formatting</td></tr>
+<tr><td>91a7</td><td>change to cyan underline</td></tr>
+<tr><td>91a8</td><td>change to red, no formatting</td></tr>
+<tr><td>9129</td><td>change to red underline</td></tr>
+<tr><td>912a</td><td>change to yellow, no formatting</td></tr>
+<tr><td>91ab</td><td>change to yellow underline</td></tr>
+<tr><td>912c</td><td>change to magenta, not formatting</td></tr>
+<tr><td>91ad</td><td>change to magenta underline</td></tr>
+<tr><td>91ae</td><td>turn on italics</td></tr>
+<tr><td>912f</td><td>turn on italics and underline</td></tr>
+<tr><td>94a8</td><td>turn flash on</td></tr>
+</tbody></table><p></p>
+<p></p><li>If the caption to be displayed contains multiple pieces of dialog, then
+another PAC, another TO, and more text would follow.</li>
+<li>To clear the screen in preparation for drawing the caption, the command EDM
+(Erase Displayed Memory), code 942c, is used.</li>
+<li>The word 8080 may be used as filler to time out the frames until the
+caption needs to be displayed.</li>
+<li>Finally, to display the caption in the buffer on the screen, the command
+EOC (End Of Caption), code 942f, is used.</li>
+<li>All of the gaps between timecodes in an SCC file are filled in with the
+filler word 8080 when the DVD is created.  This shortcut keeps SCC files from
+wasting space on repetitive information.</li>
+<li>To erase a caption, use EDM, 942c.</li>
+</ol><p></p>
+<p>As an example, here is the sample .SCC file from above, followed by its
+meaning:</p>
+<p></p>
+<table border="1"><tbody><tr><td><pre>Scenarist_SCC V1.0
+
+01:02:53:14	94ae 94ae 9420 9420 947a 947a 97a2 97a2 a820 68ef f26e 2068 ef6e 6be9 6e67 2029 942c 942c 8080 8080 942f 942f
+
+01:02:55:14	942c 942c
+
+01:03:27:29	94ae 94ae 9420 9420 94f2 94f2 c845 d92c 2054 c845 5245 ae80 942c 942c 8080 8080 942f 942f
+
+</pre></td></tr></tbody></table><p></p>
+<ul><li>Timecode 01:02:53:14: Clear buffer (<code>94ae 94ae</code>); start
+pop-on caption (<code>9420 9420</code>); move cursor to row 15, column 20
+(<code>947a 947a</code>); move over 2 more columns to column 22
+(<code>97a2 97a2</code>); display "( horn honking )" (<code>a820 68ef f26e 2068
+ef6e 6be9 6e67 2029</code>); clear screen (<code>942c 942c</code>); wait 2
+frames (<code>8080 8080</code>); and display caption (<code>942f
+942f</code>).</li>
+<li>Timecode 01:02:55:14: Clear caption (<code>942c 942c</code>).</li>
+<li>Timecode 01:03:27:29: Clear buffer (<code>94ae 94ae</code>); start pop-on
+caption (<code>9420 9420</code>); move cursor to row 15, column 4 (<code>94f2
+94f2</code>); display "HEY, THERE." (<code>c845 d92c 2054 c845 5245
+ae80</code>--note the 80 used as a spacer); clear screen (<code>942c
+942c</code>); wait 2 frames (<code>8080 8080</code>); and display caption
+(<code>942f 942f</code>).</li>
+</ul>
+
+<p><b><u>A Technical Explanation of Placement and Format of DVD
+Closed Caption User Data Packets</u></b></p>
+<p>Data in MPEG files is organized in terms of packets.  DVD closed captions
+are stored on a per-GOP basis, and are located within the video MPEG-2 file
+between the GOP Header packet and the (I-frame) Picture Header packet.</p>
+<p>Structure of the DVD Closed Caption User Data Packet (all values are in
+hexidecimal):</p>
+<table width="80%" border="1" align="center">
+  <tbody><tr><th width="65">Bytes</th><th width="140">Sample Contents</th>
+    <th>Description</th></tr>
+  <tr><td colspan="3" align="center">HEADER (9 bytes)</td></tr>
+  <tr><td align="center">0 - 3</td>
+    <td align="center"><code>00 00 01 b2</code></td><td>User Data Packet header
+    (never changes).</td></tr>
+  <tr><td align="center">4 - 7</td>
+    <td align="center"><code>43 43 01 f8</code></td><td>DVD Closed Caption
+    header (never changes).</td></tr>
+  <tr><td align="center">8</td><td align="center"><code>9b</code></td>
+    <td>Attributes:
+    <table border="1">
+      <tbody><tr><th width="30">Bits</th><th width="75">Sample Contents</th>
+        <th>Description</th></tr>
+      <tr><td align="center">0</td>
+        <td><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</code></td>
+        <td>Extra Field Flag: whether or not to add an extra field's caption to
+		  the end of the caption segments. This is a by-product of analog
+		  editing equipment, which occasionally cut scenes between two fields
+		  of the same frame. I've also seen it used to create a CC User Data
+		  Packet with a length evenly-divisible by 4 (14 frames plus an extra
+		  field of captions works out to 96 bytes). Note that the Pattern Flag
+		  in the next CC User Data Packet must flip if the Extra Field Flag is
+		  set (Otherwise, you'd lose that odd field's worth of data).</td></tr>
+      <tr><td align="center">1 - 5</td>
+        <td><code>&nbsp;&nbsp;01 101&nbsp;</code></td><td>Caption Count:
+          How many caption segments in the packet. This is always at least as
+		  large as the number of video frames in the GOP (minus 1, when the
+		  Extra Field Flag is set), but it can be greater, in which case the
+		  extra frames of caption data are not used.</td></tr>
+      <tr><td align="center">6</td>
+        <td><code>&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+        <td>Filler (never changes)</td></tr>
+      <tr><td align="center">7</td>
+        <td><code>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+        <td>Pattern Flag: Determines if each caption segment is Field 1
+          followed by Field 2 (<code>1</code>) or Field 2 followed by Field 1
+          (<code>0</code>). This also determines what the extra field will be
+		  if the Extra Field Flag is set: Field 1 for Pattern Flag 1, or Field
+		  2 for Pattern Flag 0.</td></tr>
+    </tbody></table></td></tr>
+  <tr><td colspan="3" align="center">CAPTION SEGMENT (6 bytes)--repeat for
+    each frame of GOP</td></tr>
+  <tr><td align="center">n</td><td align="center"><code>ff</code></td>
+    <td>Field (<code>ff</code> = Field 1, <code>fe</code> = Field 2)</td></tr>
+  <tr><td align="center">n+1 - n+2</td><td align="center"><code>94 a3</code></td>
+    <td>Caption: Two bytes that are transmitted this field.  Use
+    <code>80 80</code> if there's nothing to transmit.</td></tr>
+  <tr><td align="center">n+3</td><td align="center"><code>fe</code></td>
+    <td>Field (always opposite value from above)</td></tr>
+  <tr><td align="center">n+4 - n+5</td>
+    <td align="center"><code>01 83</code></td><td>Caption (see above)</td></tr>
+  <tr><td colspan="3" align="center">EXTRA FIELD (3 bytes)--only if Extra Field
+    Flag is set</td></tr>
+  <tr><td align="center">m</td><td align="center"><code>ff</code></td>
+    <td>Field (<code>ff</code> = Field 1, <code>fe</code> = Field 2)</td></tr>
+  <tr><td align="center">m+1 - m+2</td><td align="center"><code>94 a3</code></td>
+    <td>Caption: Two bytes that are transmitted this field.  Use
+    <code>80 80</code> if there's nothing to transmit.</td></tr>
+  <tr><td colspan="3" align="center">FOOTER</td></tr>
+  <tr><td align="center">- x</td>
+    <td align="center"><code>00 00 00 00 00 00</code></td>
+    <td>Padding (repeat <code>00</code> byte until packet is evenly divisible
+  	  by 4)</td></tr>
+</tbody></table>
+<p>Note that some DVD's create a fixed 96-byte closed caption packet size as
+described above (by using padding for GOP's below 15 frames and the Truncate
+Flag for 15-frame GOP's), but many DVD's do not do this, and the DVD's created
+by Sonic Scenarist and Spruce DVDMaestro never do this.  In these cases, 
+the Extra Field Flag is always 0, the Pattern Flag is always 1 (Field 1
+followed by Field 2), and no padding is used at the end of the data packet.</p>
+<p>Another item to note is the variation of this format used by a number of
+MPEG-capturing devices, including Hauppauge's WinTV-250 card and Panasonic's
+DMR-H50S tabletop DVD recorder (in DVR mode).  These devices use
+<code>ff</code> as the flag for both fields' caption data, relying on the
+Pattern Flag to tell the fields apart.</p>
+
+<p><a href="http://www.theneitherworld.com/mcpoodle/SCC_TOOLS/DOCS/SCC_TOOLS.HTML">Return</a> to SCC Tools Documentation.</p>
+
+
+
+</body></html>

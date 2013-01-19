@@ -1,0 +1,923 @@
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: blanco,Arial,28,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,0
+Style: amarillo,Arial,28,&H0000FFFF,&H0000FFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,0
+Style: verde,Arial,28,&H0000FF00,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,0
+Style: cyan,Arial,28,&H00FFFF00,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,0
+Style: magenta,Arial,28,&H00FF00FF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,0
+Style: rojo,Arial,28,&H00FF00FF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,0
+Style: azul,Arial,28,&H00FF0000,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,0
+Style: amarillo-azul,Arial,28,&H00FF0000,&H00FFFFFF,&H0000FFFF,&H80000000,0,0,0,0,100,100,0,0,3,2,2,2,10,10,10,0
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,-10:-2:0.080,-10:-2:0.200,blanco,,0000,0000,0000,,STORY:CC0683CA LANG:ESP\NTITLE:AQUÍNO1
+Dialogue: 0,-1:58:0.0,-1:58:2.0,blanco,,0000,0000,0000,,
+Dialogue: 0,-1:58:37.160,-1:58:41.320,blanco,,0000,0000,0000,,-¡Vicenta! Ven que esto empieza ya.\N-No, voy a acostarme.
+Dialogue: 0,-1:58:41.360,-1:58:45.360,blanco,,0000,0000,0000,,Tengo unos ardores..\N-Normal, soltera toda tu vida.
+Dialogue: 0,-1:58:45.400,-1:58:47.240,blanco,,0000,0000,0000,,-Ardor de estómago.
+Dialogue: 0,-1:58:48.0,-1:58:51.760,blanco,,0000,0000,0000,,¿Por qué siempre me recuerdas\Nque no me he casado? Yo decidí...
+Dialogue: 0,-1:58:51.800,-1:58:54.800,blanco,,0000,0000,0000,,...esperar al hombre de mi vida.\N-Parece que tarda.
+Dialogue: 0,-1:58:54.840,-1:58:58.440,blanco,,0000,0000,0000,,-No necesito a un hombre, no como\Ntú, desde que te dejó Manolo...
+Dialogue: 0,-1:58:58.480,-1:59:1.480,blanco,,0000,0000,0000,,...estás amargada.\N-No, estaba amargada desde antes.
+Dialogue: 0,-1:59:1.520,-1:59:4.360,blanco,,0000,0000,0000,,-La culpa de todo la tuvo papá.\N-¿Por qué?
+Dialogue: 0,-1:59:4.400,-1:59:8.400,blanco,,0000,0000,0000,,-Si le digo a las 11, es a las 11.\N¿Por qué esta niña nunca hace caso?
+Dialogue: 0,-1:59:8.440,-1:59:11.400,blanco,,0000,0000,0000,,-Pero si no me lo coge.
+Dialogue: 0,-1:59:8.440,-1:59:11.400,cyan,,0000,0000,0000,,-Llámala al móvil.
+Dialogue: 0,-1:59:11.440,-1:59:15.320,blanco,,0000,0000,0000,,Le compramos uno y lo apaga.\NHijo mío, si te digo a las 11,
+Dialogue: 0,-1:59:15.360,-1:59:17.960,blanco,,0000,0000,0000,,¿tú qué entiendes?\N-A las 11, ¿no?
+Dialogue: 0,-1:59:18.0,-1:59:20.840,blanco,,0000,0000,0000,,-Este niño sí será algo grande\Nalgún día.
+Dialogue: 0,-1:59:20.880,-1:59:24.200,cyan,,0000,0000,0000,,-Se habrá retrasado un poco.\NEs joven, tiene 17 años.
+Dialogue: 0,-1:59:24.240,-1:59:27.880,cyan,,0000,0000,0000,,Le gusta divertirse y salir\Ncon chicos. Cuando yo tenía...
+Dialogue: 0,-1:59:27.920,-1:59:30.120,cyan,,0000,0000,0000,,...su edad...
+Dialogue: 0,-1:59:32.0,-1:59:33.920,cyan,,0000,0000,0000,,Ya verás cuando vuelva.
+Dialogue: 0,-1:59:37.200,-1:59:40.760,blanco,,0000,0000,0000,,-Alicia, ¿nos vamos?\NQuiero conocer a tíos cuando aún...
+Dialogue: 0,-1:59:40.800,-1:59:42.840,blanco,,0000,0000,0000,,...no están borrachos.
+Dialogue: 0,-1:59:45.600,-1:59:47.720,blanco,,0000,0000,0000,,-Ya estoy.\N-Vámonos.
+Dialogue: 0,-1:59:48.400,-1:59:50.920,blanco,,0000,0000,0000,,¿Vas a salir así?\N-Sí.
+Dialogue: 0,-1:59:50.960,-1:59:53.880,blanco,,0000,0000,0000,,-Pues no salgo.\NSiempre me haces lo mismo.
+Dialogue: 0,-1:59:53.920,-1:59:56.920,blanco,,0000,0000,0000,,-¡Venga, tía! Si luego siempre\Nhablan contigo.
+Dialogue: 0,-1:59:56.960,-1:59:59.680,blanco,,0000,0000,0000,,-Para preguntarme tu nombre.\N¡Es humillante!
+Dialogue: 0,-1:59:59.720,0:0:3.320,blanco,,0000,0000,0000,,-¿Por qué eres tan negativa?\N-Porque no estoy ya para eso,
+Dialogue: 0,0:0:3.360,0:0:7.400,blanco,,0000,0000,0000,,tengo casi 30 años.\NNo tengo casa ni coche... ¡nada!
+Dialogue: 0,0:0:7.440,0:0:11.640,blanco,,0000,0000,0000,,¿Hasta cuándo nos vamos a comportar\Ncomo si tuviéramos 16 años?
+Dialogue: 0,0:0:11.680,0:0:13.760,blanco,,0000,0000,0000,,-¿Nos vamos?\N-Vámonos.
+Dialogue: 0,0:0:13.800,0:0:16.240,blanco,,0000,0000,0000,,Es la última vez que salgo.\N-Sí.
+Dialogue: 0,0:0:16.280,0:0:19.0,blanco,,0000,0000,0000,,-Te lo digo en serio, la última.\N-Vale.
+Dialogue: 0,0:0:19.040,0:0:20.920,blanco,,0000,0000,0000,,-Siempre me haces lo mismo.
+Dialogue: 0,0:0:20.960,0:0:25.680,blanco,,0000,0000,0000,,-¿Adónde irán a estas horas?\N-A ti qué más te da.
+Dialogue: 0,0:0:25.720,0:0:29.120,blanco,,0000,0000,0000,,-Estas dos trasnochan más\Nque Batman. Si lo hubiera sabido,
+Dialogue: 0,0:0:29.160,0:0:32.760,blanco,,0000,0000,0000,,no les alquilo el piso.\N-Beatriz, el niño me lo quedo yo.
+Dialogue: 0,0:0:32.800,0:0:35.800,blanco,,0000,0000,0000,,El domingo te lo llevas tú.\N-¡Con coche!
+Dialogue: 0,0:0:35.840,0:0:38.440,blanco,,0000,0000,0000,,-También tengo derecho a disfrutar\Nde mi hijo.
+Dialogue: 0,0:0:38.480,0:0:40.600,blanco,,0000,0000,0000,,-¡Di que sí!\N-Me voy a tomar algo.
+Dialogue: 0,0:0:40.640,0:0:44.0,blanco,,0000,0000,0000,,-¿Y el niño?\N-Pero, mamá, donde voy...
+Dialogue: 0,0:0:44.040,0:0:46.400,blanco,,0000,0000,0000,,...no le dejan entrar.\N-Anda que...
+Dialogue: 0,0:0:46.440,0:0:48.720,verde,,0000,0000,0000,,-¿Por qué no vamos a Ibiza\Nen ferry?
+Dialogue: 0,0:0:48.760,0:0:52.520,verde,,0000,0000,0000,,-No puedo montar en avión,
+Dialogue: 0,0:0:48.760,0:0:52.520,blanco,,0000,0000,0000,,-Porque se nos va el fin de semana.
+Dialogue: 0,0:0:52.560,0:0:56.080,blanco,,0000,0000,0000,,-Mauri, Ibiza está aquí al lado.
+Dialogue: 0,0:0:52.560,0:0:56.080,verde,,0000,0000,0000,,Fernando, no puedo.
+Dialogue: 0,0:0:56.120,0:0:59.280,verde,,0000,0000,0000,,-Suficientes para estrellarse.
+Dialogue: 0,0:0:56.120,0:0:59.280,blanco,,0000,0000,0000,,Son 40 minutos.
+Dialogue: 0,0:0:59.320,0:1:2.760,blanco,,0000,0000,0000,,-El avión es el medio de transporte\Nmás seguro que existe.
+Dialogue: 0,0:1:2.800,0:1:5.240,blanco,,0000,0000,0000,,Lo peor que puede pasar\Nes perder la maleta.
+Dialogue: 0,0:1:5.280,0:1:8.480,verde,,0000,0000,0000,,-Primero me matan\Ny luego me pierden la maleta.
+Dialogue: 0,0:1:8.520,0:1:11.360,verde,,0000,0000,0000,,Pues esta camisa no la meto\Nque es muy cara.
+Dialogue: 0,0:1:11.400,0:1:13.400,blanco,,0000,0000,0000,,-Todo es un drama.
+Dialogue: 0,0:1:14.040,0:1:16.560,blanco,,0000,0000,0000,,-No podía ir, imposible.
+Dialogue: 0,0:1:16.600,0:1:18.560,blanco,,0000,0000,0000,,Vale, yo te llamo.
+Dialogue: 0,0:1:19.800,0:1:23.040,blanco,,0000,0000,0000,,Natalia, ¿has visto qué hora es?
+Dialogue: 0,0:1:24.0,0:1:26.760,blanco,,0000,0000,0000,,¿No tienes nada que decir?\N¡Natalia!
+Dialogue: 0,0:1:26.800,0:1:28.640,blanco,,0000,0000,0000,,¡Natalia!
+Dialogue: 0,0:1:28.680,0:1:30.880,blanco,,0000,0000,0000,,(Se oye un portazo)
+Dialogue: 0,0:1:31.400,0:1:33.360,blanco,,0000,0000,0000,,-¡A tu cuarto castigada!
+Dialogue: 0,0:1:33.400,0:1:35.080,blanco,,0000,0000,0000,,¡Y no salgas!
+Dialogue: 0,0:1:35.120,0:1:38.880,blanco,,0000,0000,0000,,-Ésta no me conoce a mí.
+Dialogue: 0,0:1:35.120,0:1:38.880,cyan,,0000,0000,0000,,-No seas tan duro con ella.
+Dialogue: 0,0:1:40.400,0:1:44.800,blanco,,0000,0000,0000,,(CANCIÓN) Aquí no hay quien viva,\Naquí no.
+Dialogue: 0,0:1:44.840,0:1:49.520,blanco,,0000,0000,0000,,Todos los días son así, no podía\Nimaginarlo cuando vine aquí.
+Dialogue: 0,0:1:49.560,0:1:53.280,blanco,,0000,0000,0000,,Sólo buscaba algo normal.\NMe despierto cada día en medio...
+Dialogue: 0,0:1:53.320,0:1:54.920,blanco,,0000,0000,0000,,...de un huracán.
+Dialogue: 0,0:1:54.960,0:1:58.520,blanco,,0000,0000,0000,,Aquí no hay quien viva, aquí no.
+Dialogue: 0,0:1:58.560,0:2:3.080,blanco,,0000,0000,0000,,Aquí no hay quien viva, aquí no.
+Dialogue: 0,0:2:3.120,0:2:7.600,blanco,,0000,0000,0000,,La casa sobre mí se derrumba,\Nal portero no le puedo encontrar.
+Dialogue: 0,0:2:7.640,0:2:12.840,blanco,,0000,0000,0000,,Los vecinos me vigilan y escuchan,\Nno aguanto en este lugar.
+Dialogue: 0,0:2:12.880,0:2:17.0,blanco,,0000,0000,0000,,Mete en una coctelera...
+Dialogue: 0,0:2:17.040,0:2:21.400,blanco,,0000,0000,0000,,...un tren, un terremoto\Ny un volcán,
+Dialogue: 0,0:2:21.440,0:2:26.080,blanco,,0000,0000,0000,,y tendrás esta escalera.
+Dialogue: 0,0:2:26.120,0:2:30.400,blanco,,0000,0000,0000,,Aquí no hay quien viva, aquí no.
+Dialogue: 0,0:2:30.440,0:2:35.160,blanco,,0000,0000,0000,,Aquí no hay quien viva, aquí no.
+Dialogue: 0,0:2:35.200,0:2:39.080,blanco,,0000,0000,0000,,Aquí no hay quien viva, aquí no.
+Dialogue: 0,0:2:42.0,0:2:45.560,amarillo,,0000,0000,0000,,-Lucía, ¿puedes abrir la puerta?\NEs que esto pesa.
+Dialogue: 0,0:2:45.600,0:2:49.160,magenta,,0000,0000,0000,,-Ya sé que pesa, pero no eres\Nel único que va cargado.
+Dialogue: 0,0:2:49.200,0:2:53.320,magenta,,0000,0000,0000,,-Me las tenía que dar el conserje.
+Dialogue: 0,0:2:49.200,0:2:53.320,amarillo,,0000,0000,0000,,-¿Por qué no pruebas con la llave?
+Dialogue: 0,0:2:53.360,0:2:56.480,amarillo,,0000,0000,0000,,-Llama algún vecino y que abra.
+Dialogue: 0,0:2:53.360,0:2:56.480,magenta,,0000,0000,0000,,¿Tú ves el conserje?
+Dialogue: 0,0:2:56.520,0:2:59.760,magenta,,0000,0000,0000,,-Prometiste estar de buen humor\Ndurante la mudanza.
+Dialogue: 0,0:2:59.800,0:3:3.400,amarillo,,0000,0000,0000,,-Si estoy de buen humor. No salto\Nde alegría porque la tele pesa.
+Dialogue: 0,0:3:3.440,0:3:7.600,magenta,,0000,0000,0000,,-Hola, no encontramos el conserje.
+Dialogue: 0,0:3:3.440,0:3:7.600,blanco,,0000,0000,0000,,-¿Sí?
+Dialogue: 0,0:3:7.640,0:3:11.200,blanco,,0000,0000,0000,,-¿Por qué supone que ese imbécil\Nestá en mi casa?
+Dialogue: 0,0:3:11.240,0:3:13.920,magenta,,0000,0000,0000,,-Pero... ¿nos puede abrir\Nla puerta?
+Dialogue: 0,0:3:13.960,0:3:17.520,magenta,,0000,0000,0000,,-Qué borde, ¿no?
+Dialogue: 0,0:3:13.960,0:3:17.520,blanco,,0000,0000,0000,,-No, yo no abro a desconocidos.
+Dialogue: 0,0:3:17.560,0:3:20.600,magenta,,0000,0000,0000,,-¿Por qué no la dejas en el suelo?
+Dialogue: 0,0:3:17.560,0:3:20.600,amarillo,,0000,0000,0000,,-Llama a otro.
+Dialogue: 0,0:3:20.640,0:3:23.480,blanco,,0000,0000,0000,,-¿Dígame?
+Dialogue: 0,0:3:20.640,0:3:23.480,amarillo,,0000,0000,0000,,-Porque hay que volver a cogerla.
+Dialogue: 0,0:3:23.520,0:3:27.120,blanco,,0000,0000,0000,,-No, gracias, no queremos nada.
+Dialogue: 0,0:3:23.520,0:3:27.120,magenta,,0000,0000,0000,,-Hola, soy la nueva vecina...
+Dialogue: 0,0:3:28.200,0:3:31.400,blanco,,0000,0000,0000,,-No les abras, Marisa,
+Dialogue: 0,0:3:28.200,0:3:31.400,magenta,,0000,0000,0000,,-Pero espere...
+Dialogue: 0,0:3:31.440,0:3:34.880,amarillo,,0000,0000,0000,,(IRÓNICO) -Son majos los vecinos,
+Dialogue: 0,0:3:31.440,0:3:34.880,blanco,,0000,0000,0000,,que no sé quiénes son.
+Dialogue: 0,0:3:34.920,0:3:38.240,magenta,,0000,0000,0000,,-Habrá alguien que nos abra, ¿no?
+Dialogue: 0,0:3:34.920,0:3:38.240,amarillo,,0000,0000,0000,,creo que hemos acertado.
+Dialogue: 0,0:3:38.280,0:3:41.480,amarillo,,0000,0000,0000,,-¡Cuelgue, señora!
+Dialogue: 0,0:3:38.280,0:3:41.480,blanco,,0000,0000,0000,,-No creo.
+Dialogue: 0,0:3:45.360,0:3:47.720,blanco,,0000,0000,0000,,(Suena el timbre)
+Dialogue: 0,0:3:50.800,0:3:53.080,blanco,,0000,0000,0000,,-Pero si sólo son las 12.
+Dialogue: 0,0:3:54.200,0:3:57.040,blanco,,0000,0000,0000,,-Belén, ¿estás despierta?\N-No.
+Dialogue: 0,0:3:58.400,0:4:2.040,blanco,,0000,0000,0000,,-Están llamando al telefonillo.\N-¿No me digas?
+Dialogue: 0,0:4:2.080,0:4:5.080,blanco,,0000,0000,0000,,-¿Pero quién es?\N-Tu menstruación.
+Dialogue: 0,0:4:5.120,0:4:8.760,blanco,,0000,0000,0000,,¿A mí que me cuentas?\N-Pues no pienso levantarme.
+Dialogue: 0,0:4:9.600,0:4:12.840,amarillo,,0000,0000,0000,,-Bueno, ya está bien.
+Dialogue: 0,0:4:9.600,0:4:12.840,magenta,,0000,0000,0000,,-Ya no sé dónde llamar.
+Dialogue: 0,0:4:12.880,0:4:16.320,amarillo,,0000,0000,0000,,Mira lo que hago.\NComo no me abra alguien...
+Dialogue: 0,0:4:16.360,0:4:20.440,amarillo,,0000,0000,0000,,-No sé, pero algo habrá que hacer.
+Dialogue: 0,0:4:16.360,0:4:20.440,magenta,,0000,0000,0000,,-¿Qué vas a hacer?
+Dialogue: 0,0:4:20.480,0:4:22.480,amarillo,,0000,0000,0000,,Se acerca el invierno.
+Dialogue: 0,0:4:22.520,0:4:26.680,amarillo,,0000,0000,0000,,-Muchas gracias, señora.
+Dialogue: 0,0:4:22.520,0:4:26.680,blanco,,0000,0000,0000,,-Buenos días.
+Dialogue: 0,0:4:26.720,0:4:30.240,amarillo,,0000,0000,0000,,Si no estuviese mi novia,\Nle daba un beso en la boca.
+Dialogue: 0,0:4:30.280,0:4:32.400,magenta,,0000,0000,0000,,-No le haga caso.
+Dialogue: 0,0:4:30.280,0:4:32.400,blanco,,0000,0000,0000,,-¿Perdón?
+Dialogue: 0,0:4:32.440,0:4:36.040,magenta,,0000,0000,0000,,Somos nuevos y aún no tenemos llave\Ny nadie nos abría la puerta.
+Dialogue: 0,0:4:36.080,0:4:39.640,amarillo,,0000,0000,0000,,-¿Quién mató a Kennedy,
+Dialogue: 0,0:4:36.080,0:4:39.640,blanco,,0000,0000,0000,,-¿Ah, no? ¿Y Emilio, el portero?
+Dialogue: 0,0:4:39.680,0:4:42.600,amarillo,,0000,0000,0000,,dónde está el portero...?\NYo voy subiendo.
+Dialogue: 0,0:4:42.640,0:4:45.640,blanco,,0000,0000,0000,,-Pasad, yo os acompaño.
+Dialogue: 0,0:4:42.640,0:4:45.640,amarillo,,0000,0000,0000,,Encantado, señora.
+Dialogue: 0,0:4:45.680,0:4:48.440,blanco,,0000,0000,0000,,Me llamo Vicenta\Ny éste es Valentín.
+Dialogue: 0,0:4:48.480,0:4:51.280,magenta,,0000,0000,0000,,-Encantada, yo soy Lucía\Ny él es Roberto.
+Dialogue: 0,0:4:57.800,0:5:0.760,blanco,,0000,0000,0000,,-¿Qué os decía?\NAquí están las llaves.
+Dialogue: 0,0:5:0.800,0:5:3.200,blanco,,0000,0000,0000,,Emilio las deja siempre\Nen el mismo sitio.
+Dialogue: 0,0:5:3.240,0:5:6.960,blanco,,0000,0000,0000,,-No, sólo los que lo sabemos.
+Dialogue: 0,0:5:3.240,0:5:6.960,magenta,,0000,0000,0000,,-Entonces las coge cualquiera.
+Dialogue: 0,0:5:7.0,0:5:10.080,blanco,,0000,0000,0000,,-No, no, está prohibido...
+Dialogue: 0,0:5:7.0,0:5:10.080,amarillo,,0000,0000,0000,,-Lucía, ¿puedes abrirme?
+Dialogue: 0,0:5:10.120,0:5:14.320,blanco,,0000,0000,0000,,...usar el ascensor para subir.\NVamos mejor por las escaleras.
+Dialogue: 0,0:5:14.360,0:5:18.200,blanco,,0000,0000,0000,,-Que sólo lo usamos para bajar.
+Dialogue: 0,0:5:14.360,0:5:18.200,amarillo,,0000,0000,0000,,-¿Cómo?
+Dialogue: 0,0:5:18.240,0:5:21.520,blanco,,0000,0000,0000,,Se estropea mucho.\NCreo que quieren cambiarlo.
+Dialogue: 0,0:5:21.560,0:5:25.680,magenta,,0000,0000,0000,,-Venga, cariño, sólo son 3 pisos.
+Dialogue: 0,0:5:21.560,0:5:25.680,amarillo,,0000,0000,0000,,-Que lo cambien, yo espero aquí.
+Dialogue: 0,0:5:25.720,0:5:29.520,amarillo,,0000,0000,0000,,-¡Ah, sólo tres! Si sólo son tres\Npisos, vale.
+Dialogue: 0,0:5:30.800,0:5:35.0,blanco,,0000,0000,0000,,-Les va a encantar la gente del\Nedificio, somos todos muy jóvenes.
+Dialogue: 0,0:5:35.040,0:5:38.520,blanco,,0000,0000,0000,,Yo vivo aquí, en el primero A\Ncon mi hermana. ¿Queréis conocerla?
+Dialogue: 0,0:5:38.560,0:5:41.280,magenta,,0000,0000,0000,,-Nos encantaría, pero en otro\Nmomento.
+Dialogue: 0,0:5:41.320,0:5:43.400,blanco,,0000,0000,0000,,-¡Marisa, sal un momento!
+Dialogue: 0,0:5:44.400,0:5:47.840,blanco,,0000,0000,0000,,-¿Pero no ibas a la compra?\N-Son los nuevos vecinos...
+Dialogue: 0,0:5:47.880,0:5:51.560,blanco,,0000,0000,0000,,...del tercero.\N-Lo que faltaba, más jóvenes.
+Dialogue: 0,0:5:51.600,0:5:55.760,magenta,,0000,0000,0000,,-Todavía no, pero estamos a punto.
+Dialogue: 0,0:5:51.600,0:5:55.760,blanco,,0000,0000,0000,,Estaréis casados, ¿no?
+Dialogue: 0,0:5:55.800,0:6:0.080,blanco,,0000,0000,0000,,-Dame el carro, voy yo a comprar.
+Dialogue: 0,0:5:55.800,0:6:0.080,amarillo,,0000,0000,0000,,-¿Ah, sí?
+Dialogue: 0,0:6:0.120,0:6:2.720,amarillo,,0000,0000,0000,,-Igualmente.
+Dialogue: 0,0:6:0.120,0:6:2.720,blanco,,0000,0000,0000,,Encantada, ¿eh?
+Dialogue: 0,0:6:2.760,0:6:6.200,blanco,,0000,0000,0000,,-No hagáis caso, es una bromista.\N-Venga, Mauri, por favor,
+Dialogue: 0,0:6:6.240,0:6:9.520,verde,,0000,0000,0000,,-Nos vamos a Ibiza en avión,
+Dialogue: 0,0:6:6.240,0:6:9.520,blanco,,0000,0000,0000,,que perdemos el avión.
+Dialogue: 0,0:6:9.560,0:6:12.600,blanco,,0000,0000,0000,,-Perdonadle, se ha tomado...
+Dialogue: 0,0:6:9.560,0:6:12.600,verde,,0000,0000,0000,,estoy muy contento.
+Dialogue: 0,0:6:12.640,0:6:16.320,blanco,,0000,0000,0000,,...un valium y está histérico.\N-Fernando, estos son los nuevos...
+Dialogue: 0,0:6:16.360,0:6:18.640,verde,,0000,0000,0000,,-Di algo.
+Dialogue: 0,0:6:16.360,0:6:18.640,blanco,,0000,0000,0000,,...vecinos del tercero.
+Dialogue: 0,0:6:18.680,0:6:21.640,blanco,,0000,0000,0000,,-¡Socorro!\N-Bienvenidos, yo soy Fernando...
+Dialogue: 0,0:6:21.680,0:6:25.200,blanco,,0000,0000,0000,,...y él es Mauri. Y nos vamos\Nporque no llegamos. Hasta el lunes.
+Dialogue: 0,0:6:25.240,0:6:28.680,verde,,0000,0000,0000,,-¿Le da las llaves a Emilio?\NTiene que dar de comer a Versace.
+Dialogue: 0,0:6:28.720,0:6:32.0,verde,,0000,0000,0000,,-Mi mascota, un conejo enano.
+Dialogue: 0,0:6:28.720,0:6:32.0,blanco,,0000,0000,0000,,-¿Quién es Versace?
+Dialogue: 0,0:6:32.040,0:6:36.080,verde,,0000,0000,0000,,-¡Ya voy! Si va con las prisas...
+Dialogue: 0,0:6:32.040,0:6:36.080,blanco,,0000,0000,0000,,-¡Mauricio!
+Dialogue: 0,0:6:36.800,0:6:39.400,amarillo,,0000,0000,0000,,-Bueno, ¿podemos seguir\Nla escalada?
+Dialogue: 0,0:6:39.440,0:6:43.280,blanco,,0000,0000,0000,,-Estos son nuestros vecinos\Nde enfrente. Mi hermana asegura...
+Dialogue: 0,0:6:43.320,0:6:46.920,blanco,,0000,0000,0000,,...que son gays, pero a mí me da\Nque son homosexuales.
+Dialogue: 0,0:6:46.960,0:6:49.200,blanco,,0000,0000,0000,,-Nunca, hija.
+Dialogue: 0,0:6:46.960,0:6:49.200,magenta,,0000,0000,0000,,-Hoy nunca se sabe.
+Dialogue: 0,0:6:49.240,0:6:51.440,blanco,,0000,0000,0000,,Ahora vais a conocer a Concha.
+Dialogue: 0,0:6:52.400,0:6:55.240,blanco,,0000,0000,0000,,Lo digo porque está mirando\Npor la mirilla.
+Dialogue: 0,0:6:56.400,0:6:59.960,blanco,,0000,0000,0000,,-No miro por la mirilla,\Npero es que armáis un escándalo...
+Dialogue: 0,0:7:0.0,0:7:4.080,blanco,,0000,0000,0000,,¿Estos quiénes son?\N-Los nuevos vecinos; no están...
+Dialogue: 0,0:7:4.120,0:7:7.440,magenta,,0000,0000,0000,,-Encantada.
+Dialogue: 0,0:7:4.120,0:7:7.440,blanco,,0000,0000,0000,,...casados, pero se van a casar.
+Dialogue: 0,0:7:7.480,0:7:10.480,amarillo,,0000,0000,0000,,-Estamos de visita oficial\Npor el edificio.
+Dialogue: 0,0:7:10.520,0:7:12.560,cyan,,0000,0000,0000,,-Hola.
+Dialogue: 0,0:7:10.520,0:7:12.560,blanco,,0000,0000,0000,,-Buenos días.
+Dialogue: 0,0:7:12.600,0:7:16.160,amarillo,,0000,0000,0000,,-Esto es como jugar a la Play,
+Dialogue: 0,0:7:12.600,0:7:16.160,blanco,,0000,0000,0000,,-Ten cuidado con ésta.
+Dialogue: 0,0:7:16.200,0:7:19.360,cyan,,0000,0000,0000,,-Vecinos nuevos, ¿no?
+Dialogue: 0,0:7:16.200,0:7:19.360,amarillo,,0000,0000,0000,,hemos pasado otra pantalla.
+Dialogue: 0,0:7:19.400,0:7:23.200,blanco,,0000,0000,0000,,-Soy Juan Cuesta, el Presidente.
+Dialogue: 0,0:7:19.400,0:7:23.200,cyan,,0000,0000,0000,,Yo soy Paloma y éste es mi marido.
+Dialogue: 0,0:7:23.240,0:7:26.640,blanco,,0000,0000,0000,,Bienvenidos.\NBuena tele, debe ser cara.
+Dialogue: 0,0:7:26.680,0:7:30.040,amarillo,,0000,0000,0000,,-Gracias por recordármelo.\NPensaba soltarla.
+Dialogue: 0,0:7:30.080,0:7:35.120,blanco,,0000,0000,0000,,-Espera, te ayudo.\NVenga, con cuidado,
+Dialogue: 0,0:7:35.160,0:7:37.360,blanco,,0000,0000,0000,,no vayamos a tener un disgusto.
+Dialogue: 0,0:7:37.400,0:7:41.080,blanco,,0000,0000,0000,,-Vamos, que estos chicos deben\Nestar deseando instalarse.
+Dialogue: 0,0:7:41.120,0:7:44.120,cyan,,0000,0000,0000,,-Yo subo y me voy pronto,\Nque tengo mucho que hacer.
+Dialogue: 0,0:7:44.160,0:7:45.600,blanco,,0000,0000,0000,,-Sí, ver la tele.
+Dialogue: 0,0:7:45.640,0:7:48.840,amarillo,,0000,0000,0000,,-Por favor, si aparece el conserje,\Nque levante la mano.
+Dialogue: 0,0:7:55.200,0:7:59.480,blanco,,0000,0000,0000,,-De nada, bienvenidos.
+Dialogue: 0,0:7:55.200,0:7:59.480,magenta,,0000,0000,0000,,-Muchas gracias por todo.
+Dialogue: 0,0:7:59.520,0:8:3.520,blanco,,0000,0000,0000,,Si necesitáis algo...\N-Aquí somos una gran familia.
+Dialogue: 0,0:8:3.560,0:8:8.0,blanco,,0000,0000,0000,,-Vais a tener que pintar.\N-Venga...
+Dialogue: 0,0:8:12.600,0:8:15.440,blanco,,0000,0000,0000,,-Mira que te he dicho lo del cable,\Nchaval.
+Dialogue: 0,0:8:17.400,0:8:21.400,blanco,,0000,0000,0000,,-No me gustan, no sé por qué,\Npero no me gustan nada.
+Dialogue: 0,0:8:21.440,0:8:25.720,blanco,,0000,0000,0000,,-Yo te digo que esos no se casan.
+Dialogue: 0,0:8:21.440,0:8:25.720,cyan,,0000,0000,0000,,-¿Y a usted le gusta alguien?
+Dialogue: 0,0:8:25.760,0:8:28.960,blanco,,0000,0000,0000,,¿Y el piso, se lo han comprado\Na medias?
+Dialogue: 0,0:8:29.0,0:8:31.800,blanco,,0000,0000,0000,,-No se lo he preguntado.\N-Mal hecho.
+Dialogue: 0,0:8:31.840,0:8:34.240,blanco,,0000,0000,0000,,-Mientras paguen la comunidad...
+Dialogue: 0,0:8:34.280,0:8:36.920,magenta,,0000,0000,0000,,-¿Qué te parece?
+Dialogue: 0,0:8:36.960,0:8:41.200,magenta,,0000,0000,0000,,Lo pintamos, arreglamos el suelo,\Ncambiamos el baño...
+Dialogue: 0,0:8:41.240,0:8:45.240,magenta,,0000,0000,0000,,Le ponemos unos halógenos\Ny como nuevo, ¿a que sí?
+Dialogue: 0,0:8:45.280,0:8:48.560,amarillo,,0000,0000,0000,,-Con lo bien que estaba yo\Ncon mis padres...
+Dialogue: 0,0:8:48.600,0:8:51.680,amarillo,,0000,0000,0000,,-No, que tiene mucha luz.
+Dialogue: 0,0:8:48.600,0:8:51.680,magenta,,0000,0000,0000,,-¿Qué?
+Dialogue: 0,0:8:51.720,0:8:55.280,amarillo,,0000,0000,0000,,-¿El dormitorio?
+Dialogue: 0,0:8:51.720,0:8:55.280,magenta,,0000,0000,0000,,-¿Verdad? ¿Has visto el dormitorio?
+Dialogue: 0,0:8:55.320,0:8:57.280,amarillo,,0000,0000,0000,,No, no lo he visto.
+Dialogue: 0,0:9:0.800,0:9:3.560,magenta,,0000,0000,0000,,-El portero.
+Dialogue: 0,0:9:0.800,0:9:3.560,amarillo,,0000,0000,0000,,¿Y éste quién es?
+Dialogue: 0,0:9:3.600,0:9:6.200,magenta,,0000,0000,0000,,¡Oiga, despierte!
+Dialogue: 0,0:9:8.200,0:9:11.0,blanco,,0000,0000,0000,,-Hola, ¿qué tal?
+Dialogue: 0,0:9:11.040,0:9:14.720,magenta,,0000,0000,0000,,-Muy bien, ¿se acuerda de mí?\NSomos los de las llaves.
+Dialogue: 0,0:9:14.760,0:9:19.800,blanco,,0000,0000,0000,,-Sí, perdone, pero vine a arreglar\Nunos enchufes y me he mareado.
+Dialogue: 0,0:9:19.840,0:9:23.0,amarillo,,0000,0000,0000,,-Péinate, alguno te ha dado\Ncalambre.
+Dialogue: 0,0:9:23.040,0:9:26.440,blanco,,0000,0000,0000,,-Por cierto, ya le han traído\Nla cama.
+Dialogue: 0,0:9:26.480,0:9:29.040,blanco,,0000,0000,0000,,-Un poco dura, la verdad.
+Dialogue: 0,0:9:26.480,0:9:29.040,magenta,,0000,0000,0000,,-¿Y qué tal?
+Dialogue: 0,0:9:29.080,0:9:33.0,blanco,,0000,0000,0000,,Pero en cuanto la rueden un poco,\Nva a ir muy bien.
+Dialogue: 0,0:9:33.040,0:9:36.480,blanco,,0000,0000,0000,,El plástico se lo he quitado yo,\Nporque da un calor...
+Dialogue: 0,0:9:36.520,0:9:40.680,blanco,,0000,0000,0000,,Les dejo que tengo mucho que hacer.\NSi me necesitan, ya saben...
+Dialogue: 0,0:9:40.720,0:9:43.200,blanco,,0000,0000,0000,,...dónde me tienen.\NHasta luego.
+Dialogue: 0,0:9:43.240,0:9:44.760,magenta,,0000,0000,0000,,-Adiós.
+Dialogue: 0,0:9:49.400,0:9:51.400,magenta,,0000,0000,0000,,Bueno...
+Dialogue: 0,0:9:51.440,0:9:54.080,magenta,,0000,0000,0000,,-¿Limpiamos?
+Dialogue: 0,0:9:51.440,0:9:54.080,amarillo,,0000,0000,0000,,-Bueno...
+Dialogue: 0,0:9:55.200,0:9:56.640,amarillo,,0000,0000,0000,,-Sí.
+Dialogue: 0,0:9:56.680,0:10:0.360,blanco,,0000,0000,0000,,-Sentaos de una vez, vamos a comer.\N-Yo no tengo hambre.
+Dialogue: 0,0:10:0.400,0:10:3.800,blanco,,0000,0000,0000,,-Da igual, vas a comer.\N¡Natalia! ¿Qué hace esta niña?
+Dialogue: 0,0:10:3.840,0:10:6.600,blanco,,0000,0000,0000,,-¿Otra vez lentejas?
+Dialogue: 0,0:10:3.840,0:10:6.600,cyan,,0000,0000,0000,,-Juan, hazme sitio.
+Dialogue: 0,0:10:6.640,0:10:9.800,blanco,,0000,0000,0000,,-Sí, otra vez.\NNatalia, no te llamo más.
+Dialogue: 0,0:10:9.840,0:10:12.960,blanco,,0000,0000,0000,,-Ya estoy aquí, pesado.\N-¿Por qué comemos tan pronto?
+Dialogue: 0,0:10:13.0,0:10:15.200,cyan,,0000,0000,0000,,-¿Cuándo se mudarán\Nlos del tercero?
+Dialogue: 0,0:10:15.240,0:10:18.280,blanco,,0000,0000,0000,,-¿Lentejas? Yo no como.\N-Tú te sientas.
+Dialogue: 0,0:10:18.320,0:10:21.800,cyan,,0000,0000,0000,,-Acuérdate cómo dejaron...
+Dialogue: 0,0:10:18.320,0:10:21.800,blanco,,0000,0000,0000,,No lo sé, no he hablado con ellos.
+Dialogue: 0,0:10:21.840,0:10:25.520,blanco,,0000,0000,0000,,-Deja el móvil mientras comes.
+Dialogue: 0,0:10:21.840,0:10:25.520,cyan,,0000,0000,0000,,...el portal los que se marcharon.
+Dialogue: 0,0:10:25.560,0:10:29.400,blanco,,0000,0000,0000,,-Es que no estoy comiendo.\N-En casa de Dani comen a las tres.
+Dialogue: 0,0:10:29.440,0:10:32.840,blanco,,0000,0000,0000,,-Luego le digo a Emilio que avise\Ncuando llegue la mudanza.
+Dialogue: 0,0:10:32.880,0:10:36.920,blanco,,0000,0000,0000,,-No, a mí no me torea nadie.
+Dialogue: 0,0:10:32.880,0:10:36.920,cyan,,0000,0000,0000,,-Si van a torearte desde ahora...
+Dialogue: 0,0:10:36.960,0:10:40.040,blanco,,0000,0000,0000,,¡Natalia!\N-Papá, que te está toreando.
+Dialogue: 0,0:10:40.080,0:10:43.760,blanco,,0000,0000,0000,,-Lo importante de los nuevos...
+Dialogue: 0,0:10:40.080,0:10:43.760,cyan,,0000,0000,0000,,-Deja de jugar con el pan.
+Dialogue: 0,0:10:43.800,0:10:47.600,blanco,,0000,0000,0000,,...es que sean personas educadas\Ny buenos vecinos como nosotros.
+Dialogue: 0,0:10:47.640,0:10:50.920,blanco,,0000,0000,0000,,-A Dani siempre le ponen pizza.\N-¿Te quieres callar ya?
+Dialogue: 0,0:10:50.960,0:10:52.560,blanco,,0000,0000,0000,,Natalia...
+Dialogue: 0,0:10:56.600,0:10:58.480,blanco,,0000,0000,0000,,-¡Buenos días!
+Dialogue: 0,0:11:0.0,0:11:3.160,blanco,,0000,0000,0000,,¿Has visto qué bueno hace?\NMe voy a preparar algo.
+Dialogue: 0,0:11:3.200,0:11:6.440,blanco,,0000,0000,0000,,-¿Por qué siempre te levantas\Nde buen humor?
+Dialogue: 0,0:11:6.480,0:11:9.520,blanco,,0000,0000,0000,,-He dormido bien, estoy contenta.
+Dialogue: 0,0:11:9.560,0:11:14.080,blanco,,0000,0000,0000,,Hoy es un día que me siento feliz.\N-Pareces un anuncio de compresas.
+Dialogue: 0,0:11:14.120,0:11:18.280,blanco,,0000,0000,0000,,-Además, esta noche tenemos plan.\N-¿No crees que en vez de salir...
+Dialogue: 0,0:11:18.320,0:11:22.040,blanco,,0000,0000,0000,,...a buscar tíos deberíamos salir\Na buscar trabajo?
+Dialogue: 0,0:11:22.080,0:11:26.120,blanco,,0000,0000,0000,,-Raúl te va a traer un amigo\Nque te vas a caer cuando lo veas.
+Dialogue: 0,0:11:26.160,0:11:29.680,blanco,,0000,0000,0000,,Deportista, 1.90, 35...\NY encima es médico.
+Dialogue: 0,0:11:29.720,0:11:34.0,blanco,,0000,0000,0000,,-Por lo menos puede recetarme\Nalgo para la resaca.
+Dialogue: 0,0:11:34.040,0:11:37.160,blanco,,0000,0000,0000,,-¡Que no cabe!\N¡Que no entra el sofá!
+Dialogue: 0,0:11:37.200,0:11:40.640,blanco,,0000,0000,0000,,-Tira tú un poco de arriba.\N-Es que esto pesa más...
+Dialogue: 0,0:11:40.680,0:11:44.920,blanco,,0000,0000,0000,,...que el Cristo del Gran Poder.\N-Para un día que friego, mudanza.
+Dialogue: 0,0:11:44.960,0:11:49.400,blanco,,0000,0000,0000,,¡Oye, tú, la propaganda en los\Nbuzones! Verás el día que te coja,
+Dialogue: 0,0:11:49.440,0:11:52.440,blanco,,0000,0000,0000,,asqueroso.\N-¡Eh, un momento, un momento!
+Dialogue: 0,0:11:52.480,0:11:55.360,blanco,,0000,0000,0000,,Soy Juan Cuesta, el Presidente.\N¿Qué pasa aquí?
+Dialogue: 0,0:11:55.400,0:11:59.160,blanco,,0000,0000,0000,,-Les he dicho que por ahí no entra.\NY están ahí hasta que rompan...
+Dialogue: 0,0:11:59.200,0:12:1.760,blanco,,0000,0000,0000,,...el ascensor.\N-Está prohibido usar...
+Dialogue: 0,0:12:1.800,0:12:5.400,blanco,,0000,0000,0000,,...el ascensor como montacargas.\N-Es para subir el sofá.
+Dialogue: 0,0:12:5.440,0:12:8.440,blanco,,0000,0000,0000,,-¡No pueden subirlo por ahí!\NSegún los estatutos...
+Dialogue: 0,0:12:8.480,0:12:11.440,blanco,,0000,0000,0000,,-Bueno, vale...\NSubimos por la escalera y ya está.
+Dialogue: 0,0:12:11.480,0:12:14.920,blanco,,0000,0000,0000,,-¿Pero qué dice? No pueden,\Nque nos desconchan la pared.
+Dialogue: 0,0:12:14.960,0:12:19.200,blanco,,0000,0000,0000,,-Y la barandilla y los escalones...\N-Estoy hay que subirlo con grúa.
+Dialogue: 0,0:12:19.240,0:12:22.880,blanco,,0000,0000,0000,,-El cliente nos dijo que no hacía\Nfalta.
+Dialogue: 0,0:12:22.920,0:12:25.880,blanco,,0000,0000,0000,,-Pues hace falta.\N-Pues que piense el cliente.
+Dialogue: 0,0:12:25.920,0:12:29.480,blanco,,0000,0000,0000,,-Suban esto al camión otra vez.\N-¿Quién es este tocapelotas?
+Dialogue: 0,0:12:29.520,0:12:32.800,blanco,,0000,0000,0000,,-Soy Juan Cuesta, Presidente\Nde la Comunidad, ¿no oye?
+Dialogue: 0,0:12:32.840,0:12:36.280,blanco,,0000,0000,0000,,-Presidente del Gobierno es usted.\N-Que le ha insultado.
+Dialogue: 0,0:12:36.320,0:12:38.520,blanco,,0000,0000,0000,,(TODOS DISCUTEN)
+Dialogue: 0,0:12:39.600,0:12:43.360,blanco,,0000,0000,0000,,-¡Soy yo, Concha!\N-No, Concha, no, por Dios.
+Dialogue: 0,0:12:47.400,0:12:52.360,blanco,,0000,0000,0000,,-¡Cómo me tenéis esto!\N-Buenos días, ¿cómo usted por aquí?
+Dialogue: 0,0:12:52.400,0:12:55.840,blanco,,0000,0000,0000,,-Vengo para que me deis\Nel alquiler, que deberíais...
+Dialogue: 0,0:12:55.880,0:12:58.880,blanco,,0000,0000,0000,,...habérmelo dado anoche.\NUn momento...
+Dialogue: 0,0:12:58.920,0:13:2.280,blanco,,0000,0000,0000,,Aquí huele a hombre.\NSabéis que tenéis prohibido...
+Dialogue: 0,0:13:2.320,0:13:6.440,blanco,,0000,0000,0000,,...subir hombres a casa.\N-Sabe que nunca subimos a nadie.
+Dialogue: 0,0:13:6.480,0:13:8.920,blanco,,0000,0000,0000,,-Nunca.\N-A mí no me engañáis.
+Dialogue: 0,0:13:8.960,0:13:12.240,blanco,,0000,0000,0000,,Venga, el alquiler.\N-Tome, y acuérdese de que la...
+Dialogue: 0,0:13:12.280,0:13:15.680,blanco,,0000,0000,0000,,...lavadora no centrifuga.\N-Para lo que la usáis...
+Dialogue: 0,0:13:15.720,0:13:20.360,blanco,,0000,0000,0000,,siempre me dais billetes pequeños.\N-No, por Dios, cuéntelo.
+Dialogue: 0,0:13:20.400,0:13:23.880,blanco,,0000,0000,0000,,-Claro que lo voy a contar,\Npero en mi casa.
+Dialogue: 0,0:13:23.920,0:13:26.680,blanco,,0000,0000,0000,,¡Y limpiad esto, guarras!
+Dialogue: 0,0:13:28.0,0:13:30.560,blanco,,0000,0000,0000,,-Hasta luego, ¿eh?\N-Adiós, monada.
+Dialogue: 0,0:13:30.600,0:13:32.240,blanco,,0000,0000,0000,,-Adiós.
+Dialogue: 0,0:13:33.800,0:13:37.640,blanco,,0000,0000,0000,,Esperemos que no lo cuente.\NAyer cogí 50 euros para las copas.
+Dialogue: 0,0:13:37.680,0:13:39.400,blanco,,0000,0000,0000,,-Ah, muy bien...
+Dialogue: 0,0:13:39.440,0:13:42.840,blanco,,0000,0000,0000,,-¡Aquí se va a quedar el sofá!\NVamos a subir las cajas.
+Dialogue: 0,0:13:42.880,0:13:45.920,blanco,,0000,0000,0000,,-¡Sáquenlo ahora mismo!\N¿Pero qué hacéis?
+Dialogue: 0,0:13:45.960,0:13:49.080,blanco,,0000,0000,0000,,-¿El portero?\N-No, me gusta fregar portales.
+Dialogue: 0,0:13:49.120,0:13:52.760,blanco,,0000,0000,0000,,-Joder, qué raro eres, tío.\N-Pues claro que soy el portero.
+Dialogue: 0,0:13:52.800,0:13:55.680,blanco,,0000,0000,0000,,¿Qué quieres?\N-Soy Paco, el nuevo dependiente...
+Dialogue: 0,0:13:55.720,0:13:59.320,blanco,,0000,0000,0000,,...del videoclub. Es que me aburro.\N-Como pises ahí, te mato.
+Dialogue: 0,0:13:59.360,0:14:2.920,blanco,,0000,0000,0000,,-Vale, vale...\NEn realidad, soy director de cine.
+Dialogue: 0,0:14:2.960,0:14:6.560,blanco,,0000,0000,0000,,Este trabajo es temporal.\N-Sí, yo era modelo de Calvin Klein,
+Dialogue: 0,0:14:6.600,0:14:10.280,blanco,,0000,0000,0000,,pero me cansé de enseñar el culo.\N-¡Que no y que no!
+Dialogue: 0,0:14:10.320,0:14:14.080,blanco,,0000,0000,0000,,Todo inquilino debe comunicar\Na la comunidad la fecha y hora...
+Dialogue: 0,0:14:14.120,0:14:19.040,blanco,,0000,0000,0000,,...de la mudanza, y no han dicho\Nnada, así que esto va al camión.
+Dialogue: 0,0:14:19.080,0:14:22.360,blanco,,0000,0000,0000,,¡Hagan el favor!\N-Como no se calle, le voy a dar...
+Dialogue: 0,0:14:22.400,0:14:25.400,blanco,,0000,0000,0000,,...una hostia al Pokémon...\N-¿Qué me ha llamado?
+Dialogue: 0,0:14:25.440,0:14:30.160,blanco,,0000,0000,0000,,-Tranquilo, compañero, déjalo.\N-Su compañero es muy chulo, ¿eh?
+Dialogue: 0,0:14:30.200,0:14:34.080,blanco,,0000,0000,0000,,-Venga, que hay que comer\Ny hay que echar gasolina al motor.
+Dialogue: 0,0:14:34.120,0:14:37.960,blanco,,0000,0000,0000,,Esta tarde rematamos la faena.\N-¡Esto no se puede quedar aquí!
+Dialogue: 0,0:14:38.0,0:14:40.520,blanco,,0000,0000,0000,,¡Oiga!\N-Los sábados por la tarde...
+Dialogue: 0,0:14:40.560,0:14:43.440,blanco,,0000,0000,0000,,...no trabajamos, ¿no?\N-Vamos, chiquillo, tira.
+Dialogue: 0,0:14:43.480,0:14:46.280,blanco,,0000,0000,0000,,-¿Dónde van?\N¡Esto no se puede quedar aquí!
+Dialogue: 0,0:14:46.320,0:14:50.040,blanco,,0000,0000,0000,,Emilio, organiza esto un poco\Nporque es una vergüenza.
+Dialogue: 0,0:14:50.080,0:14:53.880,blanco,,0000,0000,0000,,Y me avisas en cuanto vuelvan.\NEsos no saben quién soy yo.
+Dialogue: 0,0:14:53.920,0:14:57.160,blanco,,0000,0000,0000,,-Ahora me como yo el "marrón".\NEste trabajo lo dejo...
+Dialogue: 0,0:14:57.200,0:15:0.560,blanco,,0000,0000,0000,,...porque yo estoy harto.\N¡Anda, mira!
+Dialogue: 0,0:15:0.600,0:15:5.320,blanco,,0000,0000,0000,,Ahí va un "sin cable"...\NEsto me lo quedo yo.
+Dialogue: 0,0:15:5.360,0:15:9.480,blanco,,0000,0000,0000,,-¿Se lo vas a robar?\N-No, esto lo han perdido...
+Dialogue: 0,0:15:9.520,0:15:14.040,blanco,,0000,0000,0000,,...los de la mudanza.\N-Qué hijos de puta, macho.
+Dialogue: 0,0:15:14.080,0:15:15.720,blanco,,0000,0000,0000,,-Ya te digo.
+Dialogue: 0,0:15:16.800,0:15:20.560,blanco,,0000,0000,0000,,-Pues yo me llevo esto.\N-Si esto es una foto de la chica...
+Dialogue: 0,0:15:20.600,0:15:25.240,blanco,,0000,0000,0000,,-Así parece que tengo novia.\N-¡Ah! Es verdad.
+Dialogue: 0,0:15:25.280,0:15:27.920,blanco,,0000,0000,0000,,¿Habrá una foto de ésta\Nen top-less?
+Dialogue: 0,0:15:27.960,0:15:29.640,blanco,,0000,0000,0000,,-No sé, a ver...
+Dialogue: 0,0:15:29.680,0:15:31.760,blanco,,0000,0000,0000,,-Aquí no hay más que libros.
+Dialogue: 0,0:15:31.800,0:15:33.400,blanco,,0000,0000,0000,,-Buenos días.
+Dialogue: 0,0:15:37.0,0:15:39.720,blanco,,0000,0000,0000,,-Macho... ¿quién es ésa?
+Dialogue: 0,0:15:39.760,0:15:44.0,blanco,,0000,0000,0000,,-Una diosa, una portada\Ndel Interviú en movimiento,
+Dialogue: 0,0:15:44.040,0:15:48.080,blanco,,0000,0000,0000,,un fenómeno... No sé qué es,\Npero me pone muy malo.
+Dialogue: 0,0:15:48.120,0:15:51.680,blanco,,0000,0000,0000,,-¿Se puede saber qué miras?\N-Doña Marisa, ¿puede pisar...
+Dialogue: 0,0:15:51.720,0:15:54.840,blanco,,0000,0000,0000,,...flojito que estoy fregando?\N-Pues ya era hora.
+Dialogue: 0,0:15:54.880,0:15:57.680,blanco,,0000,0000,0000,,-¿Qué tal todo?\N-¿Y a ti qué te importa?
+Dialogue: 0,0:15:57.720,0:16:1.0,blanco,,0000,0000,0000,,-También es verdad.\N-Vaya por Dios, sin ascensor.
+Dialogue: 0,0:16:1.040,0:16:4.960,blanco,,0000,0000,0000,,Pues sí que llevas bien el portal.\NVoy a hablar con el Presidente,
+Dialogue: 0,0:16:5.0,0:16:7.680,blanco,,0000,0000,0000,,que te va a poner un estanco.\N-¿Un estanco?
+Dialogue: 0,0:16:7.720,0:16:8.920,blanco,,0000,0000,0000,,-Sí.\N-¿Para qué?
+Dialogue: 0,0:16:8.960,0:16:12.0,blanco,,0000,0000,0000,,-Para que fumes.\N-Está muy buena. ¿Vive sola?
+Dialogue: 0,0:16:12.040,0:16:15.560,blanco,,0000,0000,0000,,-Ésta no, con la hermana.\N-No, hombre, la de la minifalda.
+Dialogue: 0,0:16:15.600,0:16:19.200,blanco,,0000,0000,0000,,-No, vive con Belén, la típica\Namiga fea que no se come...
+Dialogue: 0,0:16:19.240,0:16:22.120,blanco,,0000,0000,0000,,...una rosca, está todo el día\Namargada.
+Dialogue: 0,0:16:22.160,0:16:24.080,blanco,,0000,0000,0000,,Belén...
+Dialogue: 0,0:16:24.120,0:16:27.600,blanco,,0000,0000,0000,,Otra Belén, que no es esta Belén.
+Dialogue: 0,0:16:27.640,0:16:30.480,blanco,,0000,0000,0000,,¿Qué tal, Belén?\N-Genial.
+Dialogue: 0,0:16:30.520,0:16:34.520,blanco,,0000,0000,0000,,No hay nada como un buen piropo\Npara alegrarla a una el día.
+Dialogue: 0,0:16:34.560,0:16:37.800,blanco,,0000,0000,0000,,-Sí...\N-¡Imbécil! ¡Hombres!
+Dialogue: 0,0:16:37.840,0:16:41.240,blanco,,0000,0000,0000,,-¿Tú llevas mucho trabajando aquí?\N-Siete años.
+Dialogue: 0,0:16:41.280,0:16:43.920,blanco,,0000,0000,0000,,-Milagroso.\N-Pues sí.
+Dialogue: 0,0:16:49.0,0:16:51.720,amarillo,,0000,0000,0000,,-Cariño, yo creo que eso no sale.
+Dialogue: 0,0:16:51.760,0:16:55.040,magenta,,0000,0000,0000,,-¿Ya has terminado?
+Dialogue: 0,0:16:51.760,0:16:55.040,amarillo,,0000,0000,0000,,Es el dibujo de la baldosa.
+Dialogue: 0,0:16:55.080,0:16:57.680,amarillo,,0000,0000,0000,,-Sí, he terminado hasta los huevos.
+Dialogue: 0,0:16:57.720,0:17:1.560,magenta,,0000,0000,0000,,-¿Y si vienen los de la mudanza?
+Dialogue: 0,0:16:57.720,0:17:1.560,amarillo,,0000,0000,0000,,¿Por qué no vamos a comer algo?
+Dialogue: 0,0:17:1.600,0:17:4.840,amarillo,,0000,0000,0000,,-¡Ostras, la mudanza!\NSe me había olvidado.
+Dialogue: 0,0:17:4.880,0:17:7.400,amarillo,,0000,0000,0000,,Yo prefiero que no vengan.
+Dialogue: 0,0:17:9.600,0:17:13.200,magenta,,0000,0000,0000,,-¿Se puede saber qué te pasa?\NLlevas todo el día negativo.
+Dialogue: 0,0:17:13.240,0:17:17.360,amarillo,,0000,0000,0000,,-No, es que tengo hambre, pero mojo\Nla balleta en Fairy y se me pasa.
+Dialogue: 0,0:17:17.400,0:17:19.880,magenta,,0000,0000,0000,,-Parece que no te hace ilusión\Nvivir juntos.
+Dialogue: 0,0:17:19.920,0:17:23.040,amarillo,,0000,0000,0000,,-Sí que me hace ilusión,\N¡es que esto es una mierda!
+Dialogue: 0,0:17:23.080,0:17:25.920,magenta,,0000,0000,0000,,-Yo también vivía muy bien\Ncon mis padres.
+Dialogue: 0,0:17:25.960,0:17:28.680,amarillo,,0000,0000,0000,,-¿Y por qué le pediste a tu padre\Ncomprar el piso?
+Dialogue: 0,0:17:28.720,0:17:31.680,magenta,,0000,0000,0000,,-Antes de casarnos debemos ver\Nsi somos compatibles.
+Dialogue: 0,0:17:31.720,0:17:35.720,magenta,,0000,0000,0000,,-Bueno, mira, me voy a comprar...
+Dialogue: 0,0:17:31.720,0:17:35.720,amarillo,,0000,0000,0000,,-¿Antes de qué?
+Dialogue: 0,0:17:35.760,0:17:40.640,amarillo,,0000,0000,0000,,-Y yo me voy a dar un baño.
+Dialogue: 0,0:17:35.760,0:17:40.640,magenta,,0000,0000,0000,,...algo para comer.
+Dialogue: 0,0:17:40.680,0:17:43.440,magenta,,0000,0000,0000,,-Tenemos Fairy.
+Dialogue: 0,0:17:40.680,0:17:43.440,amarillo,,0000,0000,0000,,¿Tenemos gel?
+Dialogue: 0,0:17:55.0,0:17:57.160,magenta,,0000,0000,0000,,-Hola.
+Dialogue: 0,0:17:55.0,0:17:57.160,cyan,,0000,0000,0000,,-Hola, ¿qué tal?
+Dialogue: 0,0:17:57.200,0:17:59.640,magenta,,0000,0000,0000,,-Bien, gracias.
+Dialogue: 0,0:17:57.200,0:17:59.640,cyan,,0000,0000,0000,,-¿Cómo va la mudanza?
+Dialogue: 0,0:17:59.680,0:18:3.160,magenta,,0000,0000,0000,,-A comprar cosas que necesitamos.
+Dialogue: 0,0:17:59.680,0:18:3.160,cyan,,0000,0000,0000,,-¿Y adónde vas?
+Dialogue: 0,0:18:3.200,0:18:7.600,magenta,,0000,0000,0000,,-No, gracias, así me da el aire.
+Dialogue: 0,0:18:3.200,0:18:7.600,cyan,,0000,0000,0000,,-Pasa que yo tengo de todo.
+Dialogue: 0,0:18:7.640,0:18:10.560,magenta,,0000,0000,0000,,-No, de verdad...
+Dialogue: 0,0:18:7.640,0:18:10.560,cyan,,0000,0000,0000,,-Pasa y te enseño la casa.
+Dialogue: 0,0:18:10.600,0:18:13.640,cyan,,0000,0000,0000,,-Venga, si lo estás deseando.\NPasa para adentro.
+Dialogue: 0,0:18:13.680,0:18:16.400,cyan,,0000,0000,0000,,-Siéntate en este sofá,
+Dialogue: 0,0:18:13.680,0:18:16.400,magenta,,0000,0000,0000,,-Sólo un rato, ¿eh?
+Dialogue: 0,0:18:16.440,0:18:19.680,cyan,,0000,0000,0000,,que es de cuero.\NPues yo estoy encantada...
+Dialogue: 0,0:18:19.720,0:18:21.600,cyan,,0000,0000,0000,,...de que estés aquí.
+Dialogue: 0,0:18:22.120,0:18:24.800,blanco,,0000,0000,0000,,-Toma.\N-¿Me vas a pagar unas pipas...
+Dialogue: 0,0:18:24.840,0:18:28.600,blanco,,0000,0000,0000,,...con un billete de 50 euros?\N-Bueno, pipas y un chupa-chups.
+Dialogue: 0,0:18:28.640,0:18:31.920,blanco,,0000,0000,0000,,-Anda, voy a por cambio.\NVigílame esto un poco.
+Dialogue: 0,0:18:31.960,0:18:34.640,blanco,,0000,0000,0000,,-Pero date prisa,\Ntengo mucho que hacer.
+Dialogue: 0,0:18:35.800,0:18:40.760,blanco,,0000,0000,0000,,-Hola, buenas tardes. ¿Cómo está?\N-¡Coño! Pero bueno...
+Dialogue: 0,0:18:42.560,0:18:47.200,blanco,,0000,0000,0000,,¡Tú eres el Parlita!\N-No, creo que te confundes.
+Dialogue: 0,0:18:47.240,0:18:50.880,blanco,,0000,0000,0000,,-Que sí, tú hiciste conmigo\Nla mili en Cáceres. Soy Emilio.
+Dialogue: 0,0:18:50.920,0:18:54.960,blanco,,0000,0000,0000,,-Yo no he hecho la mili. Yo soy\Ninsumiso, nunca he hecho la mili.
+Dialogue: 0,0:18:55.0,0:18:58.200,blanco,,0000,0000,0000,,-Tuvimos un par de altercados\Nen el cuartel,
+Dialogue: 0,0:18:58.240,0:19:0.400,blanco,,0000,0000,0000,,pero vamos a perdonarnos, ¿no?
+Dialogue: 0,0:19:0.440,0:19:4.400,blanco,,0000,0000,0000,,-Ya sé lo que pasa, te sueno de\Nalgo, creo que de las películas.
+Dialogue: 0,0:19:4.440,0:19:7.880,blanco,,0000,0000,0000,,-Me da pena que te olvides\Nde las viejas amistades, pero...
+Dialogue: 0,0:19:7.920,0:19:10.960,blanco,,0000,0000,0000,,¿en qué te puedo ayudar?\N-Estoy buscando una película...
+Dialogue: 0,0:19:11.0,0:19:14.0,blanco,,0000,0000,0000,,...de Robert Aldrich,\N"El Emperador del Norte".
+Dialogue: 0,0:19:14.040,0:19:17.840,blanco,,0000,0000,0000,,-Si es guarra, yo la encuentro.\N-Están todos sucios todo el rato,
+Dialogue: 0,0:19:17.880,0:19:19.680,blanco,,0000,0000,0000,,pero no es muy guarra.
+Dialogue: 0,0:19:19.720,0:19:21.840,blanco,,0000,0000,0000,,-¡Ahí va, Santiago Segura!
+Dialogue: 0,0:19:21.880,0:19:24.840,blanco,,0000,0000,0000,,¿Dónde está Paco?\NLe traigo una película.
+Dialogue: 0,0:19:24.880,0:19:27.920,blanco,,0000,0000,0000,,-Espérate, coño, con las prisas.\N-Hola.
+Dialogue: 0,0:19:27.960,0:19:31.160,blanco,,0000,0000,0000,,-"Torrente 2", más floja que la\Nprimera, ¿eh?
+Dialogue: 0,0:19:31.200,0:19:34.960,blanco,,0000,0000,0000,,(RÍE) -¡Qué gracioso!\NNiño, ¿no te ha dicho tu madre...
+Dialogue: 0,0:19:35.0,0:19:39.360,blanco,,0000,0000,0000,,...que "si al hablar no has de\Nagradar, es mejor callar"?
+Dialogue: 0,0:19:39.400,0:19:42.960,blanco,,0000,0000,0000,,-¿Sabes que "Mortadelo y Filemón"\Nte supera en taquilla?
+Dialogue: 0,0:19:43.0,0:19:46.280,blanco,,0000,0000,0000,,-Qué dato interesante, estaba\Ndeseando saber algo así.
+Dialogue: 0,0:19:46.320,0:19:50.520,blanco,,0000,0000,0000,,Pero, querido pequeño, ha superado\Nen taquilla porque las entradas...
+Dialogue: 0,0:19:50.560,0:19:53.720,blanco,,0000,0000,0000,,...valen más caras por lo del euro.\NPero en espectadores,
+Dialogue: 0,0:19:53.760,0:19:56.760,blanco,,0000,0000,0000,,"Torrente 2" es la primera.\N-Creo que te equivocas,
+Dialogue: 0,0:19:56.800,0:20:0.320,blanco,,0000,0000,0000,,porque en espectadores la mejor\Nes la de "Los Otros".
+Dialogue: 0,0:20:0.360,0:20:3.720,blanco,,0000,0000,0000,,-Pero esa se rodó en inglés,\Nentonces no vale.
+Dialogue: 0,0:20:3.760,0:20:7.160,blanco,,0000,0000,0000,,Ellos tenían a Nicole Kidman\Ny yo tenía a Gabino Diego.
+Dialogue: 0,0:20:7.200,0:20:11.0,blanco,,0000,0000,0000,,¿Vas a estar aquí mucho rato?\NEstaría bien que te dieras...
+Dialogue: 0,0:20:11.040,0:20:13.760,blanco,,0000,0000,0000,,...una vuelta y airearas\Ntu cerebro.
+Dialogue: 0,0:20:13.800,0:20:17.400,blanco,,0000,0000,0000,,-No encuentro cambio, macho.\N¡Coño, Santiago Segura!
+Dialogue: 0,0:20:17.440,0:20:19.920,blanco,,0000,0000,0000,,-¿Qué tal?\N-¿Qué pasa, tío?
+Dialogue: 0,0:20:19.960,0:20:22.320,blanco,,0000,0000,0000,,-¿Este tío es famoso?\N-Mogollón.
+Dialogue: 0,0:20:22.360,0:20:25.760,blanco,,0000,0000,0000,,-Como no puedes ayudarme,\Nvuelvo otro día.
+Dialogue: 0,0:20:25.800,0:20:28.560,blanco,,0000,0000,0000,,-¡No!\N-Parlita, tú podrías presentarme...
+Dialogue: 0,0:20:28.600,0:20:32.160,blanco,,0000,0000,0000,,...a Belén Esteban, que me gusta.\N-Sí, sí... Como yo soy famoso,
+Dialogue: 0,0:20:32.200,0:20:35.920,blanco,,0000,0000,0000,,conozco a todos los famosos.\NA Belén Esteban, Rocío Jurado...
+Dialogue: 0,0:20:35.960,0:20:39.560,blanco,,0000,0000,0000,,Te la voy a presentar. ¿Porque\Ncuándo te ha fallado el Parlita?
+Dialogue: 0,0:20:39.600,0:20:42.0,blanco,,0000,0000,0000,,-¿Ves como eres tú?\N-¡Claro, hombre!
+Dialogue: 0,0:20:42.040,0:20:45.800,blanco,,0000,0000,0000,,-¿Te acuerdas? La de garitas\Nque nos hemos chupado juntos.
+Dialogue: 0,0:20:45.840,0:20:49.560,blanco,,0000,0000,0000,,-Tú a mí no me engañabas.\N-Oye, yo soy director de cine.
+Dialogue: 0,0:20:49.600,0:20:53.600,blanco,,0000,0000,0000,,-Éramos pocos y parió la abuela.\N-Te voy a enseñar mis cortos.
+Dialogue: 0,0:20:53.640,0:20:56.360,blanco,,0000,0000,0000,,-Sí, ¿es necesario?\N-Son muy buenos.
+Dialogue: 0,0:20:56.400,0:20:58.400,blanco,,0000,0000,0000,,-Aquí te espero, no me muevo.\N-¡Vale!
+Dialogue: 0,0:20:58.440,0:21:2.280,blanco,,0000,0000,0000,,-Me acuerdo del Teniente Linares...\N-Que mande aquí los cortos.
+Dialogue: 0,0:21:2.320,0:21:5.440,blanco,,0000,0000,0000,,Adiós, muy simpático.\N-Que no se te olvide lo de Belén.
+Dialogue: 0,0:21:5.480,0:21:9.120,blanco,,0000,0000,0000,,¡Parlita, campeón!\NQué grande ha sido siempre.
+Dialogue: 0,0:21:9.160,0:21:11.760,blanco,,0000,0000,0000,,-¿Se ha ido?\N-Sí, tenía prisa.
+Dialogue: 0,0:21:11.800,0:21:14.400,blanco,,0000,0000,0000,,Toma, que lo llames aquí.\N-¡Ahí va!
+Dialogue: 0,0:21:14.440,0:21:18.200,blanco,,0000,0000,0000,,-¿Cómo dices que se llamaba?\N-Coño, Santiago Segura.
+Dialogue: 0,0:21:18.240,0:21:22.360,blanco,,0000,0000,0000,,-Éste es el Parlita, pero se ha\Nhecho famoso y se ha cambiado...
+Dialogue: 0,0:21:22.400,0:21:25.520,blanco,,0000,0000,0000,,...el nombre.\NVenga, dame las pipas.
+Dialogue: 0,0:21:29.880,0:21:32.760,blanco,,0000,0000,0000,,(Se oye un burbujeo)
+Dialogue: 0,0:21:52.400,0:21:55.800,blanco,,0000,0000,0000,,-Decídete ya que aún me quedan\Ncuatro portales.
+Dialogue: 0,0:21:55.840,0:21:59.920,blanco,,0000,0000,0000,,-Es que no sé. Esta de "El afinador\Nde pianos", ¿de qué trata?
+Dialogue: 0,0:21:59.960,0:22:3.160,blanco,,0000,0000,0000,,-Pues de uno que afina pianos.\N-¿Y qué le pasa?
+Dialogue: 0,0:22:3.200,0:22:7.240,blanco,,0000,0000,0000,,Tendrá una vida, ¿no?\N-No lo sé, léetelo y te enteras.
+Dialogue: 0,0:22:7.280,0:22:9.840,blanco,,0000,0000,0000,,-¿Qué otras ofertas tienes\Neste mes?
+Dialogue: 0,0:22:9.880,0:22:13.280,blanco,,0000,0000,0000,,-Una colección de vídeos de Jackie\NChan y Ufito el Dinosaurio.
+Dialogue: 0,0:22:13.320,0:22:16.040,blanco,,0000,0000,0000,,-Ahora sí que me lo has puesto\Ndifícil.
+Dialogue: 0,0:22:16.080,0:22:18.680,blanco,,0000,0000,0000,,-¿Te has leído ya lo del mes\Npasado?
+Dialogue: 0,0:22:18.720,0:22:22.360,blanco,,0000,0000,0000,,-A mí leer me da mucha pereza.\N-¿Y para qué te haces socio...
+Dialogue: 0,0:22:22.400,0:22:24.880,blanco,,0000,0000,0000,,...del Círculo?\N-Para hacerte un favor.
+Dialogue: 0,0:22:24.920,0:22:28.320,blanco,,0000,0000,0000,,Papá, no me hartes porque me voy\Nahora mismo.
+Dialogue: 0,0:22:28.360,0:22:31.560,blanco,,0000,0000,0000,,-A tu padre no le amenaces.\NVamos a hacer una cosa,
+Dialogue: 0,0:22:31.600,0:22:35.200,blanco,,0000,0000,0000,,te voy a dejar el catálogo.\NLo miras, lo piensas y mañana...
+Dialogue: 0,0:22:35.240,0:22:39.0,blanco,,0000,0000,0000,,...me paso otra vez. ¿Vale?\N-Perdóname, es que estoy muy tenso.
+Dialogue: 0,0:22:39.040,0:22:42.800,blanco,,0000,0000,0000,,-Vale ya con los besos.\NY llama a tu madre, desgraciado.
+Dialogue: 0,0:22:42.840,0:22:45.840,blanco,,0000,0000,0000,,-Es verdad. No seas pesado\Ncon los vecinos,
+Dialogue: 0,0:22:45.880,0:22:47.960,blanco,,0000,0000,0000,,que después me cae el "marrón".
+Dialogue: 0,0:22:50.080,0:22:52.120,blanco,,0000,0000,0000,,-No llegues tarde.\N-No.
+Dialogue: 0,0:22:52.160,0:22:56.280,blanco,,0000,0000,0000,,-Pórtate bien con los demás niños.\N-Déjate de cachondeo. Mamá, me voy.
+Dialogue: 0,0:22:56.320,0:22:59.240,blanco,,0000,0000,0000,,-¿Pero vas a salir otra vez, hijo?\N-De cachondeo.
+Dialogue: 0,0:22:59.280,0:23:2.720,blanco,,0000,0000,0000,,-¿Tú cuándo duermes?\N-En la oficina. Voy tarde, me mata.
+Dialogue: 0,0:23:2.760,0:23:5.0,blanco,,0000,0000,0000,,-¿Con quién has quedado?\N-Con una amiga.
+Dialogue: 0,0:23:5.040,0:23:6.960,blanco,,0000,0000,0000,,-No me gusta.\N-A mí tampoco,
+Dialogue: 0,0:23:7.0,0:23:9.160,blanco,,0000,0000,0000,,pero me ha fallado la otra.
+Dialogue: 0,0:23:9.200,0:23:12.200,blanco,,0000,0000,0000,,-Está claro que yo sobro\Nen esta casa.
+Dialogue: 0,0:23:12.880,0:23:15.400,blanco,,0000,0000,0000,,(Suena el timbre)
+Dialogue: 0,0:23:17.720,0:23:21.040,amarillo,,0000,0000,0000,,-Joder, la mudanza.
+Dialogue: 0,0:23:27.800,0:23:29.760,blanco,,0000,0000,0000,,-Hola.
+Dialogue: 0,0:23:27.800,0:23:29.760,amarillo,,0000,0000,0000,,Hola.
+Dialogue: 0,0:23:29.800,0:23:32.920,amarillo,,0000,0000,0000,,-Pues no. ¿Y usted?
+Dialogue: 0,0:23:29.800,0:23:32.920,blanco,,0000,0000,0000,,Usted no es Ciriaco Cánovas.
+Dialogue: 0,0:23:32.960,0:23:36.800,amarillo,,0000,0000,0000,,-Ya, quiero decir... ¿quién es?
+Dialogue: 0,0:23:32.960,0:23:36.800,blanco,,0000,0000,0000,,-Evidentemente, yo tampoco.
+Dialogue: 0,0:23:36.840,0:23:40.800,blanco,,0000,0000,0000,,-Del Círculo de Lectores. Venía\Na traerle el pedido de este mes.
+Dialogue: 0,0:23:40.840,0:23:45.960,amarillo,,0000,0000,0000,,-Pues el tal Ciriaco debió mudarse;\Nporque acabamos de comprar la casa.
+Dialogue: 0,0:23:46.0,0:23:49.640,blanco,,0000,0000,0000,,-Ya. Y a usted no le interesa\Nhacerse del Círculo, claro.
+Dialogue: 0,0:23:49.680,0:23:54.080,amarillo,,0000,0000,0000,,-Hombre, no lo sé. ¿Le importa que\Nme lo piense con más ropa puesta?
+Dialogue: 0,0:23:54.120,0:23:57.640,blanco,,0000,0000,0000,,-No, por Dios, ya vuelvo otro día.\NAhora a buscar a Ciriaco,
+Dialogue: 0,0:23:57.680,0:24:0.360,blanco,,0000,0000,0000,,que vete a saber\Ndónde se ha metido.
+Dialogue: 0,0:24:3.600,0:24:5.600,amarillo,,0000,0000,0000,,-Coño.
+Dialogue: 0,0:24:7.120,0:24:9.520,amarillo,,0000,0000,0000,,No me lo puedo creer.
+Dialogue: 0,0:24:16.080,0:24:18.400,blanco,,0000,0000,0000,,-¡Alicia! Alicia, date prisa,
+Dialogue: 0,0:24:18.440,0:24:22.680,blanco,,0000,0000,0000,,es la primera vez en dos años\Nque me espera un tío. ¡Alicia!
+Dialogue: 0,0:24:23.880,0:24:26.360,blanco,,0000,0000,0000,,Venga, mujer.\N-¿Te gustan estos zapatos?
+Dialogue: 0,0:24:26.400,0:24:28.640,blanco,,0000,0000,0000,,-No, pero no hay tiempo.
+Dialogue: 0,0:24:29.120,0:24:31.040,amarillo,,0000,0000,0000,,-Hola.
+Dialogue: 0,0:24:31.080,0:24:33.080,amarillo,,0000,0000,0000,,¿Qué tal?
+Dialogue: 0,0:24:33.120,0:24:35.920,blanco,,0000,0000,0000,,-Esto es una señal:\Nla noche promete.
+Dialogue: 0,0:24:36.800,0:24:39.400,blanco,,0000,0000,0000,,-¡Ah!
+Dialogue: 0,0:24:36.800,0:24:39.400,amarillo,,0000,0000,0000,,-Soy el nuevo vecino.
+Dialogue: 0,0:24:39.440,0:24:42.840,blanco,,0000,0000,0000,,¿Y qué intentas, que te hagan\Npresidente de la comunidad?
+Dialogue: 0,0:24:42.880,0:24:45.200,amarillo,,0000,0000,0000,,-No, vamos a ver,
+Dialogue: 0,0:24:42.880,0:24:45.200,blanco,,0000,0000,0000,,-Yo te voto.
+Dialogue: 0,0:24:45.240,0:24:49.240,amarillo,,0000,0000,0000,,se me ha cerrado la puerta ahora\Nmismo y no llevo llaves encima.
+Dialogue: 0,0:24:49.480,0:24:52.360,blanco,,0000,0000,0000,,-¿Y...?
+Dialogue: 0,0:24:49.480,0:24:52.360,amarillo,,0000,0000,0000,,Estaba dándome un baño y...
+Dialogue: 0,0:24:54.080,0:24:58.320,blanco,,0000,0000,0000,,-Bueno, todos tenemos problemas.
+Dialogue: 0,0:24:54.080,0:24:58.320,amarillo,,0000,0000,0000,,-Y me he dejado el grifo abierto.
+Dialogue: 0,0:24:58.360,0:25:1.160,blanco,,0000,0000,0000,,Hasta luego.\N-¿Quieres pasar y llamas o algo?
+Dialogue: 0,0:25:1.200,0:25:4.760,blanco,,0000,0000,0000,,-Tú, en cuanto ves a un tipo en\Npelotas, lo quieres meter en casa.
+Dialogue: 0,0:25:4.800,0:25:7.280,blanco,,0000,0000,0000,,-Encantada. Suerte.\N-Hasta luego.
+Dialogue: 0,0:25:7.320,0:25:9.680,blanco,,0000,0000,0000,,-¿Qué pasa, golfillas?\N¿Vais de cacería?
+Dialogue: 0,0:25:9.720,0:25:12.0,blanco,,0000,0000,0000,,-Te busca un chico\Nque lleva una toalla.
+Dialogue: 0,0:25:12.040,0:25:15.320,blanco,,0000,0000,0000,,-¿A mí? Imposible. Se ha equivocado\Nusted, señorita Alicia.
+Dialogue: 0,0:25:15.360,0:25:17.400,blanco,,0000,0000,0000,,Va para abajo, ¿no?\N-Sí.
+Dialogue: 0,0:25:18.840,0:25:22.160,blanco,,0000,0000,0000,,-¡Qué bien vivimos! Todo el día\Nde cachondeo, arriba, abajo...
+Dialogue: 0,0:25:22.200,0:25:26.640,blanco,,0000,0000,0000,,-Es que Belén tiene una cita.\N-¿Cómo? ¡Coño, un milagro!
+Dialogue: 0,0:25:26.680,0:25:29.360,blanco,,0000,0000,0000,,-¿Para qué le cuentas nada\Na este imbécil?
+Dialogue: 0,0:25:31.480,0:25:34.0,blanco,,0000,0000,0000,,-¿Qué pasa? ¿Por qué se ha parado?
+Dialogue: 0,0:25:34.040,0:25:36.640,blanco,,0000,0000,0000,,-Vaya, ha vuelto a estropearse\Nel ascensor.
+Dialogue: 0,0:25:36.680,0:25:40.240,blanco,,0000,0000,0000,,-¿Qué dices? Te he visto pararlo.\N-Que no, que se ha parado solo.
+Dialogue: 0,0:25:40.280,0:25:43.480,blanco,,0000,0000,0000,,-¡Tú estás mal de la cabeza!\N¡Te he visto pararlo!
+Dialogue: 0,0:25:43.520,0:25:47.0,blanco,,0000,0000,0000,,-Tranquila, yo no he visto nada.\N-Quiere fastidiarme la cita.
+Dialogue: 0,0:25:47.040,0:25:50.480,blanco,,0000,0000,0000,,-Que sí, quería gastarle una broma.
+Dialogue: 0,0:25:50.520,0:25:54.040,blanco,,0000,0000,0000,,-No tiene gracia.\N-Pero ya bajamos, señorita Alicia.
+Dialogue: 0,0:25:59.0,0:26:3.120,blanco,,0000,0000,0000,,-¿Y ahora qué pasa?\N-Pues que no baja.
+Dialogue: 0,0:26:3.160,0:26:7.160,blanco,,0000,0000,0000,,-Conmigo bromas, no.\N-Que no son bromas, se lo juro.
+Dialogue: 0,0:26:7.200,0:26:10.840,blanco,,0000,0000,0000,,Me cago en la madre que me parió.\N-¿A qué hora habíamos quedado?
+Dialogue: 0,0:26:10.880,0:26:12.840,blanco,,0000,0000,0000,,-Hace diez minutos.
+Dialogue: 0,0:26:12.880,0:26:16.320,blanco,,0000,0000,0000,,-Perfecto. ¡Perfecto!
+Dialogue: 0,0:26:17.920,0:26:21.080,blanco,,0000,0000,0000,,-Me voy a la partida.\N-Adiós, abuela.
+Dialogue: 0,0:26:27.760,0:26:29.800,amarillo,,0000,0000,0000,,:-* -Mierda.
+Dialogue: 0,0:26:30.280,0:26:32.360,blanco,,0000,0000,0000,,-¿Quién anda ahí?
+Dialogue: 0,0:26:32.600,0:26:34.480,blanco,,0000,0000,0000,,¡Huy!
+Dialogue: 0,0:26:46.120,0:26:48.240,amarillo,,0000,0000,0000,,-¡Lucía!
+Dialogue: 0,0:26:52.760,0:26:56.0,blanco,,0000,0000,0000,,-¡Vicenta, aquí está Concha!
+Dialogue: 0,0:26:56.040,0:26:59.840,blanco,,0000,0000,0000,,-Ya estoy aquí para el vicio.\N¿Esta toalla es tuya?
+Dialogue: 0,0:26:59.880,0:27:5.600,blanco,,0000,0000,0000,,Me la he encontrado en la escalera.\N-Sí, es mía. Venga, copa al cuerpo.
+Dialogue: 0,0:27:5.640,0:27:8.0,blanco,,0000,0000,0000,,Vamos a empezar ya.\N-Esperad un momento.
+Dialogue: 0,0:27:8.040,0:27:10.400,blanco,,0000,0000,0000,,¡No empecéis sin mí!\NEnseguida vuelvo,
+Dialogue: 0,0:27:10.440,0:27:13.080,blanco,,0000,0000,0000,,voy a dar estas llaves a Emilio.\N-¿Qué llaves son?
+Dialogue: 0,0:27:13.120,0:27:15.680,blanco,,0000,0000,0000,,-De los vecinos,\Nse han ido de fin de semana.
+Dialogue: 0,0:27:15.720,0:27:18.440,blanco,,0000,0000,0000,,No lo encontraron y me las dieron.\NAhora vuelvo.
+Dialogue: 0,0:27:18.480,0:27:21.040,blanco,,0000,0000,0000,,-Un momento,\N¿no te apetece salir de dudas?
+Dialogue: 0,0:27:21.080,0:27:23.640,blanco,,0000,0000,0000,,-¿De qué?\N-De si lo vecinos son gays o no.
+Dialogue: 0,0:27:23.680,0:27:27.960,blanco,,0000,0000,0000,,-Venga, vamos a echar un vistazo.\N-¿Estáis locas?
+Dialogue: 0,0:27:28.0,0:27:32.280,blanco,,0000,0000,0000,,¿Vais a meteros a cotillear\Nen una casa que no es vuestra?
+Dialogue: 0,0:27:34.120,0:27:36.280,blanco,,0000,0000,0000,,Voy con vosotras.
+Dialogue: 0,0:27:39.880,0:27:42.360,amarillo,,0000,0000,0000,,-¿Quién ha cogido la toalla?
+Dialogue: 0,0:27:45.960,0:27:48.440,blanco,,0000,0000,0000,,(Se oye abrirse una puerta)
+Dialogue: 0,0:27:49.440,0:27:52.880,amarillo,,0000,0000,0000,,¡Por favor, no grites,\Nte lo pido por favor!
+Dialogue: 0,0:27:52.920,0:27:55.160,blanco,,0000,0000,0000,,-¿Y yo por qué iba a gritar?
+Dialogue: 0,0:27:55.400,0:27:58.0,blanco,,0000,0000,0000,,Ah, y bonito culo.
+Dialogue: 0,0:28:2.280,0:28:6.280,blanco,,0000,0000,0000,,-Venga, date prisa.\N-Calla, que no tengo las gafas.
+Dialogue: 0,0:28:6.320,0:28:8.320,blanco,,0000,0000,0000,,-¡Cuidado!
+Dialogue: 0,0:28:8.360,0:28:11.160,blanco,,0000,0000,0000,,-Hola.\N(LAS TRES) ¡Hola!
+Dialogue: 0,0:28:12.800,0:28:16.600,blanco,,0000,0000,0000,,-¿Dónde irá esa niña a estas horas?\N-¡Vaya padres!
+Dialogue: 0,0:28:16.640,0:28:19.200,blanco,,0000,0000,0000,,-Nos pillan.\N-¿Qué haces con la regadera?
+Dialogue: 0,0:28:19.240,0:28:22.360,blanco,,0000,0000,0000,,-Si preguntan, decimos\Nque vamos a regar las plantas.
+Dialogue: 0,0:28:22.400,0:28:25.920,blanco,,0000,0000,0000,,-¿Pero qué plantas?\N-Si son gays, tendrán plantas.
+Dialogue: 0,0:28:25.960,0:28:28.520,blanco,,0000,0000,0000,,-No sé.\N-Calla y vamos adentro.
+Dialogue: 0,0:28:28.800,0:28:32.280,blanco,,0000,0000,0000,,-Esto que estamos haciendo\Nno está nada bien.
+Dialogue: 0,0:28:33.360,0:28:35.880,cyan,,0000,0000,0000,,-¿Y cuándo os casáis?\N¿Ya tenéis fecha?
+Dialogue: 0,0:28:35.920,0:28:39.680,cyan,,0000,0000,0000,,-Menos mal, me pillas sin vestido.
+Dialogue: 0,0:28:35.920,0:28:39.680,magenta,,0000,0000,0000,,-No, todavía no.
+Dialogue: 0,0:28:39.720,0:28:42.120,magenta,,0000,0000,0000,,-Me voy.\NTengo muchas cosas que comprar.
+Dialogue: 0,0:28:42.160,0:28:47.080,cyan,,0000,0000,0000,,-No, mujer. Siéntate,\Nque yo tengo de todo.
+Dialogue: 0,0:28:47.680,0:28:50.880,cyan,,0000,0000,0000,,Entonces, el piso\Nte lo ha comprado tu padre, claro.
+Dialogue: 0,0:28:50.920,0:28:53.760,cyan,,0000,0000,0000,,-Me lo he imaginado.
+Dialogue: 0,0:28:50.920,0:28:53.760,magenta,,0000,0000,0000,,-¿Y cómo lo sabes?
+Dialogue: 0,0:28:53.800,0:28:56.200,cyan,,0000,0000,0000,,Es que están ahora los pisos...
+Dialogue: 0,0:28:57.240,0:29:0.480,magenta,,0000,0000,0000,,-No sé, como es un regalo...
+Dialogue: 0,0:28:57.240,0:29:0.480,cyan,,0000,0000,0000,,¿Y cuánto os ha costado?
+Dialogue: 0,0:29:0.520,0:29:2.640,cyan,,0000,0000,0000,,-¡Qué mona! Fíjate.
+Dialogue: 0,0:29:2.680,0:29:6.200,cyan,,0000,0000,0000,,Vosotros, ni hipoteca ni nada,\Nclaro.
+Dialogue: 0,0:29:7.200,0:29:8.640,cyan,,0000,0000,0000,,Mira qué bien.
+Dialogue: 0,0:29:8.680,0:29:12.320,blanco,,0000,0000,0000,,-Vamos al dormitorio a ver qué hay.\N-¡Qué nervios, por Dios!
+Dialogue: 0,0:29:12.360,0:29:15.200,blanco,,0000,0000,0000,,-¿Pero qué haces?\N-Creo que se ha caído algo.
+Dialogue: 0,0:29:15.240,0:29:17.480,blanco,,0000,0000,0000,,-¡Quietas! Voy a dar la luz.
+Dialogue: 0,0:29:18.120,0:29:21.040,blanco,,0000,0000,0000,,-¡Bueno!\NPues sí que empezamos bien.
+Dialogue: 0,0:29:27.440,0:29:30.840,magenta,,0000,0000,0000,,-Paloma, no hacía falta\Nque sacaras nada; me tengo que ir.
+Dialogue: 0,0:29:30.880,0:29:33.840,cyan,,0000,0000,0000,,-Que no, mujer,\Nque nos tenemos que ir conociendo.
+Dialogue: 0,0:29:33.880,0:29:37.200,cyan,,0000,0000,0000,,Qué suerte habéis tenido\Ncon este piso. Aquí se vive...
+Dialogue: 0,0:29:37.240,0:29:41.0,cyan,,0000,0000,0000,,Nosotros, que podríamos vivir\Nen un chalet con piscina y todo,
+Dialogue: 0,0:29:41.040,0:29:44.960,magenta,,0000,0000,0000,,-Claro.
+Dialogue: 0,0:29:41.040,0:29:44.960,cyan,,0000,0000,0000,,sin embargo, preferimos esto.
+Dialogue: 0,0:29:45.0,0:29:49.880,cyan,,0000,0000,0000,,-Bueno, ¿te gusta mi piso? Creo que\Ntiene unos metros más que el tuyo.
+Dialogue: 0,0:29:49.920,0:29:52.720,magenta,,0000,0000,0000,,-Pues así, a simple vista,\Nno sé qué decirte.
+Dialogue: 0,0:29:52.760,0:29:55.280,cyan,,0000,0000,0000,,-Sí, te lo digo yo,\Nporque lo estuve viendo.
+Dialogue: 0,0:29:55.320,0:29:59.440,cyan,,0000,0000,0000,,Queríamos hacer un dúplex; pero la\Nreforma para dejarlo como éste...
+Dialogue: 0,0:29:59.480,0:30:1.920,magenta,,0000,0000,0000,,-Poco a poco.
+Dialogue: 0,0:29:59.480,0:30:1.920,cyan,,0000,0000,0000,,...era muy cara.
+Dialogue: 0,0:30:1.960,0:30:4.480,cyan,,0000,0000,0000,,-Claro, cuando compremos\Nla casa de la playa,
+Dialogue: 0,0:30:4.520,0:30:8.240,magenta,,0000,0000,0000,,-¿Esto lo ha hecho un decorador?
+Dialogue: 0,0:30:4.520,0:30:8.240,cyan,,0000,0000,0000,,contrataremos al mismo decorador.
+Dialogue: 0,0:30:8.280,0:30:10.920,cyan,,0000,0000,0000,,-No, tonta, esto lo he hecho yo.
+Dialogue: 0,0:30:11.520,0:30:13.760,cyan,,0000,0000,0000,,¿Te lo habías creído?
+Dialogue: 0,0:30:13.800,0:30:16.400,magenta,,0000,0000,0000,,-Es que me tengo que ir.
+Dialogue: 0,0:30:13.800,0:30:16.400,cyan,,0000,0000,0000,,Pero bebe.
+Dialogue: 0,0:30:16.440,0:30:19.240,cyan,,0000,0000,0000,,-Por cierto, tu novio,
+Dialogue: 0,0:30:16.440,0:30:19.240,magenta,,0000,0000,0000,,Me está esperando mi novio.
+Dialogue: 0,0:30:19.280,0:30:21.720,magenta,,0000,0000,0000,,-Roberto es arquitecto.
+Dialogue: 0,0:30:19.280,0:30:21.720,cyan,,0000,0000,0000,,¿a qué se dedica?
+Dialogue: 0,0:30:21.760,0:30:26.760,cyan,,0000,0000,0000,,-¿Tebeos? O sea, lo mantienes tú.
+Dialogue: 0,0:30:21.760,0:30:26.760,magenta,,0000,0000,0000,,Trabaja en casa dibujando cómics.
+Dialogue: 0,0:30:26.800,0:30:31.840,cyan,,0000,0000,0000,,-¡Ah! Oye, es más joven que tú.
+Dialogue: 0,0:30:26.800,0:30:31.840,magenta,,0000,0000,0000,,-No, él gana su dinero.
+Dialogue: 0,0:30:31.880,0:30:35.040,cyan,,0000,0000,0000,,-Fíjate, que no lo parece,
+Dialogue: 0,0:30:31.880,0:30:35.040,magenta,,0000,0000,0000,,-No, es un año mayor que yo.
+Dialogue: 0,0:30:35.080,0:30:38.400,cyan,,0000,0000,0000,,como es pequeño, se le ve más crío.\NHacéis buena pareja,
+Dialogue: 0,0:30:38.440,0:30:40.560,magenta,,0000,0000,0000,,-Gracias.
+Dialogue: 0,0:30:38.440,0:30:40.560,cyan,,0000,0000,0000,,de eso entiendo.
+Dialogue: 0,0:30:40.600,0:30:44.0,cyan,,0000,0000,0000,,-Eso sí, los hijos\Nte van a salir bajos.
+Dialogue: 0,0:30:44.040,0:30:46.600,cyan,,0000,0000,0000,,Porque querréis tener hijos, ¿no?
+Dialogue: 0,0:30:47.080,0:30:50.200,blanco,,0000,0000,0000,,-¡Chicas!\NMirad lo que he encontrado.
+Dialogue: 0,0:30:50.240,0:30:52.280,blanco,,0000,0000,0000,,-¿El qué?\N-Unos calzoncillos.
+Dialogue: 0,0:30:52.320,0:30:54.280,blanco,,0000,0000,0000,,-Bueno, ¿y qué?\N-No sé.
+Dialogue: 0,0:30:54.320,0:30:58.040,blanco,,0000,0000,0000,,-Muy bien, Vicenta, así al menos\Nsabemos que usan ropa interior.
+Dialogue: 0,0:30:58.080,0:31:3.040,blanco,,0000,0000,0000,,-Mira, aquí hay un álbum de fotos.\NSeguro que... ¡Ay!
+Dialogue: 0,0:31:3.800,0:31:9.320,blanco,,0000,0000,0000,,-¡Hala, guapas! Seguid rompiendo\Ncosas. ¿Y ahora qué hacemos?
+Dialogue: 0,0:31:9.360,0:31:13.280,blanco,,0000,0000,0000,,-Lo mejor es limpiarlo todo y luego\Nlo tiramos. Quizá no se dan cuenta.
+Dialogue: 0,0:31:13.320,0:31:15.880,blanco,,0000,0000,0000,,-Claro que se darán cuenta,\Nlo harías hasta tú.
+Dialogue: 0,0:31:15.920,0:31:19.720,blanco,,0000,0000,0000,,-¿Y por qué no revolvemos todo\Ncomo si hubieran entrado a robar?
+Dialogue: 0,0:31:19.760,0:31:23.160,blanco,,0000,0000,0000,,Lo he visto en las películas.\N-Quita.
+Dialogue: 0,0:31:23.200,0:31:26.440,blanco,,0000,0000,0000,,-Conmigo no cuentes,\Nyo me voy ahora mismo.
+Dialogue: 0,0:31:33.800,0:31:36.480,blanco,,0000,0000,0000,,-Sí que van a entrar\Na robar de verdad.
+Dialogue: 0,0:31:36.520,0:31:39.200,blanco,,0000,0000,0000,,(Se oye romperse cosas)
+Dialogue: 0,0:31:39.240,0:31:44.120,blanco,,0000,0000,0000,,-¿Pero qué pasa ahora?\N-Mira, mejor me quedo con vosotras.
+Dialogue: 0,0:31:44.160,0:31:47.200,blanco,,0000,0000,0000,,-Muy bien. Venga, ayúdame.
+Dialogue: 0,0:31:48.760,0:31:51.0,blanco,,0000,0000,0000,,¡Hala!
+Dialogue: 0,0:31:56.520,0:32:0.400,blanco,,0000,0000,0000,,-Hombre, el chico nuevo. Soy Juan\NCuesta, presidente de la comunidad.
+Dialogue: 0,0:32:0.440,0:32:2.680,blanco,,0000,0000,0000,,-Soy Paco,\Ndependiente del videoclub.
+Dialogue: 0,0:32:2.720,0:32:5.720,blanco,,0000,0000,0000,,-Recomiéndame algo para esta noche.\NUna de misterio...
+Dialogue: 0,0:32:5.760,0:32:8.880,blanco,,0000,0000,0000,,-¿Misterio? Pues...\NLlévate ésta.
+Dialogue: 0,0:32:8.920,0:32:11.600,blanco,,0000,0000,0000,,-"Austín Povers".\N-"Austin Powers".
+Dialogue: 0,0:32:11.640,0:32:16.160,blanco,,0000,0000,0000,,-Ésta no es de misterio, ¿no?\N-El misterio es cómo tuvo éxito.
+Dialogue: 0,0:32:16.200,0:32:18.640,blanco,,0000,0000,0000,,-Me llevo ésta,\N"Los Ángeles de Charlie".
+Dialogue: 0,0:32:18.680,0:32:21.400,blanco,,0000,0000,0000,,-El mejor es Robert de Niro.\N-¿Robert de Niro?
+Dialogue: 0,0:32:21.440,0:32:24.800,blanco,,0000,0000,0000,,Si no sale.\N-Hace bien, ¡qué rollo de película!
+Dialogue: 0,0:32:24.840,0:32:27.200,blanco,,0000,0000,0000,,-¿Por qué la tienes?\N-Por si la quieren.
+Dialogue: 0,0:32:27.240,0:32:28.960,blanco,,0000,0000,0000,,-Yo la quiero.\N-Llévatela.
+Dialogue: 0,0:32:29.0,0:32:31.880,blanco,,0000,0000,0000,,-Si dices que es un rollo.\N-¿Por qué te fías de mí?
+Dialogue: 0,0:32:31.920,0:32:35.120,blanco,,0000,0000,0000,,-Eso, ¿por qué coño me fío de ti?\N-Claro.
+Dialogue: 0,0:32:38.960,0:32:42.160,magenta,,0000,0000,0000,,-Soy promotora inmobiliaria,
+Dialogue: 0,0:32:38.960,0:32:42.160,cyan,,0000,0000,0000,,-¿Y a qué dices que te dedicas?
+Dialogue: 0,0:32:42.200,0:32:46.120,cyan,,0000,0000,0000,,-¡Qué bien! Trabajando con papá.
+Dialogue: 0,0:32:42.200,0:32:46.120,magenta,,0000,0000,0000,,en el holding de mi padre.
+Dialogue: 0,0:32:46.360,0:32:48.400,cyan,,0000,0000,0000,,¡Cuidado!
+Dialogue: 0,0:32:49.880,0:32:53.200,cyan,,0000,0000,0000,,-Mi marido trabaja en la enseñanza;
+Dialogue: 0,0:32:49.880,0:32:53.200,magenta,,0000,0000,0000,,-¿Y tú en qué trabajas?
+Dialogue: 0,0:32:53.240,0:32:55.840,magenta,,0000,0000,0000,,-Es catedrático.
+Dialogue: 0,0:32:53.240,0:32:55.840,cyan,,0000,0000,0000,,es una eminencia.
+Dialogue: 0,0:32:55.880,0:33:0.400,cyan,,0000,0000,0000,,-Sí. Da clases de Gimnasia\Nen un colegio. Los niños le adoran.
+Dialogue: 0,0:33:0.440,0:33:4.760,cyan,,0000,0000,0000,,Está bien pagado, si no, cómo iba\Na tener el piso tan bien montado.
+Dialogue: 0,0:33:4.800,0:33:6.560,cyan,,0000,0000,0000,,-Sí.
+Dialogue: 0,0:33:4.800,0:33:6.560,magenta,,0000,0000,0000,,-Muy bonito.
+Dialogue: 0,0:33:6.600,0:33:10.280,cyan,,0000,0000,0000,,En el local de abajo quiero poner\Nun negocio, pero no te digo de qué,
+Dialogue: 0,0:33:10.320,0:33:13.720,cyan,,0000,0000,0000,,no vaya a ser que se lo digas\Na tu padre y se me adelante.
+Dialogue: 0,0:33:16.040,0:33:18.880,cyan,,0000,0000,0000,,-¿No te llevas nada?
+Dialogue: 0,0:33:16.040,0:33:18.880,magenta,,0000,0000,0000,,-Ahora sí que me tengo que ir.
+Dialogue: 0,0:33:18.920,0:33:22.0,cyan,,0000,0000,0000,,-Lo hacía por ti. Si quieres,
+Dialogue: 0,0:33:18.920,0:33:22.0,magenta,,0000,0000,0000,,-¡No! Gracias, de verdad.
+Dialogue: 0,0:33:22.040,0:33:25.960,magenta,,0000,0000,0000,,-¡No...! Bueno, sí...
+Dialogue: 0,0:33:22.040,0:33:25.960,cyan,,0000,0000,0000,,luego subo un rato a tu casa.
+Dialogue: 0,0:33:26.0,0:33:29.040,magenta,,0000,0000,0000,,Muchas gracias. Me voy.
+Dialogue: 0,0:33:32.120,0:33:34.440,cyan,,0000,0000,0000,,-¡Qué chica tan rara!
+Dialogue: 0,0:33:35.520,0:33:37.440,cyan,,0000,0000,0000,,¡Juan!
+Dialogue: 0,0:33:37.480,0:33:40.680,cyan,,0000,0000,0000,,:-O ¡Juan!
+Dialogue: 0,0:33:54.400,0:33:56.520,magenta,,0000,0000,0000,,-Roberto.
+Dialogue: 0,0:33:57.160,0:33:59.560,magenta,,0000,0000,0000,,Roberto, cariño, ¿estás ahí?
+Dialogue: 0,0:34:10.200,0:34:12.040,amarillo,,0000,0000,0000,,:-* -Emilio.
+Dialogue: 0,0:34:14.440,0:34:16.080,amarillo,,0000,0000,0000,,¿Emilio?
+Dialogue: 0,0:34:16.440,0:34:18.480,amarillo,,0000,0000,0000,,Joder.
+Dialogue: 0,0:34:22.320,0:34:24.720,amarillo,,0000,0000,0000,,¿Qué hacen nuestras cosas aquí?
+Dialogue: 0,0:34:27.480,0:34:32.160,blanco,,0000,0000,0000,,-¡Qué pesado ese chico nuevo\Ndel videoclub! ¡Cómo está esto!
+Dialogue: 0,0:34:36.720,0:34:40.080,blanco,,0000,0000,0000,,-¿De qué está hecho este ascensor?\NAquí dentro no hay cobertura.
+Dialogue: 0,0:34:40.120,0:34:43.960,blanco,,0000,0000,0000,,-¿Y tú qué? Toca algo ahí.\N-Sí, para que me dé un calambre...
+Dialogue: 0,0:34:44.0,0:34:47.800,blanco,,0000,0000,0000,,-No se te ocurre nada para salir.\N-Sí, tengo un plan.
+Dialogue: 0,0:34:47.840,0:34:50.960,blanco,,0000,0000,0000,,:-O ¡Socorro!\N¿Hay alguien ahí fuera?
+Dialogue: 0,0:34:51.0,0:34:53.320,blanco,,0000,0000,0000,,-¿No será mejor darle a la campana?
+Dialogue: 0,0:34:53.360,0:34:56.160,blanco,,0000,0000,0000,,(Suena el timbre muy bajo)\N
+Dialogue: 0,0:34:56.200,0:34:58.440,blanco,,0000,0000,0000,,:-O -¡Socorro, socorro!
+Dialogue: 0,0:34:58.480,0:35:2.680,blanco,,0000,0000,0000,,-¿Emilio?\N-¡Señor Cuesta, señor Cuesta!
+Dialogue: 0,0:35:2.720,0:35:6.640,blanco,,0000,0000,0000,,-¡Sí, dime!\N-Señor Cuesta,
+Dialogue: 0,0:35:6.680,0:35:11.400,blanco,,0000,0000,0000,,estamos encerrados en el ascensor.\N-Este imbécil nos ha encerrado.
+Dialogue: 0,0:35:11.440,0:35:14.560,blanco,,0000,0000,0000,,-Vale, tranquilos,\Nque ya estoy yo aquí.
+Dialogue: 0,0:35:15.320,0:35:18.400,blanco,,0000,0000,0000,,¿Qué hago?\N-Tiene que desbloquear la puerta...
+Dialogue: 0,0:35:18.440,0:35:23.160,blanco,,0000,0000,0000,,...del ascensor desde fuera.\N-Correcto. ¿Cómo se desbloquea?
+Dialogue: 0,0:35:23.200,0:35:29.160,blanco,,0000,0000,0000,,-Metiendo una llave especial en\Nuna ranura que hay en el lateral.
+Dialogue: 0,0:35:29.200,0:35:32.440,blanco,,0000,0000,0000,,-Bien. ¿Dónde está la llave?\N-Pues...
+Dialogue: 0,0:35:33.760,0:35:37.200,blanco,,0000,0000,0000,,La tengo yo aquí dentro.\N-¡Cojonudo!
+Dialogue: 0,0:35:37.240,0:35:40.560,blanco,,0000,0000,0000,,¿Cómo voy a desbloquear la puerta\Nsi tienes tú la llave?
+Dialogue: 0,0:35:40.600,0:35:43.440,blanco,,0000,0000,0000,,-Eso digo yo.\N-Y yo; y cualquiera lo dice.
+Dialogue: 0,0:35:43.480,0:35:46.840,blanco,,0000,0000,0000,,-¿Lo ves como es un imbécil?\N¿Para qué llevas la llave encima?
+Dialogue: 0,0:35:46.880,0:35:50.480,blanco,,0000,0000,0000,,-Porque se supone que quien\Nse queda encerrado aquí no soy yo.
+Dialogue: 0,0:35:50.520,0:35:54.240,blanco,,0000,0000,0000,,Tú vas a estar aquí encerrada\Nhasta Nochebuena. Usted no;
+Dialogue: 0,0:35:54.280,0:35:57.360,blanco,,0000,0000,0000,,en cuanto podamos, la sacamos.\N¿Qué te has creído?
+Dialogue: 0,0:35:57.400,0:36:0.400,magenta,,0000,0000,0000,,-Por favor, ayúdeme.\NA mi novio le ha pasado algo.
+Dialogue: 0,0:36:0.440,0:36:2.560,magenta,,0000,0000,0000,,Está el grifo abierto\Ny no contesta.
+Dialogue: 0,0:36:2.600,0:36:4.520,blanco,,0000,0000,0000,,-Están encerrados en el ascensor.
+Dialogue: 0,0:36:4.560,0:36:9.040,cyan,,0000,0000,0000,,-¡Juan!\NTenemos una gotera en el salón.
+Dialogue: 0,0:36:9.080,0:36:12.400,magenta,,0000,0000,0000,,-Bueno.
+Dialogue: 0,0:36:9.080,0:36:12.400,blanco,,0000,0000,0000,,-¡Coño! Vamos arriba.
+Dialogue: 0,0:36:12.440,0:36:14.400,cyan,,0000,0000,0000,,-¡Vamos, vamos!
+Dialogue: 0,0:36:15.560,0:36:18.880,blanco,,0000,0000,0000,,-Habrá que picar paredes.\N-¡Oiga, no se vaya!
+Dialogue: 0,0:36:18.920,0:36:21.720,blanco,,0000,0000,0000,,-¡Qué follón!\N-¡Señor Cuesta, por Dios!
+Dialogue: 0,0:36:21.760,0:36:24.840,blanco,,0000,0000,0000,,-¿Y este desgraciado es\Nel presidente de la comunidad?
+Dialogue: 0,0:36:24.880,0:36:26.600,blanco,,0000,0000,0000,,-Sí, éste es el presidente.
+Dialogue: 0,0:36:26.640,0:36:30.360,cyan,,0000,0000,0000,,-¿Y si se durmió y se ha ahogado?
+Dialogue: 0,0:36:26.640,0:36:30.360,blanco,,0000,0000,0000,,-¿Qué te dijo, que se iba a bañar?
+Dialogue: 0,0:36:30.400,0:36:34.080,cyan,,0000,0000,0000,,-Lo peor es que no tuvieran seguro.
+Dialogue: 0,0:36:30.400,0:36:34.080,blanco,,0000,0000,0000,,-Cariño, no te pongas en lo peor.
+Dialogue: 0,0:36:34.120,0:36:36.760,blanco,,0000,0000,0000,,-A ver, déjame a mí.
+Dialogue: 0,0:36:34.120,0:36:36.760,magenta,,0000,0000,0000,,-¿Lo veis? No contesta.
+Dialogue: 0,0:36:38.240,0:36:41.520,magenta,,0000,0000,0000,,-Qué raro; ha debido pasarle algo.
+Dialogue: 0,0:36:38.240,0:36:41.520,blanco,,0000,0000,0000,,Es verdad, no contesta.
+Dialogue: 0,0:36:41.560,0:36:43.880,magenta,,0000,0000,0000,,-Hay que tirar la puerta abajo.
+Dialogue: 0,0:36:41.560,0:36:43.880,cyan,,0000,0000,0000,,-Claro.
+Dialogue: 0,0:36:43.920,0:36:47.240,cyan,,0000,0000,0000,,-Sí, tírala, ¡tírala, Juan!\N¡La gotera nuestra!
+Dialogue: 0,0:36:47.280,0:36:49.440,blanco,,0000,0000,0000,,-Apartaos,\Nesto puede ser peligroso.
+Dialogue: 0,0:36:49.480,0:36:52.480,blanco,,0000,0000,0000,,-Lo que hay que hacer.
+Dialogue: 0,0:36:49.480,0:36:52.480,cyan,,0000,0000,0000,,-¿Qué vas a hacer, Juan?
+Dialogue: 0,0:36:53.760,0:36:55.400,cyan,,0000,0000,0000,,-¡Ay!
+Dialogue: 0,0:36:55.560,0:36:57.840,blanco,,0000,0000,0000,,-Voy a buscar ayuda.
+Dialogue: 0,0:37:16.200,0:37:18.280,blanco,,0000,0000,0000,,-Tío, mira ese idiota.
+Dialogue: 0,0:37:22.320,0:37:26.200,amarillo,,0000,0000,0000,,-Chaval, tírame algo de ropa.
+Dialogue: 0,0:37:22.320,0:37:26.200,blanco,,0000,0000,0000,,-Tío, ¿qué haces?
+Dialogue: 0,0:37:26.240,0:37:29.200,amarillo,,0000,0000,0000,,-Te daré diez euros, si lo haces.
+Dialogue: 0,0:37:26.240,0:37:29.200,blanco,,0000,0000,0000,,-¿Y tú quién eres?
+Dialogue: 0,0:37:29.240,0:37:31.440,blanco,,0000,0000,0000,,-¿Y dónde llevas la cartera?
+Dialogue: 0,0:37:31.760,0:37:34.360,amarillo,,0000,0000,0000,,-Venga, coño, niño,\Ntírame cualquier cosa.
+Dialogue: 0,0:37:41.200,0:37:44.0,amarillo,,0000,0000,0000,,Gracias, majo, ya te pillaré.
+Dialogue: 0,0:37:44.040,0:37:46.560,blanco,,0000,0000,0000,,-Tío, que eso es de mi abuela.
+Dialogue: 0,0:37:47.920,0:37:51.400,blanco,,0000,0000,0000,,-Siete horas de retraso,\Nesperando en el aeropuerto,
+Dialogue: 0,0:37:51.440,0:37:54.960,blanco,,0000,0000,0000,,y justo cuando vamos a facturar,\Nte has olvidado los billetes.
+Dialogue: 0,0:37:55.0,0:37:58.600,blanco,,0000,0000,0000,,-Ya. ¿Y el neceser?
+Dialogue: 0,0:37:55.0,0:37:58.600,verde,,0000,0000,0000,,-Juro que los puse en el neceser.
+Dialogue: 0,0:37:59.0,0:38:0.880,verde,,0000,0000,0000,,-En casa.
+Dialogue: 0,0:38:0.920,0:38:4.200,blanco,,0000,0000,0000,,-Para un fin de semana\Nque podemos salir juntos...
+Dialogue: 0,0:38:5.400,0:38:9.280,verde,,0000,0000,0000,,-Fin de las vacaciones.
+Dialogue: 0,0:38:5.400,0:38:9.280,blanco,,0000,0000,0000,,¡Deja ya de grabar con la cámara!
+Dialogue: 0,0:38:9.320,0:38:11.120,verde,,0000,0000,0000,,"See you soon."
+Dialogue: 0,0:38:11.800,0:38:13.640,blanco,,0000,0000,0000,,-Ahí va.
+Dialogue: 0,0:38:23.160,0:38:27.200,blanco,,0000,0000,0000,,-¡Perdonen!\N-Vicenta, ¡Vicenta!
+Dialogue: 0,0:38:27.240,0:38:30.840,blanco,,0000,0000,0000,,-Regando las plantas.
+Dialogue: 0,0:38:27.240,0:38:30.840,verde,,0000,0000,0000,,-¿Pero qué hacen?
+Dialogue: 0,0:38:30.880,0:38:34.680,blanco,,0000,0000,0000,,-Se nos había escapado el conejo\Ny estábamos buscándolo.
+Dialogue: 0,0:38:34.720,0:38:38.480,blanco,,0000,0000,0000,,-Pero si está en la jaula.\N-Se ve que se ha acojonado.
+Dialogue: 0,0:38:38.520,0:38:40.320,blanco,,0000,0000,0000,,-Vamos a ver, no entiendo nada.
+Dialogue: 0,0:38:40.360,0:38:43.040,blanco,,0000,0000,0000,,-¡Necesitamos ayuda!\NSe está ahogando el nuevo.
+Dialogue: 0,0:38:43.080,0:38:45.120,blanco,,0000,0000,0000,,-¡Corre, vamos a ayudar!\N-Sí.
+Dialogue: 0,0:38:45.160,0:38:49.080,blanco,,0000,0000,0000,,-¡Coño! ¿Qué ha pasado aquí?\NHay que echar la puerta abajo.
+Dialogue: 0,0:38:49.120,0:38:51.200,verde,,0000,0000,0000,,-Adiós.
+Dialogue: 0,0:38:49.120,0:38:51.200,blanco,,0000,0000,0000,,-Adiós.
+Dialogue: 0,0:38:51.480,0:38:54.680,verde,,0000,0000,0000,,¿Qué le hemos hecho a esta gente?\N¿Por qué nos odian tanto?
+Dialogue: 0,0:38:54.720,0:38:56.920,blanco,,0000,0000,0000,,-No preguntes. Vamos, Mauri.
+Dialogue: 0,0:38:58.720,0:39:0.280,verde,,0000,0000,0000,,-Joder.
+Dialogue: 0,0:39:0.520,0:39:3.440,blanco,,0000,0000,0000,,(HABLAN TODOS A LA VEZ)\N-Un momento, por favor.
+Dialogue: 0,0:39:3.480,0:39:7.200,blanco,,0000,0000,0000,,Deberíamos llamar a los bomberos.\N-Bomberos, no. Si ven una grieta,
+Dialogue: 0,0:39:7.240,0:39:10.360,blanco,,0000,0000,0000,,nos mandan una inspección.\N-Si el dinero de la comunidad...
+Dialogue: 0,0:39:10.400,0:39:13.760,cyan,,0000,0000,0000,,-¿Dice que mi marido y yo robamos?
+Dialogue: 0,0:39:10.400,0:39:13.760,blanco,,0000,0000,0000,,...se empleara bien.
+Dialogue: 0,0:39:13.800,0:39:17.040,blanco,,0000,0000,0000,,-Os dije que no era buena idea.
+Dialogue: 0,0:39:13.800,0:39:17.040,verde,,0000,0000,0000,,-Otras destrozan casas.
+Dialogue: 0,0:39:17.080,0:39:20.160,blanco,,0000,0000,0000,,-Que tú eres la primera que quería\Nsaber si eran gays.
+Dialogue: 0,0:39:20.200,0:39:23.600,magenta,,0000,0000,0000,,-¿Os queréis callar?
+Dialogue: 0,0:39:20.200,0:39:23.600,blanco,,0000,0000,0000,,-¿Qué dice, señora? Somos amigos.
+Dialogue: 0,0:39:23.640,0:39:26.640,blanco,,0000,0000,0000,,-A lo mejor se ha resbalado...
+Dialogue: 0,0:39:23.640,0:39:26.640,magenta,,0000,0000,0000,,Mi novio necesita ayuda.
+Dialogue: 0,0:39:26.680,0:39:30.120,blanco,,0000,0000,0000,,...y se ha abierto la cabeza.\N-O se ha dormido y se ha ahogado.
+Dialogue: 0,0:39:30.160,0:39:33.240,verde,,0000,0000,0000,,-No te asustes, pero el 70%...
+Dialogue: 0,0:39:30.160,0:39:33.240,cyan,,0000,0000,0000,,-Eso lo dije yo antes.
+Dialogue: 0,0:39:33.280,0:39:36.200,verde,,0000,0000,0000,,...de las muertes fortuitas\Nson accidentes domésticos.
+Dialogue: 0,0:39:36.240,0:39:38.800,blanco,,0000,0000,0000,,-Dejad de preocuparla.\N-O se ha agobiado...
+Dialogue: 0,0:39:38.840,0:39:41.560,blanco,,0000,0000,0000,,...y se ha ido sin decir nada.\NLe pasó a ésta.
+Dialogue: 0,0:39:41.600,0:39:43.720,magenta,,0000,0000,0000,,-Quitaos de en medio.\N¡Venga, fuera!
+Dialogue: 0,0:39:43.760,0:39:47.280,blanco,,0000,0000,0000,,-No hagas eso, que te vas a hacer\Ndaño. ¡Que te vas a hacer daño!
+Dialogue: 0,0:39:47.320,0:39:49.440,magenta,,0000,0000,0000,,-¡Roberto!
+Dialogue: 0,0:39:47.320,0:39:49.440,blanco,,0000,0000,0000,,¡Hala!
+Dialogue: 0,0:39:49.480,0:39:51.720,blanco,,0000,0000,0000,,-Quietos, esperad aquí.
+Dialogue: 0,0:39:51.760,0:39:55.600,blanco,,0000,0000,0000,,Quietos.\N-¡Oye! El destrozo lo pagará ella.
+Dialogue: 0,0:39:55.640,0:39:58.680,blanco,,0000,0000,0000,,-Claro.\N-Si no, en cuanto nos descuidemos,
+Dialogue: 0,0:39:58.720,0:40:2.320,blanco,,0000,0000,0000,,pasas una factura que nos hundes.\N-Si viene la tele,
+Dialogue: 0,0:40:2.360,0:40:5.520,verde,,0000,0000,0000,,-Y si no viene, también.
+Dialogue: 0,0:40:2.360,0:40:5.520,blanco,,0000,0000,0000,,tengo que peinarme.
+Dialogue: 0,0:40:5.560,0:40:7.440,blanco,,0000,0000,0000,,-¿Cómo que no está?
+Dialogue: 0,0:40:5.560,0:40:7.440,magenta,,0000,0000,0000,,-No está.
+Dialogue: 0,0:40:7.480,0:40:10.240,magenta,,0000,0000,0000,,-No tiene sentido.
+Dialogue: 0,0:40:7.480,0:40:10.240,cyan,,0000,0000,0000,,-Habrá cerrado el grifo, ¿no?
+Dialogue: 0,0:40:10.280,0:40:12.560,magenta,,0000,0000,0000,,-¡Qué va!
+Dialogue: 0,0:40:10.280,0:40:12.560,blanco,,0000,0000,0000,,-Hija, ¿tenéis problemas?
+Dialogue: 0,0:40:12.600,0:40:15.920,magenta,,0000,0000,0000,,-Eso fue una tontería.
+Dialogue: 0,0:40:12.600,0:40:15.920,cyan,,0000,0000,0000,,-Sí, que los he oído yo discutir.
+Dialogue: 0,0:40:15.960,0:40:18.960,blanco,,0000,0000,0000,,-Lo de ésa también\Ny Manolo no ha vuelto a aparecer.
+Dialogue: 0,0:40:19.0,0:40:22.320,blanco,,0000,0000,0000,,-¿Y a esta gente qué le importa\Nlo que haya hecho Manolo?
+Dialogue: 0,0:40:22.360,0:40:23.920,amarillo,,0000,0000,0000,,-Perdón.
+Dialogue: 0,0:40:23.960,0:40:25.720,amarillo,,0000,0000,0000,,Hola.
+Dialogue: 0,0:40:26.200,0:40:28.080,amarillo,,0000,0000,0000,,Ya estoy aquí, cariño.
+Dialogue: 0,0:40:31.240,0:40:34.920,amarillo,,0000,0000,0000,,Encantado de conoceros a todos.\NBuenas noches.
+Dialogue: 0,0:40:36.440,0:40:38.0,cyan,,0000,0000,0000,,-¿Qué?
+Dialogue: 0,0:40:36.440,0:40:38.0,blanco,,0000,0000,0000,,-Oye.
+Dialogue: 0,0:40:38.040,0:40:41.400,cyan,,0000,0000,0000,,-Nada, he visto que está...
+Dialogue: 0,0:40:38.040,0:40:41.400,blanco,,0000,0000,0000,,-¿Y tú qué mirabas?
+Dialogue: 0,0:40:41.440,0:40:43.880,cyan,,0000,0000,0000,,...operado de apendicitis.
+Dialogue: 0,0:40:47.0,0:40:48.560,blanco,,0000,0000,0000,,-Pasa.
+Dialogue: 0,0:40:48.600,0:40:51.600,blanco,,0000,0000,0000,,No, no pases, un momento.\N-¿Qué pasa?
+Dialogue: 0,0:40:51.640,0:40:53.800,blanco,,0000,0000,0000,,¡Oye!\N-Un segundo.
+Dialogue: 0,0:40:53.960,0:40:56.440,blanco,,0000,0000,0000,,Mamá, ¡mamá!
+Dialogue: 0,0:40:56.480,0:41:0.160,blanco,,0000,0000,0000,,¿Se puede saber qué haces tú aquí?\NVenga, fuera.
+Dialogue: 0,0:41:0.200,0:41:4.320,blanco,,0000,0000,0000,,-Te estaba esperando. ¿Qué hora es?\N-No sé. Acuéstate, que te desvelas.
+Dialogue: 0,0:41:4.360,0:41:6.320,blanco,,0000,0000,0000,,-Vale.
+Dialogue: 0,0:41:6.360,0:41:9.840,blanco,,0000,0000,0000,,Voy a por un vaso de agua.\N-No te preocupes, yo te lo llevo.
+Dialogue: 0,0:41:9.880,0:41:14.160,blanco,,0000,0000,0000,,-Pero, espera. ¿A qué tanta prisa?\N-Venga, a seguir durmiendo.
+Dialogue: 0,0:41:14.200,0:41:16.800,blanco,,0000,0000,0000,,Tú sí que vives, puñetera.\N-Armando.
+Dialogue: 0,0:41:18.800,0:41:21.960,blanco,,0000,0000,0000,,¿Has encerrado a una señora\Nen esa habitación?
+Dialogue: 0,0:41:22.0,0:41:24.880,blanco,,0000,0000,0000,,-¿Dónde? No, yo no...
+Dialogue: 0,0:41:24.920,0:41:29.0,blanco,,0000,0000,0000,,(CONCHA GOLPEA LA PUERTA)\N-¡Hijo, ábreme la puerta!
+Dialogue: 0,0:41:29.040,0:41:32.040,blanco,,0000,0000,0000,,-¿Quién es?\N-¿A que va a ser mi madre,
+Dialogue: 0,0:41:32.080,0:41:35.160,blanco,,0000,0000,0000,,que le encanta esconderse?\N¡No te digo!
+Dialogue: 0,0:41:35.400,0:41:38.120,blanco,,0000,0000,0000,,Pasa, mamá, no te quedes ahí.\N-No hables fuerte,
+Dialogue: 0,0:41:38.160,0:41:42.400,blanco,,0000,0000,0000,,que vas a despertar al niño.\N-Si ya estoy despierto.
+Dialogue: 0,0:41:42.440,0:41:45.160,blanco,,0000,0000,0000,,-O sea, que también tienes un hijo.
+Dialogue: 0,0:41:45.200,0:41:49.0,blanco,,0000,0000,0000,,-Sí, mira... Se me había olvidado\Ncomentártelo en la cena.
+Dialogue: 0,0:41:49.040,0:41:54.520,blanco,,0000,0000,0000,,¡Qué cabeza la mía! Te presento\Na Concha y a Dani. Espera.
+Dialogue: 0,0:41:54.720,0:41:58.720,blanco,,0000,0000,0000,,¿Para qué salís? ¡Esther!
+Dialogue: 0,0:41:58.760,0:42:2.200,blanco,,0000,0000,0000,,-¡Una lagarta menos!\N-Pero estaba buena.
+Dialogue: 0,0:42:2.240,0:42:4.680,blanco,,0000,0000,0000,,-¡Dani!
+Dialogue: 0,0:42:5.720,0:42:8.600,verde,,0000,0000,0000,,-Bueno, ¿cuál de los dos\Nva a dormir en el sofá?
+Dialogue: 0,0:42:8.640,0:42:12.160,verde,,0000,0000,0000,,-No, como sólo somos amigos.
+Dialogue: 0,0:42:8.640,0:42:12.160,blanco,,0000,0000,0000,,-¿Por qué?
+Dialogue: 0,0:42:12.200,0:42:15.720,blanco,,0000,0000,0000,,-No empecemos. ¿Qué le importa\Na esta gente lo que somos o no?
+Dialogue: 0,0:42:15.760,0:42:19.400,verde,,0000,0000,0000,,-¡Eh! Yo tengo muy claro quién soy,\Npero parece ser que tú no.
+Dialogue: 0,0:42:19.840,0:42:22.560,blanco,,0000,0000,0000,,-Ven aquí, siéntate.
+Dialogue: 0,0:42:25.040,0:42:29.040,blanco,,0000,0000,0000,,Escúchame. Están a punto\Nde ascenderme en el bufete;
+Dialogue: 0,0:42:29.080,0:42:31.720,blanco,,0000,0000,0000,,no creo que sea el momento\Nde salir del armario.
+Dialogue: 0,0:42:31.760,0:42:34.120,verde,,0000,0000,0000,,-No es que tú no quieras\Nsalir del armario,
+Dialogue: 0,0:42:34.160,0:42:38.200,verde,,0000,0000,0000,,te has escondido en el cajón\Nde los calcetines. Me voy al sofá.
+Dialogue: 0,0:42:41.560,0:42:45.480,verde,,0000,0000,0000,,¿No piensas hacer nada?\N¿Voy a tener que dormir aquí?
+Dialogue: 0,0:42:45.960,0:42:48.0,blanco,,0000,0000,0000,,-Anda, ven, tonto.
+Dialogue: 0,0:42:48.360,0:42:51.360,verde,,0000,0000,0000,,-Vale, te perdono.\NTotal, ¿para qué?
+Dialogue: 0,0:42:59.320,0:43:2.0,blanco,,0000,0000,0000,,-Marisa.\N-¿Qué?
+Dialogue: 0,0:43:3.320,0:43:6.400,blanco,,0000,0000,0000,,-Es la primera vez que veo un pene.
+Dialogue: 0,0:43:6.960,0:43:8.920,blanco,,0000,0000,0000,,-¿Y qué tal?
+Dialogue: 0,0:43:9.520,0:43:13.0,blanco,,0000,0000,0000,,-No sé, yo me esperaba otra cosa.
+Dialogue: 0,0:43:13.840,0:43:16.640,blanco,,0000,0000,0000,,-Eso nos pasa a todas, hija.
+Dialogue: 0,0:43:18.240,0:43:20.920,amarillo,,0000,0000,0000,,-Pues es bonito\Nesto de emanciparse.
+Dialogue: 0,0:43:21.200,0:43:24.200,amarillo,,0000,0000,0000,,Ahora entiendo por qué\Nhemos esperado 30 años.
+Dialogue: 0,0:43:24.960,0:43:27.640,magenta,,0000,0000,0000,,-Todos los comienzos\Nsiempre son difíciles.
+Dialogue: 0,0:43:27.680,0:43:31.240,magenta,,0000,0000,0000,,Dentro de unos años, nos\Nacordaremos de esto y nos reiremos.
+Dialogue: 0,0:43:31.280,0:43:34.640,magenta,,0000,0000,0000,,-Por cierto, tengo que llamar...
+Dialogue: 0,0:43:31.280,0:43:34.640,amarillo,,0000,0000,0000,,-Yo creo que no.
+Dialogue: 0,0:43:34.680,0:43:38.040,magenta,,0000,0000,0000,,...a los del seguro, a los de\Nla mudanza, que no han venido...
+Dialogue: 0,0:43:38.080,0:43:41.080,amarillo,,0000,0000,0000,,-Sí han venido.\NNuestras cosas están en el portal.
+Dialogue: 0,0:43:41.120,0:43:43.360,magenta,,0000,0000,0000,,-¿Y por qué no me has dicho nada?
+Dialogue: 0,0:43:43.400,0:43:47.520,amarillo,,0000,0000,0000,,-Lo siento, estaba muy ocupado\Nenseñando el culo al vecindario.
+Dialogue: 0,0:43:48.160,0:43:51.280,amarillo,,0000,0000,0000,,Tú, ríete, pero van a pensar\Nque soy un degenerado.
+Dialogue: 0,0:43:51.320,0:43:53.720,magenta,,0000,0000,0000,,-¿Un degenerado?\NNo digas tonterías.
+Dialogue: 0,0:43:53.760,0:43:56.520,blanco,,0000,0000,0000,,-¡Un degenerado, eso es lo que es!\N¡Un degenerado!
+Dialogue: 0,0:43:56.560,0:43:59.720,blanco,,0000,0000,0000,,Imagina que lo encuentra\Nnuestra niña; nos la traumatiza.
+Dialogue: 0,0:43:59.760,0:44:2.280,cyan,,0000,0000,0000,,-Creo que se dejó el grifo abierto\Na posta.
+Dialogue: 0,0:44:2.320,0:44:4.600,cyan,,0000,0000,0000,,-Envidia.
+Dialogue: 0,0:44:2.320,0:44:4.600,blanco,,0000,0000,0000,,-¿Por qué iba a hacer eso?
+Dialogue: 0,0:44:4.640,0:44:7.480,cyan,,0000,0000,0000,,-Si ella se ha colado en casa,
+Dialogue: 0,0:44:4.640,0:44:7.480,blanco,,0000,0000,0000,,-¿Envidia de qué?
+Dialogue: 0,0:44:7.520,0:44:11.480,blanco,,0000,0000,0000,,-Está bien, es el primer día.
+Dialogue: 0,0:44:7.520,0:44:11.480,cyan,,0000,0000,0000,,sólo para ver cómo la tengo puesta.
+Dialogue: 0,0:44:11.520,0:44:15.0,cyan,,0000,0000,0000,,-Sí, tú dales confianza...
+Dialogue: 0,0:44:11.520,0:44:15.0,blanco,,0000,0000,0000,,Démosles un margen de confianza.
+Dialogue: 0,0:44:15.040,0:44:17.360,cyan,,0000,0000,0000,,...y ya verás como la hacen\Npresidenta.
+Dialogue: 0,0:44:17.400,0:44:19.720,blanco,,0000,0000,0000,,-¿Cómo presidenta?\NEl presidente soy yo.
+Dialogue: 0,0:44:19.760,0:44:23.080,blanco,,0000,0000,0000,,-Está bien.
+Dialogue: 0,0:44:19.760,0:44:23.080,cyan,,0000,0000,0000,,-Pues ya te veo en la oposición.
+Dialogue: 0,0:44:23.120,0:44:26.920,blanco,,0000,0000,0000,,Si quieren guerra, tendrán guerra.\NEl miércoles, junta de vecinos.
+Dialogue: 0,0:44:26.960,0:44:29.120,blanco,,0000,0000,0000,,¡Éstos no saben\Ndónde se han metido!
+Dialogue: 0,0:44:29.160,0:44:30.760,cyan,,0000,0000,0000,,-Di que sí, cariño.
+Dialogue: 0,0:44:30.800,0:44:34.640,blanco,,0000,0000,0000,,-¿Es que no van a sacarnos de aquí?\NSe nos va a acabar el oxígeno.
+Dialogue: 0,0:44:34.680,0:44:36.920,blanco,,0000,0000,0000,,-¿Cómo se va a acabar?\NEstá ventilado.
+Dialogue: 0,0:44:36.960,0:44:39.880,blanco,,0000,0000,0000,,-Con el tiempo que hace\Nque no limpio la rejilla.
+Dialogue: 0,0:44:39.920,0:44:43.960,blanco,,0000,0000,0000,,-Bueno, me toca. Veo, veo.\N-¿Qué ves?
+Dialogue: 0,0:44:44.0,0:44:48.320,blanco,,0000,0000,0000,,-Un portero gilipollas.\N-Cuidado, señorita Belén.
+Dialogue: 0,0:44:48.360,0:44:51.480,blanco,,0000,0000,0000,,-Vamos a jugar en serio.\N(EMILIO) -Venga, sí.
+Dialogue: 0,0:44:51.520,0:44:54.240,blanco,,0000,0000,0000,,Veo, veo.\N-¿Qué ves?
+Dialogue: 0,0:44:54.280,0:44:57.600,blanco,,0000,0000,0000,,:-) -Una que se ha quedado\Nsin cita.
+Dialogue: 0,0:45:0.200,0:45:3.240,blanco,,0000,0000,0000,,(CANCIÓN) Aquí no hay quien viva,\Naquí no.
+Dialogue: 0,0:45:4.280,0:45:8.320,blanco,,0000,0000,0000,,-Sí, les han forzado la puerta. No\Nsé para qué, pero la han forzado.
+Dialogue: 0,0:45:8.360,0:45:12.280,blanco,,0000,0000,0000,,-Al menos, no se han llevado nada.\N-Porque vivo en un segundo, si no,
+Dialogue: 0,0:45:12.320,0:45:14.760,blanco,,0000,0000,0000,,hace tiempo que habría puesto\Nuna alarma.
+Dialogue: 0,0:45:14.800,0:45:18.240,blanco,,0000,0000,0000,,-Esta alarma tiene tres sensores\Nde movimiento: salón, cocina,
+Dialogue: 0,0:45:18.280,0:45:21.880,blanco,,0000,0000,0000,,dormitorio. Tiene un código secreto\Nde cuatro dígitos que jamás...
+Dialogue: 0,0:45:21.920,0:45:23.520,blanco,,0000,0000,0000,,...deben decir a nadie.
+Dialogue: 0,0:45:23.560,0:45:26.280,blanco,,0000,0000,0000,,-Es el primer tío que me gusta\Nque no me hace caso.
+Dialogue: 0,0:45:26.320,0:45:28.520,blanco,,0000,0000,0000,,Tendré que tomar la iniciativa.
+Dialogue: 0,0:45:28.720,0:45:30.400,blanco,,0000,0000,0000,,¿Tienes sal?
+Dialogue: 0,0:45:30.440,0:45:33.880,blanco,,0000,0000,0000,,Estábamos tendiendo y a Belén\Nse le ha caído una camiseta.
+Dialogue: 0,0:45:33.920,0:45:37.480,verde,,0000,0000,0000,,-Desde que a ti las mujeres.
+Dialogue: 0,0:45:33.920,0:45:37.480,blanco,,0000,0000,0000,,-¿Desde cuándo te gusta el whisky?
+Dialogue: 0,0:45:37.520,0:45:41.200,blanco,,0000,0000,0000,,-Según el artículo 17 de la Ley de\NPropiedad Horizontal, párrafo 5,
+Dialogue: 0,0:45:41.240,0:45:45.840,blanco,,0000,0000,0000,,las obras se comentan al presidente\Nde la comunidad una semana antes.
+Dialogue: 0,0:45:45.880,0:45:48.320,blanco,,0000,0000,0000,,Tendrás un permiso\Ndel ayuntamiento.
+Dialogue: 0,0:45:48.360,0:45:52.720,blanco,,0000,0000,0000,,-A simple vista, parece un permiso.
+Dialogue: 0,0:45:48.360,0:45:52.720,magenta,,0000,0000,0000,,-¿Y esto qué es?
+Dialogue: 0,0:45:52.760,0:45:55.280,magenta,,0000,0000,0000,,-¿Y ahora qué?\N¿Me va a pagar el retraso?
+Dialogue: 0,0:45:55.320,0:45:57.800,blanco,,0000,0000,0000,,-Tú.
+Dialogue: 0,0:45:55.320,0:45:57.800,cyan,,0000,0000,0000,,-Vamos a ver, ¿quién manda aquí?
+Dialogue: 0,0:45:57.840,0:46:0.080,blanco,,0000,0000,0000,,-¡Ah, yo!
+Dialogue: 0,0:45:57.840,0:46:0.080,cyan,,0000,0000,0000,,-No, en la comunidad.
+Dialogue: 0,0:46:0.120,0:46:5.560,cyan,,0000,0000,0000,,-¡Pues imponte! Ésos todavía\Nno saben quiénes somos los Cuesta.
+Dialogue: 0,0:46:5.720,0:46:7.960,cyan,,0000,0000,0000,,Pero lo van a saber.
+Dialogue: 0,0:46:8.0,0:46:9.600,blanco,,0000,0000,0000,,
+Dialogue: 0,0:46:9.640,0:46:9.680,blanco,,0000,0000,0000,,
