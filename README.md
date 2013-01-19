@@ -1,5 +1,5 @@
-subtitleConverter
-=================
+Subtitle Converter
+==================
 
 This is a java framework for processing subtitle formats and converting them into other formats.
 
