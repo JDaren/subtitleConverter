@@ -13,6 +13,10 @@ public class Style {
 		iD = styleName;
 	}
 	
+	public Style(String string, Style style) {
+		// TODO Auto-generated constructor stub
+	}
+
 	/* ATTRIBUTES */
 	String iD;
 	String font;
