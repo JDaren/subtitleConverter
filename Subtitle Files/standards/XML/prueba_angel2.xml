@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang="es" xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling">
+<head>
+<styling>
+<style id="negro" tts:fontWeight="bold" tts:color="#000000" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="rojo" tts:fontWeight="bold" tts:color="#FF0000" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="verde" tts:fontWeight="bold" tts:color="#00FF00" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="amarillo" tts:fontWeight="bold" tts:color="#FFFF00" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="azul" tts:fontWeight="bold" tts:color="#0000FF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="magenta" tts:fontWeight="bold" tts:color="#FF00FF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="cyan" tts:fontWeight="bold" tts:color="#00FFFF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="blanco" tts:fontWeight="bold" tts:color="#FFFFFF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+</styling>
+</head>
+<body>
+<div xml:lang="es">
+<p begin="0:4:55:120" end="0:4:56:840" style="blanco"><span style='amarillo'>        Pues buen viaje.</span></p>
+<p begin="0:4:58:360" end="0:5:0:200" style="blanco">      ¿Has abierto la puerta?<br /><span style='amarillo'>               Sí.</span></p>
+<p begin="0:5:0:360" end="0:5:2:560" style="blanco">           ¿Quién era? <br /><span style='amarillo'>          Un vendedor.</span></p>
+<p begin="0:5:2:720" end="0:5:5:960" style="blanco">               ¿Y qué?<br /><span style='amarillo'>Le he vendido una guía de teléfonos.</span></p>
+<p begin="0:5:10:520" end="0:5:13:840" style="blanco">    Pónganse atrás, por favor.<br />        -Sí, ahora mismo.</p>
+</div>
+</body>
+</tt>

@@ -1,0 +1,22 @@
+<tt xml:lang="es">
+	<head>
+		<styling>
+			<style id="negro" tts:fontWeight="bold" tts:color="#000000" tts:fontSize="15" tts:fontFamily="sansSerif"/>
+			<style id="rojo" tts:fontWeight="bold" tts:color="#FF0000" tts:fontSize="15" tts:fontFamily="sansSerif"/>
+			<style id="verde" tts:fontWeight="bold" tts:color="#00FF00" tts:fontSize="15" tts:fontFamily="sansSerif"/>
+			<style id="amarillo" tts:fontWeight="bold" tts:color="#FFFF00" tts:fontSize="15" tts:fontFamily="sansSerif"/>
+			<style id="azul" tts:fontWeight="bold" tts:color="#0000FF" tts:fontSize="15" tts:fontFamily="sansSerif"/>
+			<style id="magenta" tts:fontWeight="bold" tts:color="#FF00FF" tts:fontSize="15" tts:fontFamily="sansSerif"/>
+			<style id="cyan" tts:fontWeight="bold" tts:color="#00FFFF" tts:fontSize="15" tts:fontFamily="sansSerif"/>
+			<style id="blanco" tts:fontWeight="bold" tts:color="#FFFFFF" tts:fontSize="15" tts:fontFamily="sansSerif"/>
+		</styling>
+	</head>
+	<body>
+		<div xml:lang="es">
+			<p begin="0:0:02:640" end="0:0:4:960" style="blanco"><span style="magenta">A la casa de socorro,</span><br/><span style="magenta">como una bala.</span></p>
+			<p begin="0:0:05:120" end="0:0:8:120" style="blanco"><span style="amarillo">Pues buen viaje.</span></p>
+			<p begin="0:0:8:360" end="0:0:12:200" style="blanco">¿Has abierto la puerta?<br/><span style="amarillo">Sí.</span></p>
+			<p begin="0:0:15:360" end="0:0:20:560" style="blanco">¿Quién era?<br/><span style="amarillo">Un vendedor.</span></p>
+		</div>
+	</body>
+</tt>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang="es" xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling">
+<head>
+<styling>
+<style id="negro" tts:fontWeight="bold" tts:color="#000000" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="rojo" tts:fontWeight="bold" tts:color="#FF0000" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="verde" tts:fontWeight="bold" tts:color="#00FF00" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="amarillo" tts:fontWeight="bold" tts:color="#FFFF00" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="azul" tts:fontWeight="bold" tts:color="#0000FF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="magenta" tts:fontWeight="bold" tts:color="#FF00FF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="cyan" tts:fontWeight="bold" tts:color="#00FFFF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="blanco" tts:fontWeight="bold" tts:color="#FFFFFF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+</styling>
+</head>
+<body>
+<div xml:lang="es">
+<p begin="0:0:7:800" end="0:0:11:360" style="blanco">  Subtitulado para personas sordas<br />patrocinado por el Real Patronato...</p>
+<p begin="0:0:13:160" end="0:0:15:040" style="blanco">...sobre Discapacidad, CESyA y UC3 M</p>
+<p begin="0:1:34:640" end="0:1:38:120" style="blanco">Moderadora: Bueno, señores, muchas<br /> gracias. Hay que abandonar la...</p>
+<p begin="0:1:41:040" end="0:1:44:600" style="blanco">...sala porque tenemos que empezar.<br />Gracias a todos, eh, compañeros....</p>
+<p begin="0:1:44:600" end="0:1:46:480" style="blanco">...Señores. Usted allí, usted, aquí.</p>
+<p begin="0:0:0:0" end="0:0:0:0" style="blanco"></p>
+</div>
+</body>
+</tt>

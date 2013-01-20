@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang="en" xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling">
+<head>
+<styling>
+<style id="negro" tts:fontWeight="bold" tts:color="#000000" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="rojo" tts:fontWeight="bold" tts:color="#FF0000" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="verde" tts:fontWeight="bold" tts:color="#00FF00" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="amarillo" tts:fontWeight="bold" tts:color="#FFFF00" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="azul" tts:fontWeight="bold" tts:color="#0000FF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="magenta" tts:fontWeight="bold" tts:color="#FF00FF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="cyan" tts:fontWeight="bold" tts:color="#00FFFF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+<style id="blanco" tts:fontWeight="bold" tts:color="#FFFFFF" tts:fontSize="15" tts:fontFamily="sansSerif" />
+</styling>
+</head>
+<body>
+<div xml:lang="en">
+<p begin="0:0:0:0" end="0:0:0:320" style="blanco">   BBC Digital test titles</p>
+<p begin="10:0:0:0" end="10:0:9:0" style="blanco">   5 Second subtitles with 5 seconds<br />   between: 100010-100055</p>
+<p begin="10:0:10:0" end="10:0:15:0" style="blanco">   10:00:10:00 - 10:00:15:00 Test</p>
+<p begin="10:0:20:0" end="10:0:25:0" style="blanco">   10:00:20:00 - 10:00:25:00 Test</p>
+<p begin="10:0:30:0" end="10:0:35:0" style="blanco">   10:00:30:00 - 10:00:35:00 Test</p>
+<p begin="10:0:40:0" end="10:0:45:0" style="blanco">   10:00:40:00 - 10:00:45:00 Test</p>
+<p begin="10:0:50:0" end="10:0:55:0" style="blanco">   10:00:50:00 - 10:00:55:00 Test</p>
+<p begin="10:1:0:0" end="10:1:5:0" style="blanco">   Backtoback 10:01:00:00 - 10:01:05:00</p>
+<p begin="10:1:5:0" end="10:1:10:0" style="blanco">   Backtoback 10:01:05:00 - 10:00:10:00</p>
+<p begin="10:1:10:0" end="10:1:15:0" style="blanco">   Backtoback 10:01:10:00 - 10:00:15:00</p>
+<p begin="10:1:15:0" end="10:1:20:0" style="blanco">   Backtoback 10:01:15:00 - 10:01:20:00</p>
+<p begin="10:1:20:0" end="10:1:25:0" style="blanco">   Backtoback 10:01:20:00 - 10:01:25:00</p>
+<p begin="10:1:25:0" end="10:1:30:0" style="blanco">   Backtoback 10:01:25:00 - 10:01:30:00 </p>
+<p begin="10:1:30:0" end="10:1:35:0" style="blanco">   Backtoback 10:01:30:00 - 10:01:35:00</p>
+<p begin="10:1:35:0" end="10:1:40:0" style="blanco">   Backtoback 10:01:35:00 - 10:01:40:00</p>
+<p begin="10:1:40:0" end="10:1:45:0" style="blanco">   Backtoback 10:01:40:00 - 10:01:45:00</p>
+<p begin="10:1:45:0" end="10:1:50:0" style="blanco">   Backtoback 10:01:45:00 - 10:01:50:00</p>
+<p begin="10:1:50:0" end="10:1:55:0" style="blanco">   Backtoback 10:01:50:00 - 10:01:55:00</p>
+<p begin="10:1:55:0" end="10:2:0:0" style="blanco">   Backtoback 10:01:55:00 - 10:02:00:00</p>
+<p begin="10:2:0:0" end="10:2:5:0" style="blanco">   10:02:00:00 - 10:02:05:00 Test<br />   2 line subtitles with 5 second gap</p>
+<p begin="10:2:10:0" end="10:2:15:0" style="blanco">   10:02:10:00 - 10:02:15:00 Test<br />   2 line subtitles with 5 second gap</p>
+<p begin="10:2:20:0" end="10:2:25:0" style="blanco">   10:02:20:00 - 10:02:25:00 Test<br />   Second Line of title</p>
+<p begin="10:2:30:0" end="10:2:35:0" style="blanco">   10:02:30:00 - 10:02:35:00 Test<br />   Second Line of title</p>
+<p begin="10:2:40:0" end="10:2:45:0" style="blanco">   10:02:40:00 - 10:02:45:00 Test<br />   Second Line of title</p>
+<p begin="10:2:50:0" end="10:2:55:0" style="blanco">   10:02:50:00 - 10:02:55:00 Test<br />   Second Line of title</p>
+<p begin="10:3:0:0" end="10:3:10:0" style="blanco">   Ten second titles with addon at 5</p>
+<p begin="10:3:5:0" end="10:3:10:0" style="blanco">   10:03:05:00 - 10:03:10:00 Add-On</p>
+<p begin="10:3:15:0" end="10:3:25:0" style="blanco">   10:03:15:00 - 10:03:25:00 Test</p>
+<p begin="10:3:20:0" end="10:3:25:0" style="blanco">   10:03:20:00 - 10:03:25:00 Add-On</p>
+<p begin="10:3:30:0" end="10:3:40:0" style="blanco">   10:03:30:00 - 10:03:40:00 Test</p>
+<p begin="10:3:35:0" end="10:3:40:0" style="blanco">   10:03:35:00 - 10:03:40:00 Add-On</p>
+<p begin="10:3:45:0" end="10:3:55:0" style="blanco">   10:03:45:00 - 10:03:55:00 Test</p>
+<p begin="10:3:50:0" end="10:3:55:0" style="blanco">   10:03:50:00 - 10:03:55:00 Add-On</p>
+<p begin="10:4:0:0" end="10:4:9:800" style="blanco">   10:04:00:00 - 10:04:09:20 Test<br />   Three line subtitles, 9:20 long with<br />   5 frame Intervals</p>
+<p begin="10:4:10:0" end="10:4:19:800" style="blanco">   10:04:10:00 - 10:04:19:20 Test<br />   Second Line of title<br />   Third line of title</p>
+<p begin="10:4:20:0" end="10:4:29:800" style="blanco">   10:04:20:00 - 10:04:29:20 Test<br />   Second Line of title<br />   Third line of title</p>
+<p begin="10:4:30:0" end="10:4:39:800" style="blanco">   10:04:30:00 - 10:04:39:20 Test<br />   Second Line of title<br />   Third line of title</p>
+<p begin="10:4:40:0" end="10:4:49:800" style="blanco">   10:04:40:00 - 10:04:49:20 Test<br />   Second Line of title<br />   Third line of title</p>
+<p begin="10:4:50:0" end="10:4:59:800" style="blanco">   10:04:50:00 - 10:04:59:20 Test<br />   Second Line of title<br />   Third line of title</p>
+<p begin="10:5:0:0" end="10:5:8:0" style="blanco">   Snake Subtitle test</p>
+<p begin="10:5:10:0" end="10:5:59:0" style="blanco">   Simple</p>
+<p begin="10:5:10:480" end="10:5:59:0" style="blanco">   Simple Snake</p>
+<p begin="10:5:11:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle</p>
+<p begin="10:5:11:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test</p>
+<p begin="10:5:12:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one</p>
+<p begin="10:5:12:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two</p>
+<p begin="10:5:13:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three</p>
+<p begin="10:5:13:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four</p>
+<p begin="10:5:14:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five</p>
+<p begin="10:5:14:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six</p>
+<p begin="10:5:15:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven</p>
+<p begin="10:5:15:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven eight</p>
+<p begin="10:5:16:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven eight nine</p>
+<p begin="10:5:16:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten</p>
+<p begin="10:5:17:0" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven</p>
+<p begin="10:5:17:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve</p>
+<p begin="10:5:18:0" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve thirteen</p>
+<p begin="10:5:18:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve thirteen fourteen</p>
+<p begin="10:5:19:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple</p>
+<p begin="10:5:19:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake</p>
+<p begin="10:5:20:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle</p>
+<p begin="10:5:20:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test</p>
+<p begin="10:5:21:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test one</p>
+<p begin="10:5:21:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test one two</p>
+<p begin="10:5:22:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three</p>
+<p begin="10:5:22:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four</p>
+<p begin="10:5:23:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five</p>
+<p begin="10:5:23:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six</p>
+<p begin="10:5:24:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven</p>
+<p begin="10:5:24:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven eight</p>
+<p begin="10:5:25:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven eight nine</p>
+<p begin="10:5:25:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten</p>
+<p begin="10:5:26:0" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven</p>
+<p begin="10:5:26:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve</p>
+<p begin="10:5:27:0" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve thirteen</p>
+<p begin="10:5:27:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve thirteen fourteen</p>
+<p begin="10:5:28:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple</p>
+<p begin="10:5:28:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake</p>
+<p begin="10:5:29:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle</p>
+<p begin="10:5:29:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test</p>
+<p begin="10:5:30:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test one</p>
+<p begin="10:5:30:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test one two</p>
+<p begin="10:5:31:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three</p>
+<p begin="10:5:31:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four</p>
+<p begin="10:5:32:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five</p>
+<p begin="10:5:32:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six</p>
+<p begin="10:5:33:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven</p>
+<p begin="10:5:33:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven eight</p>
+<p begin="10:5:34:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven eight nine</p>
+<p begin="10:5:34:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten</p>
+<p begin="10:5:35:0" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven</p>
+<p begin="10:5:35:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve</p>
+<p begin="10:5:36:0" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve thirteen</p>
+<p begin="10:5:36:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve thirteen fourteen</p>
+<p begin="10:5:37:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple</p>
+<p begin="10:5:37:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake</p>
+<p begin="10:5:38:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle</p>
+<p begin="10:5:38:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test</p>
+<p begin="10:5:39:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test one</p>
+<p begin="10:5:39:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test one two</p>
+<p begin="10:5:40:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three</p>
+<p begin="10:5:40:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four</p>
+<p begin="10:5:41:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five</p>
+<p begin="10:5:41:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six</p>
+<p begin="10:5:42:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven</p>
+<p begin="10:5:42:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven eight</p>
+<p begin="10:5:43:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven eight nine</p>
+<p begin="10:5:43:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten</p>
+<p begin="10:5:44:0" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven</p>
+<p begin="10:5:44:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve</p>
+<p begin="10:5:45:0" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve thirteen</p>
+<p begin="10:5:45:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve thirteen fourteen</p>
+<p begin="10:5:46:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple</p>
+<p begin="10:5:46:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake</p>
+<p begin="10:5:47:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle</p>
+<p begin="10:5:47:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test</p>
+<p begin="10:5:48:0" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test one</p>
+<p begin="10:5:48:480" end="10:5:59:0" style="blanco">   ten eleven twelve thirteen fourteen<br />   Simple Snake subtitle test one two</p>
+<p begin="10:5:49:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three</p>
+<p begin="10:5:49:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four</p>
+<p begin="10:5:59:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five</p>
+<p begin="10:5:50:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six</p>
+<p begin="10:5:51:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven</p>
+<p begin="10:5:51:480" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven eight</p>
+<p begin="10:5:52:0" end="10:5:59:0" style="blanco">   Simple Snake Subtitle test one two<br />   three four five six seven eight nine</p>
+<p begin="10:5:52:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten</p>
+<p begin="10:5:53:0" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven</p>
+<p begin="10:5:53:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve</p>
+<p begin="10:5:54:0" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve thirteen</p>
+<p begin="10:5:54:480" end="10:5:59:0" style="blanco">   three four five six seven eight nine<br />   ten eleven twelve thirteen fourteen</p>
+<p begin="10:6:0:0" end="10:6:10:0" style="blanco">   Short title followed by long title<br />   followed by short ......</p>
+<p begin="10:6:15:0" end="10:6:16:880" style="blanco">   10:06:15:00 - 16:22</p>
+<p begin="10:6:17:0" end="10:6:21:880" style="blanco">   1Longer title with two lines - first<br />   10:06:17:00-10:06:21:22 ............;</p>
+<p begin="10:6:22:0" end="10:6:23:880" style="blanco">   10:06:15:00 - 16:22</p>
+<p begin="10:6:24:0" end="10:6:28:880" style="blanco">   1Longer title with two lines - first<br />   10:06:17:00-10:06:21:22 ............;</p>
+<p begin="10:6:29:0" end="10:6:30:880" style="blanco">   10:06:15:00 - 16:22</p>
+<p begin="10:6:31:0" end="10:6:35:880" style="blanco">   1Longer title with two lines - first<br />   10:06:17:00-10:06:21:22 ............;</p>
+<p begin="10:6:36:0" end="10:6:37:880" style="blanco">   10:06:15:00 - 16:22</p>
+<p begin="10:6:38:0" end="10:6:42:880" style="blanco">   1Longer title with two lines - first<br />   10:06:17:00-10:06:21:22 ............;</p>
+<p begin="10:6:43:0" end="10:6:44:880" style="blanco">   10:06:15:00 - 16:22</p>
+<p begin="10:6:45:0" end="10:6:49:880" style="blanco">   1Longer title with two lines - first<br />   10:06:17:00-10:06:21:22 ............;</p>
+<p begin="10:6:50:0" end="10:6:51:880" style="blanco">   10:06:15:00 - 16:22</p>
+<p begin="10:6:52:0" end="10:6:56:880" style="blanco">   1Longer title with two lines - first<br />   10:06:17:00-10:06:21:22 ............;</p>
+<p begin="10:6:57:0" end="10:6:58:880" style="blanco">   10:06:15:00 - 16:22</p>
+<p begin="10:6:59:0" end="10:7:3:880" style="blanco">   1Longer title with two lines - first<br />   10:06:17:00-10:06:21:22 ............;</p>
+<p begin="10:7:4:0" end="10:7:5:880" style="blanco">   10:06:15:00 - 16:22</p>
+<p begin="10:7:6:0" end="10:7:10:880" style="blanco">   1Longer title with two lines - first<br />   10:06:17:00-10:06:21:22 ............;</p>
+<p begin="10:7:15:0" end="10:7:25:0" style="blanco">Centred subtitles</p>
+<p begin="10:7:25:120" end="10:7:27:600" style="blanco">These subtitles should be<br />centred</p>
+<p begin="10:7:27:720" end="10:7:30:0" style="blanco">This<br />subtitle should be centred</p>
+<p begin="10:7:30:120" end="10:7:33:120" style="blanco">more centred subtitles<br />more centred subtitles</p>
+<p begin="10:7:33:240" end="10:7:35:240" style="blanco">Subtitles<br />at the top</p>
+<p begin="10:7:35:360" end="10:7:37:840" style="blanco">Subtitles at the<br />top right</p>
+<p begin="10:7:37:960" end="10:7:40:440" style="blanco">   Subtitles at the<br />   top left</p>
+<p begin="10:7:40:560" end="10:7:43:040" style="blanco">                  Subtitles - middle;<br />                  Left aligned</p>
+<p begin="10:7:44:0" end="10:7:49:0" style="blanco">                        A bit at the top<br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />   A bit at the bottom</p>
+<p begin="10:7:50:0" end="10:7:54:840" style="blanco">A bit at the top</p>
+<p begin="10:7:53:120" end="10:7:54:840" style="blanco">   Add at the bottom</p>
+<p begin="10:7:55:120" end="10:7:59:840" style="blanco">   Conversational<br />   add-ons......</p>
+<p begin="10:7:57:240" end="10:7:59:840" style="blanco">Added on<br />Bottom Right</p>
+<p begin="10:8:0:0" end="10:8:10:0" style="blanco">END OF TEST SUBTITLES</p>
+<p begin="0:255:0:0" end="0:255:0:0" style="blanco"></p>
+<p begin="0:255:0:0" end="0:255:0:0" style="blanco"></p>
+<p begin="0:255:0:0" end="0:255:0:0" style="blanco"></p>
+<p begin="0:255:0:0" end="0:255:0:0" style="blanco"></p>
+<p begin="0:255:0:0" end="0:255:0:0" style="blanco"></p>
+</div>
+</body>
+</tt>
