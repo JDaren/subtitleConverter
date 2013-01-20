@@ -13,6 +13,12 @@ public class Style {
 		this.iD = styleName;
 	}
 	
+	/**
+	 * Constructor that receives a String with the new styleName and a style to copy
+	 * 
+	 * @param styleName
+	 * @param style
+	 */
 	protected Style(String styleName, Style style) {
 		this.iD = styleName;
 		this.font = style.font;
