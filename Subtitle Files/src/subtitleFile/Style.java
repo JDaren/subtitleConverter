@@ -9,26 +9,35 @@ public class Style {
 	 * 
 	 * @param styleName = identifier of this style
 	 */
-	public Style(String styleName) {
-		iD = styleName;
+	protected Style(String styleName) {
+		this.iD = styleName;
 	}
 	
-	public Style(String string, Style style) {
-		// TODO Auto-generated constructor stub
+	protected Style(String styleName, Style style) {
+		this.iD = styleName;
+		this.font = style.font;
+		this.fontSize = style.fontSize;
+		this.color = style.color;
+		this.backgroundColor = style.backgroundColor;
+		this.textAlign = style.textAlign;
+		this.italic = style.italic;
+		this.underline = style.underline;
+		this.bold = style.bold;
+		
 	}
 
 	/* ATTRIBUTES */
-	String iD;
-	String font;
-	String fontSize;
+	protected String iD;
+	protected String font;
+	protected String fontSize;
 	/**colors are stored as 6 chars long RGB*/
-	String color;
-	String backgroundColor;
-	String textAlign;
+	protected String color;
+	protected String backgroundColor;
+	protected String textAlign;
 	
-	boolean italic;
-	boolean bold;
-	boolean underline;
+	protected boolean italic;
+	protected boolean bold;
+	protected boolean underline;
 	
 	/* METHODS */
 	
@@ -37,7 +46,7 @@ public class Style {
 	 * @param useASSInsteadOfSSA true if formated for ASS
 	 * @return the colors in the decimal format
 	 */
-	public String getColorsForASS(boolean useASSInsteadOfSSA) {
+	protected String getColorsForASS(boolean useASSInsteadOfSSA) {
 		String colors;
 		if(useASSInsteadOfSSA)
 			//primary color(BBGGRR) with Alpha level (00) in front + 00FFFFFF + 00000000 + background color(BBGGRR) with Alpha level (80) in front
@@ -53,7 +62,7 @@ public class Style {
 	 * @param useASSInsteadOfSSA
 	 * @return
 	 */
-	public String getOptionsForASS(boolean useASSInsteadOfSSA) {
+	protected String getOptionsForASS(boolean useASSInsteadOfSSA) {
 		String options;
 		if (bold)
 			options="-1,";
@@ -80,7 +89,7 @@ public class Style {
 	 * @param value RRGGBB string
 	 * @return
 	 */
-	public static String getRGBValue(String format, String value){
+	protected static String getRGBValue(String format, String value){
 		String color = null;
 		if (format.equalsIgnoreCase("#RRGGBB")){
 			//standard color format from W3C
@@ -111,7 +120,7 @@ public class Style {
 		 return color;
 	}
 
-	public static String defaultID() {
+	protected static String defaultID() {
 		return "default"+styleCounter++;
 	}
 
