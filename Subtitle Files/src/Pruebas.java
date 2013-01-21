@@ -3,7 +3,10 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 
 import subtitleFile.FormatASS;
+import subtitleFile.FormatSCC;
 import subtitleFile.FormatSRT;
+import subtitleFile.FormatSTL;
+import subtitleFile.FormatTTML;
 import subtitleFile.TimedTextFileFormat;
 import subtitleFile.TimedTextObject;
 
@@ -35,8 +38,27 @@ public class Pruebas {
 			tto = ttff.parseFile(file.getName(), is);
 			IOClass.escribirFicheroTxt("prueba.txt", ((FormatASS)ttff).toFile(tto));
 
+			//To test the correct implementation of the TTML parser and writter.
+			ttff = new FormatTTML();
+			file = new File("standards\\");
+			is = new FileInputStream(file);
+			tto = ttff.parseFile(file.getName(), is);
+			IOClass.escribirFicheroTxt("prueba.txt", ((FormatTTML)ttff).toFile(tto));
 
+			//To test the correct implementation of the STL parser and writter.
+			ttff = new FormatSTL();
+			file = new File("standards\\");
+			is = new FileInputStream(file);
+			tto = ttff.parseFile(file.getName(), is);
+			//IOClass.escribirFicheroTxt("prueba.txt", ((FormatSTL)ttff).toFile(tto));
 
+			//To test the correct implementation of the SCC parser and writter.
+			ttff = new FormatSCC();
+			file = new File("standards\\");
+			is = new FileInputStream(file);
+			tto = ttff.parseFile(file.getName(), is);
+			IOClass.escribirFicheroTxt("prueba.txt", ((FormatSCC)ttff).toFile(tto));
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
