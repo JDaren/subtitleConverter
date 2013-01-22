@@ -56,23 +56,56 @@ public class Time {
 	 * @return formatted time in a string
 	 */
 	protected String getTime(String format) {
-		String time = null;
+		//we use string builder for efficiency
+		StringBuilder time = new StringBuilder();
+		String aux;
 		if(format.equalsIgnoreCase("hh:mm:ss,ms")){
 			// this type of format:  01:02:22,501 (used in .SRT)
 			int h, m, s, ms;
-			ms = mseconds%1000;
-			s = (mseconds/1000)%60;
-			m = (mseconds/60000)%60;
 			h =  mseconds/3600000;
-			time = "" + h + ":" + m + ":" + s + "," + ms;
+			aux = String.valueOf(h);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append(':');
+			m = (mseconds/60000)%60;
+			aux = String.valueOf(m);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append(':');
+			s = (mseconds/1000)%60;
+			aux = String.valueOf(s);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append(',');
+			ms = mseconds%1000;
+			aux = String.valueOf(ms);
+			if (aux.length()==1) time.append("00");
+			else if (aux.length()==2) time.append('0');
+			time.append(aux);
+			
 		} else if(format.equalsIgnoreCase("h:mm:ss.cs")){
 			// this type of format:  1:02:22.51 (used in .ASS/.SSA)
 			int h, m, s, cs;
-			cs = (mseconds/10)%100;
-			s = (mseconds/1000)%60;
-			m = (mseconds/60000)%60;
 			h =  mseconds/3600000;
-			time = "" + h + ":" + m + ":" + s + "." + cs;
+			aux = String.valueOf(h);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append(':');
+			m = (mseconds/60000)%60;
+			aux = String.valueOf(m);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append(':');
+			s = (mseconds/1000)%60;
+			aux = String.valueOf(s);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append('.');
+			cs = (mseconds/10)%1000;
+			aux = String.valueOf(cs);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			
 		} else if (format.startsWith("hhmmssff/")){
 			//this format is used in EBU's STL
 			int h, m, s, f;
@@ -80,19 +113,23 @@ public class Time {
 			String[] args = format.split("/");
 			fps = Float.parseFloat(args[1]);
 			//now we concatenate time
-			f = (mseconds%1000)*(int)fps/1000;
-			time = ""+f;
-			//we check if an extra 0 is needed
-			if (time.length()==1) time = "0"+time;
-			s = (mseconds/1000)%60;
-			time += s;
-			if (time.length()==3) time = "0"+time;
-			m = (mseconds/60000)%60;
-			time += m;
-			if (time.length()==5) time = "0"+time;
 			h =  mseconds/3600000;
-			time += h;
-			if (time.length()==7) time = "0"+time;
+			aux = String.valueOf(h);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			m = (mseconds/60000)%60;
+			aux = String.valueOf(m);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			s = (mseconds/1000)%60;
+			aux = String.valueOf(s);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			f = (mseconds%1000)*(int)fps/1000;
+			aux = String.valueOf(f);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			
 		} else if (format.startsWith("hh:mm:ss:ff/")){
 			//this format is used in EBU's STL
 			int h, m, s, f;
@@ -100,22 +137,28 @@ public class Time {
 			String[] args = format.split("/");
 			fps = Float.parseFloat(args[1]);
 			//now we concatenate time
-			f = (mseconds%1000)*(int)fps/1000;
-			time = ""+f;
-			//we check if an extra 0 is needed
-			if (time.length()==1) time = "0"+time;
-			s = (mseconds/1000)%60;
-			time += ":" + s;
-			if (time.length()==4) time = "0"+time;
-			m = (mseconds/60000)%60;
-			time += ":" + m;
-			if (time.length()==7) time = "0"+time;
 			h =  mseconds/3600000;
-			time += ":" + h;
-			if (time.length()==10) time = "0"+time;
+			aux = String.valueOf(h);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append(':');
+			m = (mseconds/60000)%60;
+			aux = String.valueOf(m);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append(':');
+			s = (mseconds/1000)%60;
+			aux = String.valueOf(s);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append(':');
+			f = (mseconds%1000)*(int)fps/1000;
+			aux = String.valueOf(f);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
 		}
 
-		return time;
+		return time.toString();
 	}
 	
 	
