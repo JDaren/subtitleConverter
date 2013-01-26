@@ -99,17 +99,17 @@ public class FormatTTML implements TimedTextFileFormat {
 					style.color = parseColor(currentAtr.getNodeValue(),tto);
 				
 				//we check for font family
-				currentAtr = attr.getNamedItem(" tts:fontFamily");
+				currentAtr = attr.getNamedItem("tts:fontFamily");
 				if (currentAtr != null)
 					style.font = currentAtr.getNodeValue();
 				
 				//we check for font size
-				currentAtr = attr.getNamedItem(" tts:fontSize");
+				currentAtr = attr.getNamedItem("tts:fontSize");
 				if (currentAtr != null)
 					style.fontSize = currentAtr.getNodeValue();
 				
 				//we check for italics
-				currentAtr = attr.getNamedItem(" tts:fontStyle");
+				currentAtr = attr.getNamedItem("tts:fontStyle");
 				if (currentAtr != null)
 					if (currentAtr.getNodeValue().equalsIgnoreCase("italic") || currentAtr.getNodeValue().equalsIgnoreCase("oblique"))
 						style.italic = true;
@@ -125,7 +125,7 @@ public class FormatTTML implements TimedTextFileFormat {
 						style.bold = false;
 				
 				//we check opacity (to set the alpha)
-				currentAtr = attr.getNamedItem(" tts:opacity");
+				currentAtr = attr.getNamedItem("tts:opacity");
 				if (currentAtr != null){
 					try {
 						//a number between 1.0 and 0
@@ -148,7 +148,7 @@ public class FormatTTML implements TimedTextFileFormat {
 				}
 				
 				//we check for text align
-				currentAtr = attr.getNamedItem(" tts:textAlign");
+				currentAtr = attr.getNamedItem("tts:textAlign");
 				if (currentAtr != null)
 					if (currentAtr.getNodeValue().equalsIgnoreCase("left") || currentAtr.getNodeValue().equalsIgnoreCase("start"))
 						style.textAlign = "bottom-left";
@@ -156,7 +156,7 @@ public class FormatTTML implements TimedTextFileFormat {
 						style.textAlign = "bottom-right";
 
 				//we check for underline
-				currentAtr = attr.getNamedItem(" tts:textDecoration");
+				currentAtr = attr.getNamedItem("tts:textDecoration");
 				if (currentAtr != null)
 					if (currentAtr.getNodeValue().equalsIgnoreCase("underline"))
 						style.underline = true;
@@ -170,6 +170,7 @@ public class FormatTTML implements TimedTextFileFormat {
 			//we parse the captions
 			for (int i = 0; i < captionsN.getLength(); i++) {
 				Caption caption = new Caption();
+				caption.content = "";
 				boolean validCaption = true;
 				node = captionsN.item(i);
 				
@@ -294,10 +295,14 @@ public class FormatTTML implements TimedTextFileFormat {
 			Style style = itrS.next();
 			//we add the attributes
 			line = "\t\t\t<style xml:id=\""+style.iD+"\"";
-			line += " tts:color=\"#"+style.color+"\"";
-			line += " tts:backgroundColor=\"#"+style.backgroundColor+"\"";
-			line += " tts:fontFamily=\""+style.font+"\"";
-			line += " tts:fontSize=\""+style.fontSize+"\"";
+			if(style.color!=null)
+				line += " tts:color=\"#"+style.color+"\"";
+			if(style.backgroundColor!=null)
+				line += " tts:backgroundColor=\"#"+style.backgroundColor+"\"";
+			if(style.font!=null)
+				line += " tts:fontFamily=\""+style.font+"\"";
+			if(style.fontSize!=null)
+				line += " tts:fontSize=\""+style.fontSize+"\"";
 			if (style.italic)
 				line += " tts:fontStyle=\"italic\"";
 			if (style.bold)

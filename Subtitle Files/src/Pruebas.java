@@ -40,7 +40,7 @@ public class Pruebas {
 
 			//To test the correct implementation of the TTML parser and writter.
 			ttff = new FormatTTML();
-			file = new File("standards\\");
+			file = new File("standards\\XML\\Debate0_03-03-08.dfxp.xml");
 			is = new FileInputStream(file);
 			tto = ttff.parseFile(file.getName(), is);
 			IOClass.escribirFicheroTxt("prueba.txt", ((FormatTTML)ttff).toFile(tto));

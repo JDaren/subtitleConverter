@@ -1,17 +1,35 @@
-[Script Info]
-Title: Wolf's rain 2
-Original Script: Anime-spirit Ishin-francais
-; Converted by the Online Subtitle Converter developed by J. David Requejo
-Script Type: V4.00
-Collisions: Normal
-Timer: 100,0000
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang="null" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling">
+	<head>
+		<metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+			<ttm:title>Debate0_03-03-08.dfxp.xml</ttm:title>
+			<ttm:desc>Converted by the Online Subtitle Converter developed by J. David Requejo
+			</ttm:desc>
+		</metadata>
+		<styling>
+			<style xml:id="magenta" tts:color="#FF00FFff" tts:fontFamily="sansSerif" tts:fontSize="15" tts:fontWeight="bold" tts:textAlign="center" />
+			<style xml:id="verde" tts:color="#00FF00ff" tts:fontFamily="sansSerif" tts:fontSize="15" tts:fontWeight="bold" tts:textAlign="center" />
+			<style xml:id="blanco" tts:color="#FFFFFFff" tts:fontFamily="sansSerif" tts:fontSize="15" tts:fontWeight="bold" tts:textAlign="center" />
+			<style xml:id="cyan" tts:color="#00FFFFff" tts:fontFamily="sansSerif" tts:fontSize="15" tts:fontWeight="bold" tts:textAlign="center" />
+			<style xml:id="azul" tts:color="#0000FFff" tts:fontFamily="sansSerif" tts:fontSize="15" tts:fontWeight="bold" tts:textAlign="center" />
+			<style xml:id="negro" tts:color="#000000ff" tts:fontFamily="sansSerif" tts:fontSize="15" tts:fontWeight="bold" tts:textAlign="center" />
+			<style xml:id="rojo" tts:color="#FF0000ff" tts:fontFamily="sansSerif" tts:fontSize="15" tts:fontWeight="bold" tts:textAlign="center" />
+			<style xml:id="amarillo" tts:color="#FFFF00ff" tts:fontFamily="sansSerif" tts:fontSize="15" tts:fontWeight="bold" tts:textAlign="center" />
+		</styling>
+	</head>
+	<body>
+		<div>
+			<p begin="00:00:07.800" end="00:00:11.360" style="blanco" >Subtitulado para personas sordas<br />patrocinado por el Real Patronato...</p>
 
-[V4 Styles]
-Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, TertiaryColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, AlphaLevel, Encoding
-Style: Wolf main,Wolf_Rain,56,15724527,16777215,0,4144959,0,0,1,2,2,2,0,0,0,0,0
+			<p begin="00:00:13.160" end="00:00:15.040" style="blanco" >...sobre Discapacidad, CESyA y UC3 M</p>
 
-[Events]
-Format: Marked, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,00:02:40.65,00:02:41.79,Wolf main,,0000,0000,0000,,Et les enregistrements de ses ondes delta ?
-Dialogue: 0,00:02:42.42,00:02:44.15,Wolf main,,0000,0000,0000,,Toujours rien.
+			<p begin="00:01:34.640" end="00:01:38.120" style="blanco" >Moderadora: Bueno, señores, muchas<br />gracias. Hay que abandonar la...</p>
+
+			<p begin="00:01:41.040" end="00:01:44.600" style="blanco" >...sala porque tenemos que empezar.<br />Gracias a todos, eh, compañeros....</p>
+
+			<p begin="00:01:44.600" end="00:01:46.480" style="blanco" >...Señores. Usted allí, usted, aquí.</p>
+
+		</div>
+	</body>
+</tt>
 

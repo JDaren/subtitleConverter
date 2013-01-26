@@ -39,7 +39,7 @@ public class Style {
 	/**colors are stored as 6 chars long RGB*/
 	protected String color;
 	protected String backgroundColor;
-	protected String textAlign;
+	protected String textAlign = "";
 	
 	protected boolean italic;
 	protected boolean bold;
