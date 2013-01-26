@@ -101,7 +101,7 @@ public class Time {
 			if (aux.length()==1) time.append('0');
 			time.append(aux);
 			time.append('.');
-			cs = (mseconds/10)%1000;
+			cs = (mseconds/10)%100;
 			aux = String.valueOf(cs);
 			if (aux.length()==1) time.append('0');
 			time.append(aux);

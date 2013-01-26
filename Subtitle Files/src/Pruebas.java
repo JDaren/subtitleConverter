@@ -33,7 +33,7 @@ public class Pruebas {
 			
 			//To test the correct implementation of the ASS/SSA parser and writter.
 			ttff = new FormatASS();
-			file = new File("standards\\ASS\\test.ass");
+			file = new File("standards\\ASS\\test.ssa");
 			is = new FileInputStream(file);
 			tto = ttff.parseFile(file.getName(), is);
 			IOClass.escribirFicheroTxt("prueba.txt", ((FormatASS)ttff).toFile(tto));

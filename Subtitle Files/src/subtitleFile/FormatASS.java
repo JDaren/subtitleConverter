@@ -260,8 +260,11 @@ public class FormatASS implements TimedTextFileFormat {
 			styleLine+= current.fontSize+",";
 			styleLine+= getColorsForASS(tto.useASSInsteadOfSSA, current);
 			styleLine+= getOptionsForASS(tto.useASSInsteadOfSSA, current);
-			//BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV
-			styleLine+= "1,2,2,2,";
+			//BorderStyle, Outline, Shadow
+			styleLine+= "1,2,2,";
+			styleLine+= getAlignForASS(tto.useASSInsteadOfSSA, current.textAlign);
+			//MarginL, MarginR, MarginV
+			styleLine+= ",0,0,0,";
 			//AlphaLevel
 			if(!tto.useASSInsteadOfSSA)styleLine+= "0,";
 			//Encoding
@@ -523,7 +526,7 @@ public class FormatASS implements TimedTextFileFormat {
 	 * @param useASSInsteadOfSSA
 	 * @return
 	 */
-	private String getOptionsForASS(boolean useASSInsteadOfSSA , Style style) {
+	private String getOptionsForASS(boolean useASSInsteadOfSSA, Style style) {
 		String options;
 		if (style.bold)
 			options="-1,";
@@ -541,6 +544,61 @@ public class FormatASS implements TimedTextFileFormat {
 			options+="0,100,100,0,0,";
 		}	
 		return options;
+	}
+	
+	/**
+	 * converts the string explaining the alignment into the ASS equivalent integer offering bottom-center as default value
+	 * @param useASSInsteadOfSSA
+	 * @param align
+	 * @return
+	 */
+	private int getAlignForASS(boolean useASSInsteadOfSSA, String align) {
+		if (useASSInsteadOfSSA){
+			int placement = 2;
+			if ("bottom-left".equals(align))
+				placement = 1;
+			else if ("bottom-center".equals(align))
+				placement = 2;
+			else if ("bottom-right".equals(align))
+				placement = 3;
+			else if ("mid-left".equals(align))
+				placement = 4;
+			else if ("mid-center".equals(align))
+				placement = 5;
+			else if ("mid-right".equals(align))
+				placement = 6;
+			else if ("top-left".equals(align))
+				placement = 7;
+			else if ("top-center".equals(align))
+				placement = 8;
+			else if ("top-right".equals(align))
+				placement = 9;
+			
+			return placement;
+		} else {
+
+			int placement = 10;
+			if ("bottom-left".equals(align))
+				placement = 9;
+			else if ("bottom-center".equals(align))
+				placement = 10;
+			else if ("bottom-right".equals(align))
+				placement = 11;
+			else if ("mid-left".equals(align))
+				placement = 1;
+			else if ("mid-center".equals(align))
+				placement = 2;
+			else if ("mid-right".equals(align))
+				placement = 3;
+			else if ("top-left".equals(align))
+				placement = 5;
+			else if ("top-center".equals(align))
+				placement = 6;
+			else if ("top-right".equals(align))
+				placement = 7;
+			
+			return placement;
+		}
 	}
 
 }

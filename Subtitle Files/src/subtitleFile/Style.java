@@ -48,47 +48,6 @@ public class Style {
 	/* METHODS */
 	
 	/**
-	 * returns a string with the correctly formated colors
-	 * @param useASSInsteadOfSSA true if formated for ASS
-	 * @return the colors in the decimal format
-	 */
-	protected String getColorsForASS(boolean useASSInsteadOfSSA) {
-		String colors;
-		if(useASSInsteadOfSSA)
-			//primary color(BBGGRR) with Alpha level (00) in front + 00FFFFFF + 00000000 + background color(BBGGRR) with Alpha level (80) in front
-			colors=Integer.parseInt("00"+ this.color.substring(4)+this.color.substring(2, 4)+this.color.substring(0, 2), 16)+",16777215,0,"+Long.parseLong("80"+ this.backgroundColor.substring(4)+this.backgroundColor.substring(2, 4)+this.backgroundColor.substring(0, 2), 16)+",";
-		else
-			//primary color(BBGGRR) + FFFFFF + 000000 + background color(BBGGRR)
-			colors=Integer.parseInt(this.color.substring(4)+this.color.substring(2, 4)+this.color.substring(0, 2), 16)+",16777215,0,"+Integer.parseInt(this.backgroundColor.substring(4)+this.backgroundColor.substring(2, 4)+this.backgroundColor.substring(0, 2), 16)+",";	
-		return colors;
-	}
-	
-	/**
-	 * returns a string with the correctly formated options
-	 * @param useASSInsteadOfSSA
-	 * @return
-	 */
-	protected String getOptionsForASS(boolean useASSInsteadOfSSA) {
-		String options;
-		if (bold)
-			options="-1,";
-		else
-			options="0,";
-		if (italic)
-			options+="-1,";
-		else
-			options+="0,";
-		if(useASSInsteadOfSSA){
-			if (underline)
-				options+="-1,";
-			else
-				options+="0,";
-			options+="0,100,100,0,0,";
-		}	
-		return options;
-	}
-	
-	/**
 	 * To get the string containing the hex value to put into color or background color
 	 * 
 	 * @param format supported: "#RRGGBB", "&HBBGGRR", "&HAABBGGRR", "decimalCodedBBGGRR", "decimalCodedAABBGGRR"
