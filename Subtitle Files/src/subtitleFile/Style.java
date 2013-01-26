@@ -36,7 +36,7 @@ public class Style {
 	protected String iD;
 	protected String font;
 	protected String fontSize;
-	/**colors are stored as 6 chars long RGB*/
+	/**colors are stored as 8 chars long RGBA*/
 	protected String color;
 	protected String backgroundColor;
 	protected String textAlign = "";

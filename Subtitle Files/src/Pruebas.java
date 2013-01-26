@@ -1,6 +1,9 @@
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
 
 import subtitleFile.FormatASS;
 import subtitleFile.FormatSCC;
@@ -45,20 +48,27 @@ public class Pruebas {
 			tto = ttff.parseFile(file.getName(), is);
 			IOClass.escribirFicheroTxt("prueba.txt", ((FormatTTML)ttff).toFile(tto));
 
-			//To test the correct implementation of the STL parser and writter.
-			ttff = new FormatSTL();
-			file = new File("standards\\");
-			is = new FileInputStream(file);
-			tto = ttff.parseFile(file.getName(), is);
-			//IOClass.escribirFicheroTxt("prueba.txt", ((FormatSTL)ttff).toFile(tto));
-
 			//To test the correct implementation of the SCC parser and writter.
 			ttff = new FormatSCC();
-			file = new File("standards\\");
+			file = new File("standards\\SCC\\sccTest.scc");
 			is = new FileInputStream(file);
 			tto = ttff.parseFile(file.getName(), is);
 			IOClass.escribirFicheroTxt("prueba.txt", ((FormatSCC)ttff).toFile(tto));
 			
+			//To test the correct implementation of the STL parser and writter.
+			ttff = new FormatSTL();
+			file = new File("standards\\STL\\Alsalirdeclasebien.stl");
+			is = new FileInputStream(file);
+			tto = ttff.parseFile(file.getName(), is);
+			OutputStream output = null;
+			try {
+				output = new BufferedOutputStream(new FileOutputStream("prueba.txt"));
+				output.write(((FormatSTL)ttff).toFile(tto));
+			} finally {
+				output.close();
+			}
+
+	
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
