@@ -13,10 +13,10 @@
 	</head>
 	<body>
 		<div xml:lang="es">
-			<p begin="0:0:02:640" end="0:0:4:960" style="blanco"><span style="magenta">A la casa de socorro,</span><br/><span style="magenta">como una bala.</span></p>
-			<p begin="0:0:05:120" end="0:0:8:120" style="blanco"><span style="amarillo">Pues buen viaje.</span></p>
-			<p begin="0:0:8:360" end="0:0:12:200" style="blanco">¿Has abierto la puerta?<br/><span style="amarillo">Sí.</span></p>
-			<p begin="0:0:15:360" end="0:0:20:560" style="blanco">¿Quién era?<br/><span style="amarillo">Un vendedor.</span></p>
+			<p begin="0:0:02.640" end="0:0:4.960" style="blanco"><span style="magenta">A la casa de socorro,</span><br/><span style="magenta">como una bala.</span></p>
+			<p begin="0:0:05.120" end="0:0:8.120" style="blanco"><span style="amarillo">Pues buen viaje.</span></p>
+			<p begin="0:0:8.360" end="0:0:12.200" style="blanco">ï¿½Has abierto la puerta?<br/><span style="amarillo">Sï¿½.</span></p>
+			<p begin="0:0:15.360" end="0:0:20.560" style="blanco">ï¿½Quiï¿½n era?<br/><span style="amarillo">Un vendedor.</span></p>
 		</div>
 	</body>
 </tt>
