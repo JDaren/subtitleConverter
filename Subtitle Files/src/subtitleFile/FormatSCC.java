@@ -50,8 +50,7 @@ public class FormatSCC implements TimedTextFileFormat {
 		String color = null;
 
 		//first lets load the file
-		InputStreamReader in= new InputStreamReader(is);
-		BufferedReader br = new BufferedReader(in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
 		//the file name is saved
 		tto.fileName = fileName;
@@ -346,6 +345,16 @@ public class FormatSCC implements TimedTextFileFormat {
 
 				}
 
+				//we save any shown caption
+				newCaption.end =  new Time("h:m:s:f/fps", "99:59:59:29/29.97");;
+				if (newCaption.start != null){
+					//we save the caption
+					int key = newCaption.start.mseconds;
+					//in case the key is already there, we increase it by a millisecond, since no duplicates are allowed
+					while (tto.captions.containsKey(key)) key++;
+					//we save the caption
+					tto.captions.put(newCaption.start.mseconds, newCaption);
+				}
 				tto.cleanUnusedStyles();
 			}
 
