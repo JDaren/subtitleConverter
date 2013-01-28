@@ -158,7 +158,6 @@ public class FormatSCC implements TimedTextFileFormat {
 												}
 												//new caption starts with roll up style
 												newCaption = new Caption();
-												newCaption.content = "";
 												newCaption.start = currentTime;
 												//all characters and codes will be applied directly to the screen
 												isBuffered = false;
@@ -167,7 +166,6 @@ public class FormatSCC implements TimedTextFileFormat {
 												//Resume Direct Captioning: start paint-on captions
 												isBuffered = false;
 												newCaption = new Caption();
-												newCaption.content = "";
 												newCaption.start = currentTime;
 												break;
 											case 12:
@@ -193,7 +191,6 @@ public class FormatSCC implements TimedTextFileFormat {
 											case 15:
 												//End of caption: Swap off-screen buffer with caption screen.
 												newCaption = new Caption();
-												newCaption.content = "";
 												newCaption.start = currentTime;
 												newCaption.content += textBuffer;
 												break;
@@ -345,7 +342,7 @@ public class FormatSCC implements TimedTextFileFormat {
 
 				}
 
-				//we save any shown caption
+				//we save any last shown caption
 				newCaption.end =  new Time("h:m:s:f/fps", "99:59:59:29/29.97");;
 				if (newCaption.start != null){
 					//we save the caption

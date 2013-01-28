@@ -50,37 +50,82 @@ public class Style {
 	/**
 	 * To get the string containing the hex value to put into color or background color
 	 * 
-	 * @param format supported: "#RRGGBB", "&HBBGGRR", "&HAABBGGRR", "decimalCodedBBGGRR", "decimalCodedAABBGGRR"
-	 * @param value RRGGBB string
+	 * @param format supported: "name", "&HBBGGRR", "&HAABBGGRR", "decimalCodedBBGGRR", "decimalCodedAABBGGRR"
+	 * @param value RRGGBBAA string
 	 * @return
 	 */
 	protected static String getRGBValue(String format, String value){
 		String color = null;
-		if (format.equalsIgnoreCase("#RRGGBB")){
+		if (format.equalsIgnoreCase("name")){
 			//standard color format from W3C
-			color = value.substring(1);
+			if (value.equals("transparent"))
+				color = "00000000";
+			else if (value.equals("black"))
+				color = "000000ff";
+			else if (value.equals("silver"))
+				color = "c0c0c0ff";
+			else if (value.equals("gray"))
+				color = "808080ff";
+			else if (value.equals("white"))
+				color = "ffffffff";
+			else if (value.equals("maroon"))
+				color = "800000ff";
+			else if (value.equals("red"))
+				color = "ff0000ff";
+			else if (value.equals("purple"))
+				color = "800080ff";
+			else if (value.equals("fuchsia"))
+				color = "ff00ffff";
+			else if (value.equals("magenta"))
+				color = "ff00ffff ";
+			else if (value.equals("green"))
+				color = "008000ff";
+			else if (value.equals("lime"))
+				color = "00ff00ff";
+			else if (value.equals("olive"))
+				color = "808000ff";
+			else if (value.equals("yellow"))
+				color = "ffff00ff";
+			else if (value.equals("navy"))
+				color = "000080ff";
+			else if (value.equals("blue"))
+				color = "0000ffff";
+			else if (value.equals("teal"))
+				color = "008080ff";
+			else if (value.equals("aqua"))
+				color = "00ffffff";
+			else if (value.equals("cyan"))
+				color = "00ffffff ";
 		} else if (format.equalsIgnoreCase("&HBBGGRR")){
 			//hex format from SSA
-			color = value.substring(2);
-			color = new StringBuffer(color).reverse().toString();
+			StringBuilder sb = new StringBuilder();
+			sb.append(value.substring(6));
+			sb.append(value.substring(4,5));
+			sb.append(value.substring(2,3));
+			sb.append("ff");
+			color = sb.toString();
 		} else if (format.equalsIgnoreCase("&HAABBGGRR")){
 			//hex format from ASS
-			color = value.substring(4);
-			color = new StringBuffer(color).reverse().toString();
+			StringBuilder sb = new StringBuilder();
+			sb.append(value.substring(8));
+			sb.append(value.substring(6,7));
+			sb.append(value.substring(4,5));
+			sb.append(value.substring(2,3));
+			color = sb.toString();
 		} else if (format.equalsIgnoreCase("decimalCodedBBGGRR")){
 			//normal format from SSA
 			color = Integer.toHexString(Integer.parseInt(value));
 			//any missing 0s are filled in
 			while(color.length()<6)color="0"+color;
 			//order is reversed
-			color = color.substring(4)+color.substring(2,4)+color.substring(0,2);
+			color = color.substring(4)+color.substring(2,4)+color.substring(0,2)+"ff";
 		}  else if (format.equalsIgnoreCase("decimalCodedAABBGGRR")){
 			//normal format from ASS
 			color = Long.toHexString(Long.parseLong(value));
 			//any missing 0s are filled in
 			while(color.length()<8)color="0"+color;
 			//order is reversed
-			color = color.substring(6)+color.substring(4,6)+color.substring(2,4);
+			color = color.substring(6)+color.substring(4,6)+color.substring(2,4)+color.substring(0,2);
 		}
 		 return color;
 	}

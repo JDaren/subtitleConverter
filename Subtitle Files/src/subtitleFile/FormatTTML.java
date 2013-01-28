@@ -421,7 +421,7 @@ public class FormatTTML implements TimedTextFileFormat {
 			//it should be a named color so...
 			value = Style.getRGBValue("name", color);
 			//if not recognized named color
-			if (value == null){
+			if (value == null || value.isEmpty()){
 				value = "ffffffff";
 				tto.warnings += "Unrecoginzed color: "+color+"\n\n";
 			}

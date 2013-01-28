@@ -487,6 +487,7 @@ public class FormatSTL implements TimedTextFileFormat {
 		Style style;
 		
 		style = new Style("white");
+		style.color = Style.getRGBValue("name", "white");
 		tto.styling.put(style.iD, style);
 		
 		style = new Style("whiteU",style);
