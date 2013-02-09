@@ -586,7 +586,7 @@ public class FormatSCC implements TimedTextFileFormat {
 			case ')':
 				toReturn+="29";
 				break;
-			case 'á':
+			case 'Ã¡':
 				toReturn+="2a";
 				break;
 			case '+':
@@ -736,19 +736,19 @@ public class FormatSCC implements TimedTextFileFormat {
 			case '[':
 				toReturn+="5b";
 				break;
-			case 'é':
+			case 'Ã©':
 				toReturn+="dc";
 				break;
 			case ']':
 				toReturn+="5d";
 				break;
-			case 'í':
+			case 'Ã­':
 				toReturn+="5e";
 				break;
-			case 'ó':
+			case 'Ã³':
 				toReturn+="df";
 				break;
-			case 'ú':
+			case 'Ãº':
 				toReturn+="e0";
 				break;
 			case 'a':
@@ -829,16 +829,16 @@ public class FormatSCC implements TimedTextFileFormat {
 			case 'z':
 				toReturn+="7a";
 				break;
-			case 'ç':
+			case 'Ã§':
 				toReturn+="fb";
 				break;
-			case '÷':
+			case 'Ã·':
 				toReturn+="7c";
 				break;
-			case 'Ñ':
+			case 'Ã‘':
 				toReturn+="fd";
 				break;
-			case 'ñ':
+			case 'Ã±':
 				toReturn+="fe";
 				break;
 			case '|':
@@ -862,23 +862,23 @@ public class FormatSCC implements TimedTextFileFormat {
 	private String decodeChar(byte c) {
 		switch (c){
 		case 42:
-			return "á";
+			return "ï¿½";
 		case 92:
-			return "é";
+			return "ï¿½";
 		case 94:
-			return "í";
+			return "ï¿½";
 		case 95:
-			return "ó";
+			return "ï¿½";
 		case 96:
-			return "ú";
+			return "ï¿½";
 		case 123:
-			return "ç";
+			return "ï¿½";
 		case 124:
-			return "÷";
+			return "ï¿½";
 		case 125:
-			return "Ñ";
+			return "ï¿½";
 		case 126:
-			return "ñ";
+			return "ï¿½";
 		case 127:
 			return "|";
 		case 0:
@@ -893,37 +893,37 @@ public class FormatSCC implements TimedTextFileFormat {
 	private String decodeSpecialChar(int word) {
 		switch(word){
 		case 15:
-			return"û";
+			return"ï¿½";
 		case 14:
-			return "ô";
+			return "ï¿½";
 		case 13:
-			return "î";
+			return "ï¿½";
 		case 12:
-			return "ê";
+			return "ï¿½";
 		case 11:
-			return "â";
+			return "ï¿½";
 		case 10:
-			return "è";
+			return "ï¿½";
 		case 9:
 			return "\u00A0";
 		case 8:
-			return "à";
+			return "ï¿½";
 		case 7:
 			return "\u266A";
 		case 6:
-			return "£";
+			return "ï¿½";
 		case 5:
-			return "¢";
+			return "ï¿½";
 		case 4:
-			return "™";
+			return "ï¿½";
 		case 3:
-			return "¿";
+			return "ï¿½";
 		case 2:
-			return "½";
+			return "ï¿½";
 		case 1:
-			return "°";
+			return "ï¿½";
 		case 0:
-			return "®";
+			return "ï¿½";
 		default:
 			//unrecoginzed code
 			return "";
