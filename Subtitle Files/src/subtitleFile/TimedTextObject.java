@@ -6,6 +6,7 @@ import java.util.TreeMap;
 
 /**
  * These objects can (should) only be created through the implementations of parseFile() in the {@link TimedTextFileFormat} interface
+ * They are an object representation of a subtitle file and contain all the captions and associated styles.
  * <br><br>
  * Copyright (c) 2012 J. David Requejo <br>
  * j[dot]david[dot]requejo[at] Gmail
@@ -58,7 +59,7 @@ public class TimedTextObject {
 	
 	//**** OPTIONS *****
 	//to know whether file should be saved as .ASS or .SSA
-	public boolean useASSInsteadOfSSA = false;
+	public boolean useASSInsteadOfSSA = true;
 	//to delay or advance the subtitles, parsed into +/- milliseconds
 	public int offset = 0;
 	

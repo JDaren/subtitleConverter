@@ -39,6 +39,7 @@ public class FormatSTL implements TimedTextFileFormat {
 
 		TimedTextObject tto = new TimedTextObject();
 		tto.fileName = fileName;
+		tto.title = fileName;
 
 		byte [] gsiBlock = new byte [1024];
 		byte [] ttiBlock = new byte [128];
