@@ -54,6 +54,7 @@ public class FormatSCC implements TimedTextFileFormat {
 
 		//the file name is saved
 		tto.fileName = fileName;
+		tto.title = fileName;
 
 		String line;
 		int lineCounter = 0;
