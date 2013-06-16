@@ -156,6 +156,32 @@ public class Time {
 			aux = String.valueOf(f);
 			//if (aux.length()==1) time.append('0');
 			time.append(aux);
+		} else if (format.startsWith("hh:mm:ss:ff/")){
+			//this format is used in SCC
+			int h, m, s, f;
+			float fps;
+			String[] args = format.split("/");
+			fps = Float.parseFloat(args[1]);
+			//now we concatenate time
+			h =  mseconds/3600000;
+			aux = String.valueOf(h);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append(':');
+			m = (mseconds/60000)%60;
+			aux = String.valueOf(m);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append(':');
+			s = (mseconds/1000)%60;
+			aux = String.valueOf(s);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
+			time.append(':');
+			f = (mseconds%1000)*(int)fps/1000;
+			aux = String.valueOf(f);
+			if (aux.length()==1) time.append('0');
+			time.append(aux);
 		}
 
 		return time.toString();
