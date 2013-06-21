@@ -37,12 +37,12 @@ public class TimedTextObject {
 	 * 
 	 */
 	//meta info
-	public String title;
-	public String description;
-	public String copyrigth;
-	public String author;
-	public String fileName;
-	public String language;
+	public String title = "";
+	public String description = "";
+	public String copyrigth = "";
+	public String author = "";
+	public String fileName = "";
+	public String language = "";
 	
 	//list of styles (id, reference)
 	public Hashtable<String, Style> styling;
@@ -64,7 +64,7 @@ public class TimedTextObject {
 	public int offset = 0;
 	
 	//to know if a parsing method has been applied
-	public boolean built;
+	public boolean built = false;
 	
 	
 	/**
