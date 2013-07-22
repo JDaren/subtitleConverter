@@ -209,7 +209,7 @@ public class FormatSTL implements TimedTextFileFormat {
 		byte [] extra = "850STL25.0110000".getBytes();
 		System.arraycopy(extra, 0, gsiBlock, 0, extra.length);
 		//then we add the title and fill the rest with blanks
-		extra = tto.title.getBytes();
+		extra = (tto.title != null)? tto.title.getBytes(): tto.fileName.getBytes();		
 		for (int i = 0; i < 224-16; i++) {
 			if (i< extra.length)
 				gsiBlock[i+16] = extra[i];
