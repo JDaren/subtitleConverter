@@ -865,21 +865,21 @@ public class FormatSCC implements TimedTextFileFormat {
 		case 42:
 			return "�";
 		case 92:
-			return "�";
+			return "é";
 		case 94:
-			return "�";
+			return "í";
 		case 95:
-			return "�";
+			return "ó";
 		case 96:
-			return "�";
+			return "ú";
 		case 123:
-			return "�";
+			return "ç";
 		case 124:
 			return "�";
 		case 125:
-			return "�";
+			return "Ñ";
 		case 126:
-			return "�";
+			return "ñ";
 		case 127:
 			return "|";
 		case 0:
