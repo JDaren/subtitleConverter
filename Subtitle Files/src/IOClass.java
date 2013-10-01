@@ -27,7 +27,7 @@ public class IOClass {
 	    PrintWriter pw = null;
 	    try
 	    {
-	        fichero = new FileWriter(System.getProperty("user.dir")+"\\"+nombreFichero);
+	        fichero = new FileWriter(System.getProperty("user.dir")+"/"+nombreFichero);
 	        pw = new PrintWriter(fichero);
 	
 	        for (int i = 0; i < ficheroTotal.length; i++)
@@ -57,7 +57,7 @@ public class IOClass {
 	public static String[] leerFicheroTxt(String nombreFichero){
 		
 		String [] s = new String [0];
-		String direccion = System.getProperty("user.dir")+"\\"+ nombreFichero;
+		String direccion = System.getProperty("user.dir")+"/"+ nombreFichero;
 		
 		//Intenta cargar el archivo
 		File archivo = null;
