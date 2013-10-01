@@ -451,7 +451,7 @@ public class FormatTTML implements TimedTextFileFormat {
 				s = Float.parseFloat(parts[2]);
 				mSeconds = h*3600000+m*60000+(int)(s*1000);
 			} else if (parts.length == 4){
-				//we have h:m:s:f.fractionç
+				//we have h:m:s:f.fraction
 				int h, m, s;
 				float f;
 				int frameRate = 25;
