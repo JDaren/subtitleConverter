@@ -54,17 +54,17 @@ public class Convert {
 				tto = ttff.parseFile(file.getName(), is);
 
 				if ("SRT".equalsIgnoreCase(outputFormat)){
-					IOClass.escribirFicheroTxt(outputFile, tto.toSRT());
+					IOClass.writeFileTxt(outputFile, tto.toSRT());
 				} else if ("STL".equalsIgnoreCase(outputFormat)){
 					output = new BufferedOutputStream(new FileOutputStream(outputFile));
 					output.write(tto.toSTL());
                     output.close();
 				} else if ("SCC".equalsIgnoreCase(outputFormat)){
-					IOClass.escribirFicheroTxt(outputFile, tto.toSCC());
+					IOClass.writeFileTxt(outputFile, tto.toSCC());
 				} else if ("XML".equalsIgnoreCase(outputFormat)){
-					IOClass.escribirFicheroTxt(outputFile, tto.toTTML());
+					IOClass.writeFileTxt(outputFile, tto.toTTML());
 				} else if ("ASS".equalsIgnoreCase(outputFormat)){
-					IOClass.escribirFicheroTxt(outputFile, tto.toASS());
+					IOClass.writeFileTxt(outputFile, tto.toASS());
 				} else {
 					throw new Exception("Unrecognized input format: "+outputFormat+" only [SRT,STL,SCC,XML,ASS] are possible");
 				}
@@ -75,7 +75,7 @@ public class Convert {
 
 			// normal test use
 		} else {
-                System.out.println("Usage: java Pruebas input-file input-format output-format output-file");
+                System.out.println("Usage: java Convert input-file input-format output-format output-file");
 		}
 
 	}

@@ -10,37 +10,36 @@ import java.io.PrintWriter;
  * 
  * @author J. David
  * 
- * Clase que se encarga de la lectura y escritura de ficheros o lectura desde teclado
+ * Class that handles reading and writing files or reads from keyboard
  *
  */
 public class IOClass {
 	
 	/**
-	 * Metodo que recibe el nombre del fichero (o la ruta relativa al directorio de usuario)
-	 * y el fichero a escribir en forma de un array de Strings donde cada String representa una linea
+	 * Method to get the file name (or path relative to the directory) and file to write to
+	 * in the form of an array of strings where each string represents a line
 	 * 
-	 * @param nombreFichero nombre del fichero (o la ruta relativa al directorio de usuario)
-	 * @param ficheroTotal array de Strings donde cada String representa una linea del fichero
+	 * @param fileName name of the file (or path relative to directory)
+	 * @param totalFile array of strings where each string represents a line in the file
 	 */
-	public static void escribirFicheroTxt(String nombreFichero, String[] ficheroTotal){
-		FileWriter fichero = null;
+	public static void writeFileTxt(String fileName, String[] totalFile){
+		FileWriter file = null;
 	    PrintWriter pw = null;
 	    try
 	    {
-	        fichero = new FileWriter(System.getProperty("user.dir")+"/"+nombreFichero);
-	        pw = new PrintWriter(fichero);
+	        file = new FileWriter(System.getProperty("user.dir")+"/"+fileName);
+	        pw = new PrintWriter(file);
 	
-	        for (int i = 0; i < ficheroTotal.length; i++)
-	            pw.println(ficheroTotal[i]);
+	        for (int i = 0; i < totalFile.length; i++)
+	            pw.println(totalFile[i]);
 	
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	    } finally {
 	       try {
-	       // Aprovechamos el finally para 
-	       // asegurarnos que se cierra el fichero.
-	       if (null != fichero)
-	          fichero.close();
+	       // Execute the "finally" to make sure the file is closed
+	       if (null != file)
+	          file.close();
 	       } catch (Exception e2) {
 	          e2.printStackTrace();
 	       }
@@ -48,44 +47,43 @@ public class IOClass {
 	}
 	
 	/**
-	 * Metodo que recibe el nombre del fichero (o la ruta relativa al directorio de usuario)
-	 * y el fichero a escribir en forma de un array de Strings donde cada String representa una linea
+	 * Method to get the file name (or path relative to the directory) and file to write to
+	 * in the form of an array of strings where each string represents a line
 	 * 
-	 * @param nombreFichero nombre del fichero (o la ruta relativa al directorio de usuario)
-	 * @return array de Strings donde cada String representa una linea del fichero leido
+	 * @param fileName name of the file (or path relative to directory)
+	 * @param s array of strings where each string represents a line in the file
 	 */
-	public static String[] leerFicheroTxt(String nombreFichero){
+	public static String[] readfileTxt(String fileName){
 		
 		String [] s = new String [0];
-		String direccion = System.getProperty("user.dir")+"/"+ nombreFichero;
+		String direccion = System.getProperty("user.dir")+"/"+ fileName;
 		
-		//Intenta cargar el archivo
-		File archivo = null;
+		// Try to load the file (archive)
+		File archive = null;
         FileReader fr = null;
         BufferedReader br = null;
 		try {
-	        // Apertura del fichero y creacion de BufferedReader para poder
-	        // hacer una lectura comoda (disponer del metodo readLine()).
-	        archivo = new File (direccion);
-	        fr = new FileReader (archivo);
+	        // Open the file and create BufferedReader in order to
+	        // reading easier (disposing the method readLine()).
+	        archive = new File (direccion);
+	        fr = new FileReader (archive);
 	        br = new BufferedReader(fr);
 
-	        // Lectura del fichero
-	        String linea = null;
-	        while((linea=br.readLine())!=null){
+	        // Reading the file
+	        String line = null;
+	        while((line=br.readLine())!=null){
 	        	int n=0;
 	        	String [] s2 = new String[s.length+1];
 	        	for(n=0;n<s.length;n++)s2[n] = s[n];
-	        	s2[n]=linea.trim();
+	        	s2[n]=line.trim();
 	        	s=s2;
 	        }
 	     }catch(Exception e){
-	        System.err.println("No se ha encontrado el archivo");
+	        System.err.println("File not found");
 	        System.exit(-1);
 	     }finally{
-	        // En el finally cerramos el fichero, para asegurarnos
-	        // que se cierra tanto si todo va bien como si salta 
-	        // una excepcion.
+	        // In the "finally" block, try to close the file and ensure
+	        // that it closes, otherwise, throw an exception
 	        try{                    
 	           if( null != fr ){   
 	              fr.close();     
@@ -98,20 +96,20 @@ public class IOClass {
 	}
 	
 	/**
-	 * Metodo que lee una linea desde el teclado
+	 * Method to read a line from the keyboard
 	 * 
-	 * @return Devuelve el String leido
+	 * @return Returns the string being read
 	 */
-	public static String leerTeclado(){
-		String respuesta = null;
+	public static String readTeclado(){
+		String response = null;
 		try{
 			InputStreamReader isr = new InputStreamReader (System.in);
 			BufferedReader br = new BufferedReader (isr);
-			respuesta = br.readLine();
+			response = br.readLine();
 		} catch (IOException e){
-			System.err.println("excepcion al leer el teclado, programa finalizado");
+			System.err.println("Error reading keyboard, program complete");
 			System.exit(-1);
 		}
-		return respuesta;
+		return response;
 	}
 }

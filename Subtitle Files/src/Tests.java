@@ -14,7 +14,7 @@ import subtitleFile.TimedTextFileFormat;
 import subtitleFile.TimedTextObject;
 
 
-public class Pruebas {
+public class Tests {
 
 	/**
 	 * @param args
@@ -54,17 +54,17 @@ public class Pruebas {
 				tto = ttff.parseFile(file.getName(), is);
 
 				if ("SRT".equalsIgnoreCase(outputFormat)){
-					IOClass.escribirFicheroTxt(outputFile, tto.toSRT());
+					IOClass.writeFileTxt(outputFile, tto.toSRT());
 				} else if ("STL".equalsIgnoreCase(outputFormat)){
 					output = new BufferedOutputStream(new FileOutputStream(outputFile));
 					output.write(tto.toSTL());
 				    output.close();
 				} else if ("SCC".equalsIgnoreCase(outputFormat)){
-					IOClass.escribirFicheroTxt(outputFile, tto.toSCC());
+					IOClass.writeFileTxt(outputFile, tto.toSCC());
 				} else if ("XML".equalsIgnoreCase(outputFormat)){
-					IOClass.escribirFicheroTxt(outputFile, tto.toTTML());
+					IOClass.writeFileTxt(outputFile, tto.toTTML());
 				} else if ("ASS".equalsIgnoreCase(outputFormat)){
-					IOClass.escribirFicheroTxt(outputFile, tto.toASS());
+					IOClass.writeFileTxt(outputFile, tto.toASS());
 				} else {
 					throw new Exception("Unrecognized input format: "+outputFormat+" only [SRT,STL,SCC,XML,ASS] are possible");
 				}
@@ -80,39 +80,39 @@ public class Pruebas {
 
 				//To test the correct implementation of the SRT parser and writer.
 				ttff = new FormatSRT();
-				File file = new File("standards\\SRT\\Avengers.2012.Eng.Subs.srt");
+				File file = new File("../standards/SRT/Avengers.2012.Eng.Subs.srt");
 				InputStream is = new FileInputStream(file);
 				tto = ttff.parseFile(file.getName(), is);
-				IOClass.escribirFicheroTxt("prueba.txt", tto.toSRT());
+				IOClass.writeFileTxt("test.srt", tto.toSRT());
 
 				//To test the correct implementation of the ASS/SSA parser and writer.
 				ttff = new FormatASS();
-				file = new File("standards\\ASS\\test.ssa");
+				file = new File("../standards/ASS/test.ssa");
 				is = new FileInputStream(file);
 				tto = ttff.parseFile(file.getName(), is);
-				IOClass.escribirFicheroTxt("prueba.txt", tto.toASS());
+				IOClass.writeFileTxt("test.ssa", tto.toASS());
 
 				//To test the correct implementation of the TTML parser and writer.
 				ttff = new FormatTTML();
-				file = new File("standards\\XML\\Debate0_03-03-08.dfxp.xml");
+				file = new File("../standards/XML/Debate0_03-03-08.dfxp.xml");
 				is = new FileInputStream(file);
 				tto = ttff.parseFile(file.getName(), is);
-				IOClass.escribirFicheroTxt("prueba.txt", tto.toTTML());
+				IOClass.writeFileTxt("test.xml", tto.toTTML());
 
 				//To test the correct implementation of the SCC parser and writer.
 				ttff = new FormatSCC();
-				file = new File("standards\\SCC\\sccTest.scc");
+				file = new File("../standards/SCC/sccTest.scc");
 				is = new FileInputStream(file);
 				tto = ttff.parseFile(file.getName(), is);
-				IOClass.escribirFicheroTxt("prueba.txt", tto.toSCC());
+				IOClass.writeFileTxt("prueba.scc", tto.toSCC());
 
 				//To test the correct implementation of the STL parser and writer.
 				ttff = new FormatSTL();
-				file = new File("standards\\STL\\Alsalirdeclasebien.stl");
+				file = new File("../standards/STL/Alsalirdeclasebien.stl");
 				is = new FileInputStream(file);
 				tto = ttff.parseFile(file.getName(), is);
 				try {
-					output = new BufferedOutputStream(new FileOutputStream("prueba.txt"));
+					output = new BufferedOutputStream(new FileOutputStream("test.stl"));
 					output.write(tto.toSTL());
 				} finally {
 					output.close();
