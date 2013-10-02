@@ -35,5 +35,13 @@ Once you have Convert.class, you can run the following:
 
     $ java Convert input-file input-format output-format output-file
 
-Note that some IO changes have been made for Linux support (filepaths) and are
+Note: Some IO changes have been made for Linux support (filepaths) and are
 not guaranteed to work on Windows.
+
+To make a java archive (jar) file, do the following:
+
+    $ cd Subtitle\ Files/src/
+    $ ./makejar.sh
+
+This will create a jar which can be run from anywhere. It uses the same the
+argument structure as the Convert.class.
