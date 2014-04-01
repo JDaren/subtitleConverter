@@ -24,24 +24,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 Addtional Notes
 ---------------
-Modified by Ethan Hart
+To create an executable jar using maven, run the following out of the parent
+subtitleConvert directory where pom.xml is (Note: Maven must already be installed):
 
-To run conversion, first, you must compile Convert.java by doing the following:
+    $ mvn package
 
-    $ cd Subtitle\ Files/src/
-    $ javac Convert.java
+This will create the executable jar under target/subtitleConvert-1.0.2.jar
 
-Once you have Convert.class, you can run the following:
+To perform a conversion:
 
-    $ java Convert input-file input-format output-format output-file
+    $ java -jar subtitleConvert-1.0.2.jar input-file input-format output-format output-file
 
-Note: Some IO changes have been made for Linux support (filepaths) and are
-not guaranteed to work on Windows.
-
-To make a java archive (jar) file, do the following:
-
-    $ cd Subtitle\ Files/src/
-    $ ./makejar.sh
-
-This will create a jar which can be run from anywhere. It uses the same the
-argument structure as the Convert.class.
+Note: Some IO changes have been made for Linux support and are not guaranteed
+to work on Windows.
