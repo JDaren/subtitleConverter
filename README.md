@@ -9,7 +9,7 @@ So far the formats supported are EBU's STL, .SCC, .ASS/.SSA .SRT and a subset of
 
 The whole project is under licensed under MIT so it can be used freely. Do not hesitate to contact me if this project or I can be of assistance.
 
-You can find the logic working online at: subtitleconverter.net (Temporarily Out of Order, sorry for the inconvenience).
+You can find the logic working online at: subtitleconverter.net
 
 This work was done as part of my bachelor's thesis for the Universidad Carlos III de Madrid.
 
