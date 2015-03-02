@@ -5,7 +5,7 @@ import java.io.InputStream;
 
 /**
  * This class specifies the interface for any format supported by the converter, these formats must
- * create a {@link TimedTextObject} from an {@link InputStream} (so it can process files form standard In or uploads)
+ * create a {@link TimedTextObject} from an {@link java.io.InputStream} (so it can process files form standard In or uploads)
  * and return a String array for text formats, or byte array for binary formats.
  * <br><br>
  * Copyright (c) 2012 J. David Requejo <br>
@@ -37,7 +37,7 @@ public interface TimedTextFileFormat {
 	 * 
 	 * @param path String that contains the path to the file
 	 * @return TimedTextObject representing the parsed file
-	 * @throws IOException when having trouble reading the file from the given path
+	 * @throws java.io.IOException when having trouble reading the file from the given path
 	 */
 	TimedTextObject parseFile(String fileName, InputStream is) throws IOException, FatalParsingException;
 	
