@@ -10,4 +10,11 @@ public class Caption {
 	
 	public String content="";
 
+    @Override
+    public String toString() {
+        return "Caption{" +
+                start + ".." + end +
+                ", " + (style != null ? style.iD : null) + ", " + region + ": " + content +
+                '}';
+    }
 }

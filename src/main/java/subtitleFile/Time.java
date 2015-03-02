@@ -186,7 +186,14 @@ public class Time {
 
 		return time.toString();
 	}
-	
-	
+
+    /**
+     * ASS/SSA time format.
+     * @return ASS/SSA time format.
+     */
+    @Override
+    public String toString() {
+        return getTime("h:mm:ss.cs");
+    }
 
 }
