@@ -45,9 +45,16 @@ public class Time {
 
 	// in an integer we can store 24 days worth of milliseconds, no need for a long
 	protected int mseconds;
-	
-	
-	/* METHODS */
+
+    public int getMseconds() {
+        return mseconds;
+    }
+
+    public void setMseconds(int mseconds) {
+        this.mseconds = mseconds;
+    }
+
+    /* METHODS */
 	
 	/**
 	 * Method to return a formatted value of the time stored
