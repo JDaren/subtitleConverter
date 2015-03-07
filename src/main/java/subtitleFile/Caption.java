@@ -7,7 +7,14 @@ public class Caption {
 	
 	public Time start;
 	public Time end;
-	
+
+    /**
+     * Raw content, before cleaning up templates and markup.
+     */
+	public String rawContent="";
+    /**
+     * Cleaned-up subtitle content.
+     */
 	public String content="";
 
     @Override

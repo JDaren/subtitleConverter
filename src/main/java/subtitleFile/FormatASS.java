@@ -473,9 +473,10 @@ public class FormatASS implements TimedTextFileFormat {
 		
 		//all information from fields 10 onwards are the caption text therefore needn't be split
 		String captionText = line[9];
-		//text is cleaned before being inserted into the caption
-		newCaption.content = captionText.replaceAll("\\{.*?\\}", "").replace("\n", "<br />").replace("\\N", "<br />");		
-		
+        newCaption.rawContent = captionText;
+        //text is cleaned before being inserted into the caption
+		newCaption.content = captionText.replaceAll("\\{.*?\\}", "").replace("\n", "<br />").replace("\\N", "<br />");
+
 		for (int i = 0; i < dialogueFormat.length; i++) {
 			//we go through every format parameter and save the interesting values
 			if (dialogueFormat[i].trim().equalsIgnoreCase("Style")){
