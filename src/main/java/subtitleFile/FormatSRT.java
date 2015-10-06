@@ -52,6 +52,7 @@ public class FormatSRT implements TimedTextFileFormat {
 		tto.fileName = fileName;
 
 		String line = br.readLine();
+		line = line.replace("\uFEFF", ""); //remove BOM character
 		int lineCounter = 0;
 		try {
 			while(line!=null){
