@@ -471,12 +471,6 @@ public class FormatASS implements TimedTextFileFormat {
 		
 		Caption newCaption = new Caption();
 		
-		//all information from fields 10 onwards are the caption text therefore needn't be split
-		String captionText = line[9];
-        newCaption.rawContent = captionText;
-        //text is cleaned before being inserted into the caption
-		newCaption.content = captionText.replaceAll("\\{.*?\\}", "").replace("\n", "<br />").replace("\\N", "<br />");
-
 		for (int i = 0; i < dialogueFormat.length; i++) {
 			//we go through every format parameter and save the interesting values
 			if (dialogueFormat[i].trim().equalsIgnoreCase("Style")){
@@ -492,6 +486,12 @@ public class FormatASS implements TimedTextFileFormat {
 			} else if (dialogueFormat[i].trim().equalsIgnoreCase("End")){
 				//we save the starting time
 				newCaption.end=new Time("h:mm:ss.cs",line[i].trim());
+			} else if (dialogueFormat[i].trim().equalsIgnoreCase("Text")) {
+				//we save the text
+				String captionText = line[i];
+				newCaption.rawContent = captionText;
+				//text is cleaned before being inserted into the caption
+				newCaption.content = captionText.replaceAll("\\{.*?\\}", "").replace("\n", "<br />").replace("\\N", "<br />");
 			}
 		}
 		
