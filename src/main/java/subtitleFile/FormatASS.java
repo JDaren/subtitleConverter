@@ -207,7 +207,7 @@ public class FormatASS implements TimedTextFileFormat {
 		//we will write the lines in an ArrayList 
 		int index = 0;
 		//the minimum size of the file is the number of captions and styles + lines for sections and formats and the script info, so we'll take some extra space.
-		ArrayList<String> file = new ArrayList<String>(30+tto.styling.size()+tto.captions.size());
+		ArrayList<String> file = new ArrayList<>(30 + tto.styling.size() + tto.captions.size());
 
 	//header is placed
 		file.add(index++,"[Script Info]");

@@ -256,7 +256,7 @@ public class FormatTTML implements TimedTextFileFormat {
 		//we will write the lines in an ArrayList 
 		int index = 0;
 		//the minimum size of the file is the number of captions and styles + lines for sections and formats and the metadata, so we'll take some extra space.
-		ArrayList<String> file = new ArrayList<String>(30+tto.styling.size()+tto.captions.size());
+		ArrayList<String> file = new ArrayList<>(30 + tto.styling.size() + tto.captions.size());
 
 		//identification line is placed
 		file.add(index++,"<?xml version=\"1.0\" encoding=\"UTF-8\"?>");

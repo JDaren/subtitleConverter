@@ -72,9 +72,9 @@ public class TimedTextObject {
 	 */
 	protected TimedTextObject(){
 		
-		styling = new Hashtable<String, Style>();
-		layout = new Hashtable<String, Region>();
-		captions = new TreeMap<Integer, Caption>(); 
+		styling = new Hashtable<>();
+		layout = new Hashtable<>();
+		captions = new TreeMap<>(); 
 		
 		warnings = "List of non fatal errors produced during parsing:\n\n";
 		
@@ -140,7 +140,7 @@ public class TimedTextObject {
 	 */
 	protected void cleanUnusedStyles(){
 		//here all used styles will be stored
-		Hashtable<String, Style> usedStyles = new Hashtable<String, Style>();
+		Hashtable<String, Style> usedStyles = new Hashtable<>();
 		//we iterate over the captions
 		Iterator<Caption> itrC = captions.values().iterator();
 		while(itrC.hasNext()){
