@@ -43,6 +43,13 @@ public class IOClass {
 	       } catch (Exception e2) {
 	          e2.printStackTrace();
 	       }
+			
+		   try {
+		   	  if (pw != null)
+				  pw.close();
+		   } catch (Exception e2) {
+		      e2.printStackTrace();
+		   }
 	    }
 	}
 	
@@ -91,6 +98,14 @@ public class IOClass {
 	        }catch (Exception e2){ 
 	           e2.printStackTrace();
 	        }
+	        
+			try{
+			   if( br != null ){
+			      br.close();
+			   }
+			}catch (Exception e2){
+			   e2.printStackTrace();
+			}
 	     }
 		return s;
 	}
