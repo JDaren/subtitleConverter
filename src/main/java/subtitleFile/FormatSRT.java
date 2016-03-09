@@ -150,7 +150,7 @@ public class FormatSRT implements TimedTextFileFormat {
 			//new caption
 			Caption current = itr.next();
 			//number is written
-			file.add(index++,""+captionNumber++);
+			file.add(index++, Integer.toString(captionNumber++));
 			//we check for offset value:
 			if(tto.offset != 0){
 				current.start.mseconds += tto.offset;

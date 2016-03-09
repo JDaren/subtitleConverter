@@ -886,7 +886,7 @@ public class FormatSCC implements TimedTextFileFormat {
 			//filler code
 			return "";
 		default:
-			return "" + (char)c;
+			return Character.toString((char)c);
 		}
 	}
 	

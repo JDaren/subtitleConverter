@@ -16,6 +16,9 @@ import subtitleFile.TimedTextObject;
 
 public class Convert {
 
+	private Convert() {
+	}
+
 	/**
 	 * @param args
 	 */
