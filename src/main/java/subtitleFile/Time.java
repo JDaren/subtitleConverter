@@ -22,10 +22,11 @@ public class Time {
 		} else if (format.equalsIgnoreCase("h:mm:ss.cs")){
 			// this type of format:  1:02:22.51 (used in .ASS/.SSA) 
 			int h, m, s, cs;
-			h = Integer.parseInt(value.substring(0, 1));
-			m = Integer.parseInt(value.substring(2, 4));
-			s = Integer.parseInt(value.substring(5, 7));
-			cs = Integer.parseInt(value.substring(8, 10));
+			String[] hms = value.split(":");
+			h = Integer.parseInt(hms[0]);
+			m = Integer.parseInt(hms[1]);
+			s = Integer.parseInt(hms[2].substring(0, 2));
+			cs = Integer.parseInt(hms[2].substring(3, 5));
 
 			mseconds = cs*10 + s*1000 + m*60000 + h*3600000;
 		} else if (format.equalsIgnoreCase("h:m:s:f/fps")){
