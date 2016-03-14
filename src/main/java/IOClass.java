@@ -14,7 +14,10 @@ import java.io.PrintWriter;
  *
  */
 public class IOClass {
-	
+
+	private IOClass() {
+	}
+
 	/**
 	 * Method to get the file name (or path relative to the directory) and file to write to
 	 * in the form of an array of strings where each string represents a line
