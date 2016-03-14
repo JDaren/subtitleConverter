@@ -377,7 +377,7 @@ public class FormatSCC implements TimedTextFileFormat {
 		//we will write the lines in an ArrayList 
 		int index = 0;
 		//the minimum size of the file is double the number of captions since lines are double spaced.
-		ArrayList<String> file = new ArrayList<String>(20 + 2*tto.captions.size());
+		ArrayList<String> file = new ArrayList<>(20 + 2 * tto.captions.size());
 
 		//first we add the header
 		file.add(index++,"Scenarist_SCC V1.0\n");
