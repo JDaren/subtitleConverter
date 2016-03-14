@@ -26,7 +26,7 @@ public class Convert {
 		
 		TimedTextObject tto;
 		TimedTextFileFormat ttff;
-		OutputStream output = null;
+		OutputStream output;
 
 		//this is in case anyone may want to use this as stand alone java executable
 		if (args != null && args.length == 4){

@@ -456,7 +456,7 @@ public class FormatSCC implements TimedTextFileFormat {
 		String[]lines = newC.content.split("<br />");
 		
 		int i = 0;
-		int tab = 0;
+		int tab;
 		//max 32 chars
 		if(lines[i].length() > 32)
 			lines[i] = lines[i].substring(0, 32);

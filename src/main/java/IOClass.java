@@ -27,7 +27,7 @@ public class IOClass {
 	 */
 	public static void writeFileTxt(String fileName, String[] totalFile){
 		FileWriter file = null;
-	    PrintWriter pw = null;
+	    PrintWriter pw;
 	    try
 	    {
 	        file = new FileWriter(System.getProperty("user.dir")+"/"+fileName);
@@ -62,9 +62,9 @@ public class IOClass {
 		String direccion = System.getProperty("user.dir")+"/"+ fileName;
 		
 		// Try to load the file (archive)
-		File archive = null;
+		File archive;
         FileReader fr = null;
-        BufferedReader br = null;
+        BufferedReader br;
 		try {
 	        // Open the file and create BufferedReader in order to
 	        // reading easier (disposing the method readLine()).
@@ -73,9 +73,9 @@ public class IOClass {
 	        br = new BufferedReader(fr);
 
 	        // Reading the file
-	        String line = null;
+	        String line;
 	        while((line=br.readLine())!=null){
-	        	int n=0;
+	        	int n;
 	        	String [] s2 = new String[s.length+1];
 	        	for(n=0;n<s.length;n++)s2[n] = s[n];
 	        	s2[n]=line.trim();
