@@ -342,9 +342,11 @@ public class FormatSCC implements TimedTextFileFormat {
 					line = br.readLine();
 
 				}
-
-				//we save any last shown caption
-				newCaption.end =  new Time("h:m:s:f/fps", "99:59:59:29/29.97");;
+				
+				if(newCaption != null) {
+					//we save any last shown caption
+					newCaption.end = new Time("h:m:s:f/fps", "99:59:59:29/29.97");;
+				}
 				if (newCaption.start != null){
 					//we save the caption
 					int key = newCaption.start.mseconds;
