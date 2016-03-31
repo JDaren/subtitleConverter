@@ -157,7 +157,7 @@ public class FormatASS implements TimedTextFileFormat {
 							//WARNING: all other events are ignored.
 							if (line.startsWith("Dialogue:")){
 								//we parse the dialogue
-								caption = parseDialogueForASS(line.split(":",2)[1].trim().split(",",10),dialogueFormat,timer, tto);
+								caption = parseDialogueForASS(line.split(":",2)[1].trim().split(",",dialogueFormat.length),dialogueFormat,timer, tto);
 								//and save the caption
 								int key = caption.start.mseconds;
 								//in case the key is already there, we increase it by a millisecond, since no duplicates are allowed
