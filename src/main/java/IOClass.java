@@ -27,7 +27,7 @@ public class IOClass {
 	 */
 	public static void writeFileTxt(String fileName, String[] totalFile){
 		FileWriter file = null;
-	    PrintWriter pw;
+	    PrintWriter pw = null;
 	    try
 	    {
 	        file = new FileWriter(System.getProperty("user.dir")+"/"+fileName);
@@ -71,7 +71,7 @@ public class IOClass {
 		// Try to load the file (archive)
 		File archive;
         FileReader fr = null;
-        BufferedReader br;
+        BufferedReader br = null;
 		try {
 	        // Open the file and create BufferedReader in order to
 	        // reading easier (disposing the method readLine()).
