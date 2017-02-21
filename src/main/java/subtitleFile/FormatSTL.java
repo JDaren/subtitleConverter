@@ -84,10 +84,10 @@ public class FormatSTL implements TimedTextFileFormat {
 			//RN : Revision Number 236..237
 			//TNB : Total Number of TTI Blocks 238..242
 			byte[] tnb = {gsiBlock[238],gsiBlock[239],gsiBlock[240],gsiBlock[241],gsiBlock[242]};
-			int numberOfTTIBlocks = Integer.parseInt(new String(tnb));
+			int numberOfTTIBlocks = Integer.parseInt(new String(tnb).trim());
 			//TNS : Total Number of Subtitles 243..247
 			byte[] tns = {gsiBlock[243],gsiBlock[244],gsiBlock[245],gsiBlock[246],gsiBlock[247]};
-			int numberOfSubtitles = Integer.parseInt(new String(tns));
+			int numberOfSubtitles = Integer.parseInt(new String(tns).trim());
 			//TNG : Total Number of Subtitle Groups 248..250
 			//MNC : Max Number of characters in row 251..252
 			//MNR : Max number of rows 253..254
@@ -136,10 +136,15 @@ public class FormatSTL implements TimedTextFileFormat {
 					tto.warnings += "Unexpected subtitle number at TTI block "+i+". Parsing proceeds...\n\n";
 				//EBN : Extension Block Number 3
 				int ebn = ttiBlock[3];
-				if (ebn != -1)
+                                if (ebn != -1 && ebn != -2){
 					additionalText = true;
-				else additionalText = false;
-
+				} else if (ebn == -2){
+					//EBN is UserData so Jump it.
+					additionalText = false;
+					continue;
+				} else {
+					additionalText = false;
+				}
 				//CS : Cumulative Status 4
 				//TCI : Time Code In 5..8
 				String startTime = ""+ttiBlock[5]+":"+ttiBlock[6]+":"+ttiBlock[7]+":"+ttiBlock[8];
