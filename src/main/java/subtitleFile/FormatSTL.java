@@ -361,6 +361,7 @@ public class FormatSTL implements TimedTextFileFormat {
 		
 		boolean italics = false;
 		boolean underline = false;
+		int diacritical_mark = 0;
 		String color = "white";
 		Style style;
 		String text = "";
@@ -440,11 +441,14 @@ public class FormatSTL implements TimedTextFileFormat {
 					default:
 						//non valid code...
 					}
-				} else {
-					//other codes and non supported characters...
-					//corresponds to the upper half of the character code table
+				} else if (textField[i] >= -64 && textField[i] <= -49){
+                                    // diacritical characters
+                                    diacritical_mark = textField[i];
 				}
-
+                                else {
+                                    //other codes and non supported characters...
+                                    //corresponds to the upper half of the character code table
+                                }
 			} else if(textField[i] < 32){
 				//it is a teletext control code, only colors are supported
 				if (i+1<textField.length && textField[i]==textField[i+1])
@@ -481,7 +485,27 @@ public class FormatSTL implements TimedTextFileFormat {
 			} else {
 				//we have a supported character coded in the two bytes, range is from 0x20 to 0x7F
 				byte[] x = {textField[i]};
-				text+=new String(x);
+                                String raw_string = new String(x);
+
+                                if (diacritical_mark != 0) {
+                                    if ((diacritical_mark == -62) && (textField[i] == 101)) raw_string = "é";
+                                    else if ((diacritical_mark == -56) && (textField[i] == 105)) raw_string = "ï";
+                                    else if ((diacritical_mark == -63) && (textField[i] == 97)) raw_string = "à";
+                                    else if ((diacritical_mark == -56) && (textField[i] == 101)) raw_string = "ë";
+                                    else if ((diacritical_mark == -61) && (textField[i] == 101)) raw_string = "ê";
+                                    else if ((diacritical_mark == -63) && (textField[i] == 117)) raw_string = "ù";
+                                    else if ((diacritical_mark == -61) && (textField[i] == 105)) raw_string = "î";
+                                    else if ((diacritical_mark == -63) && (textField[i] == 101)) raw_string = "è";
+                                    else if ((diacritical_mark == -61) && (textField[i] == 97)) raw_string = "â";
+                                    else if ((diacritical_mark == -61) && (textField[i] == 111)) raw_string = "ô";
+                                    else if ((diacritical_mark == -61) && (textField[i] == 117)) raw_string = "û";
+                                    else if ((diacritical_mark == -53) && (textField[i] == 99)) raw_string = "ç";
+                                    else if ((diacritical_mark == -56) && (textField[i] == 97)) raw_string = "ä";
+                                    else if ((diacritical_mark == -56) && (textField[i] == 111)) raw_string = "ö";
+                                    else if ((diacritical_mark == -56) && (textField[i] == 117)) raw_string = "ü";
+                                    diacritical_mark = 0;
+                                }
+				text+=raw_string;
 			}
 			
 		}	
