@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -35,6 +36,10 @@ import java.util.Iterator;
 public class FormatSCC implements TimedTextFileFormat {
 
 	public TimedTextObject parseFile(String fileName, InputStream is) throws IOException, FatalParsingException {
+		return parseFile(fileName, is, Charset.defaultCharset());
+	}
+
+	public TimedTextObject parseFile(String fileName, InputStream is, Charset isCharset) throws IOException, FatalParsingException {
 		
 		TimedTextObject tto = new TimedTextObject();
 		Caption newCaption = null;
@@ -50,7 +55,7 @@ public class FormatSCC implements TimedTextFileFormat {
 		String color = null;
 
 		//first lets load the file
-		BufferedReader br = new BufferedReader(new InputStreamReader(is));
+		BufferedReader br = new BufferedReader(new InputStreamReader(is, isCharset));
 
 		//the file name is saved
 		tto.fileName = fileName;

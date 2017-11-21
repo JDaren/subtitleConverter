@@ -2,6 +2,7 @@ package subtitleFile;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 
 /**
  * This class specifies the interface for any format supported by the converter, these formats must
@@ -40,6 +41,15 @@ public interface TimedTextFileFormat {
 	 * @throws java.io.IOException when having trouble reading the file from the given path
 	 */
 	TimedTextObject parseFile(String fileName, InputStream is) throws IOException, FatalParsingException;
+
+	/**
+	 * This methods receives the path to a file, parses it, and returns a TimedTextObject
+	 * @param path String that contains the path to the file
+	 * @param isCharset the Charset to use when reading the InputStream
+	 * @return TimedTextObject representing the parsed file
+	 * @throws java.io.IOException when having trouble reading the file from the given path
+	 */
+	TimedTextObject parseFile(String fileName, InputStream is, Charset isCharset) throws IOException, FatalParsingException;
 	
 	/**
 	 * This method transforms a given TimedTextObject into a formated subtitle file

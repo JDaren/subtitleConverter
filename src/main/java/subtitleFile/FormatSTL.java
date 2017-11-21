@@ -2,6 +2,7 @@ package subtitleFile;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -36,6 +37,10 @@ import java.util.Iterator;
 public class FormatSTL implements TimedTextFileFormat {
 
 	public TimedTextObject parseFile(String fileName, InputStream is) throws IOException, FatalParsingException {
+		return parseFile(fileName, is, Charset.defaultCharset());
+	}
+
+	public TimedTextObject parseFile(String fileName, InputStream is, Charset isCharset) throws IOException, FatalParsingException {
 
 		TimedTextObject tto = new TimedTextObject();
 		tto.fileName = fileName;
