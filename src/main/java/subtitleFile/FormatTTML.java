@@ -2,6 +2,8 @@ package subtitleFile;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -12,6 +14,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
 
 
 /**
@@ -43,6 +46,10 @@ public class FormatTTML implements TimedTextFileFormat {
 
 
 	public TimedTextObject parseFile(String fileName, InputStream is) throws IOException, FatalParsingException {
+		return parseFile(fileName, is, Charset.defaultCharset());
+	}
+
+	public TimedTextObject parseFile(String fileName, InputStream is, Charset isCharset) throws IOException, FatalParsingException {
 
 		TimedTextObject tto = new TimedTextObject();
 		tto.fileName = fileName;
@@ -51,7 +58,7 @@ public class FormatTTML implements TimedTextFileFormat {
 		DocumentBuilder dBuilder;
 		try {
 			dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(is);
+			Document doc = dBuilder.parse(new InputSource(new InputStreamReader(is, isCharset)));
 			doc.getDocumentElement().normalize();
 			
 			//we recover the metadata

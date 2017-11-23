@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -38,6 +39,10 @@ public class FormatSRT implements TimedTextFileFormat {
 
 
 	public TimedTextObject parseFile(String fileName, InputStream is) throws IOException {
+		return parseFile(fileName, is, Charset.defaultCharset());
+	}
+
+	public TimedTextObject parseFile(String fileName, InputStream is, Charset isCharset) throws IOException {
 
 		TimedTextObject tto = new TimedTextObject();
 		Caption caption = new Caption();
@@ -45,7 +50,7 @@ public class FormatSRT implements TimedTextFileFormat {
 		boolean allGood;
 
 		//first lets load the file
-		InputStreamReader in= new InputStreamReader(is);
+		InputStreamReader in= new InputStreamReader(is, isCharset);
 		BufferedReader br = new BufferedReader(in);
 
 		//the file name is saved
