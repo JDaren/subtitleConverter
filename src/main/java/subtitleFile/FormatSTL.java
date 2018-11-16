@@ -36,6 +36,12 @@ import java.util.Iterator;
  */
 public class FormatSTL implements TimedTextFileFormat {
 
+	private String frameRate = "25";
+
+	public void setFrameRate(String frameRate) {
+		this.frameRate = frameRate;
+	}
+	
 	public TimedTextObject parseFile(String fileName, InputStream is) throws IOException, FatalParsingException {
 		return parseFile(fileName, is, Charset.defaultCharset());
 	}
@@ -236,7 +242,7 @@ public class FormatSTL implements TimedTextFileFormat {
 		while (aux2.length()<5) aux2="0"+aux2;
 		aux += aux2+aux2+"0013216100000000";
 		//we add the time of first subtitle
-		aux += tto.captions.get(tto.captions.firstKey()).start.getTime("hhmmssff/25");
+		aux += tto.captions.get(tto.captions.firstKey()).start.getTime("hhmmssff/" + frameRate);
 		aux += "11OOO";
 		extra = aux.getBytes();
 		System.arraycopy(extra, 0, gsiBlock, 224, extra.length);
@@ -264,13 +270,13 @@ public class FormatSTL implements TimedTextFileFormat {
 			//CS
 			ttiBlock[4] = 0;
 			//TCI
-			String [] timeCode = currentC.start.getTime("h:m:s:f/25").split(":");
+			String [] timeCode = currentC.start.getTime("h:m:s:f/" + frameRate).split(":");
 			ttiBlock[5] = Byte.parseByte(timeCode[0]);
 			ttiBlock[6] = Byte.parseByte(timeCode[1]);
 			ttiBlock[7] = Byte.parseByte(timeCode[2]);
 			ttiBlock[8] = Byte.parseByte(timeCode[3]);
 			//TCO
-			timeCode = currentC.end.getTime("h:m:s:f/25").split(":");
+			timeCode = currentC.end.getTime("h:m:s:f/" + frameRate).split(":");
 			ttiBlock[9] = Byte.parseByte(timeCode[0]);
 			ttiBlock[10] = Byte.parseByte(timeCode[1]);
 			ttiBlock[11] = Byte.parseByte(timeCode[2]);
@@ -331,8 +337,12 @@ public class FormatSTL implements TimedTextFileFormat {
 					if (pos >126)
 						break;
 					//check it is a supported char, else it is ignored
-					if (chars[j]>=0x20 && chars[j]<=0x7f)
+					if (chars[j]>=0x20 && chars[j]<=0x7f) {
 						ttiBlock[pos++]= (byte) chars[j];
+					}else if (chars[j] == 0x0A) {
+						// line break
+						ttiBlock[pos++] = (byte) 0x8A;
+					}
 				}
 				
 				if (i+1 < lines.length)

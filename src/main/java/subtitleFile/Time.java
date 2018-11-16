@@ -43,6 +43,10 @@ public class Time {
 			mseconds = (int)(f*1000/fps) + s*1000 + m*60000 + h*3600000;
 		}
 	}
+		
+	protected Time(int timeInMSeconds) {
+		this.mseconds = timeInMSeconds;
+	}
 
 	// in an integer we can store 24 days worth of milliseconds, no need for a long
 	protected int mseconds;
