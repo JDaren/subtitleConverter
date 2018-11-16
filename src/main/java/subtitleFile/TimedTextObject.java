@@ -108,8 +108,19 @@ public class TimedTextObject {
 	 * Method to generate the .STL file
 	 */
 	public byte[] toSTL(){
-		return new FormatSTL().toFile(this);
+		return toSTL(null);
 	}
+	
+	/**
+	 * Method to generate the .STL file for a specific frameRate
+	 */
+	public byte[] toSTL(String frameRate){
+		FormatSTL formatSTL = new FormatSTL();
+		if(frameRate!= null && frameRate.length()>0) {
+			formatSTL.setFrameRate(frameRate);
+		}
+		return formatSTL.toFile(this);
+ 	}
 	
 	/**
 	 * Method to generate the .SCC file
