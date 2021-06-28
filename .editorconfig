@@ -1,0 +1,12 @@
+root = true
+
+[*.java]
+indent_style = space
+indent_size = 4
+charset = utf-8
+
+[*.xml]
+indent_style = space
+indent_size = 4
+charset = utf-8
+
