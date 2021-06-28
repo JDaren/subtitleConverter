@@ -1,8 +1,12 @@
 package subtitleFile;
 
+import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Iterator;
+import java.util.List;
 import java.util.TreeMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * These objects can (should) only be created through the implementations of parseFile() in the {@link subtitleFile.TimedTextFileFormat} interface
@@ -31,7 +35,9 @@ import java.util.TreeMap;
  *
  */
 public class TimedTextObject {
-	
+
+    static final Pattern wordCntPat = Pattern.compile("\\S+");
+    
 	/*
 	 * Attributes
 	 * 
@@ -158,4 +164,67 @@ public class TimedTextObject {
 		this.styling = usedStyles;
 	}
 
+	/**
+	 * Merge segments containing only a single word into the previous segment.
+	 */
+    public void mergeSingleWords() {
+        List<Integer> removed = new ArrayList<>();
+        Iterator<Integer> it = captions.navigableKeySet().iterator();
+        Caption prev = null;
+        while (it.hasNext()) {
+            Integer key = it.next();
+            Caption c = (Caption) captions.get(key);
+            int n = countWords(c.content);
+            if (prev != null && n <= 1) {
+                prev.content = prev.content + " " + c.content;
+                prev.end = c.end;
+                removed.add(key);
+            } else {
+                prev = c;
+            }
+            continue;
+        }
+        for (Integer key : removed) {
+            captions.remove(key);
+        }
+    }
+
+    private int countWords(String input) {
+        Matcher m = wordCntPat.matcher(input);
+        int n = 0;
+        while (m.find()) {
+            n++;
+        }
+        return n;
+    }
+
+
+    public void stripTags() {
+        Iterator<Integer> it = captions.navigableKeySet().iterator();
+        while (it.hasNext()) {
+            Integer key = it.next();
+            Caption c = (Caption) captions.get(key);
+            c.content = stripTags(c.content);
+        }
+    }
+
+
+    private String stripTags(String content) {
+        content = content.replaceAll("<[^>]*>", "");
+        content = content.replaceAll("\\s+", " ");
+        return content;
+    }
+
+
+    public void removeWords(String wordList) {
+        wordList = wordList.replaceAll(",", "|");
+        Pattern pat = Pattern.compile("(?:\\s*(" + wordList + ")\\s*)", Pattern.CASE_INSENSITIVE);
+        
+        Iterator<Integer> it = captions.navigableKeySet().iterator();
+        while (it.hasNext()) {
+            Integer key = it.next();
+            Caption c = (Caption) captions.get(key);
+            c.content = pat.matcher(c.content).replaceAll(" ").trim();
+        }
+    }
 }

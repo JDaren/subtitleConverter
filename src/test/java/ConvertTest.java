@@ -1,3 +1,7 @@
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.io.BufferedOutputStream;
@@ -7,6 +11,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Locale;
 
 import subtitleFile.FormatASS;
 import subtitleFile.FormatSCC;
@@ -77,4 +82,39 @@ public class ConvertTest {
             }
         }
     }
+    
+    @Test
+    public void testSRTMerge() throws Exception {
+        // To test the correct implementation of the SRT parser and writer.
+        TimedTextFileFormat ttff = new FormatSRT();
+        File file = new File("SRT/Avengers.2012.Eng.Subs.srt");
+        Path outfile = builddir.resolve("testMerge.srt");
+        try (InputStream is = getClass().getResourceAsStream(file.getPath())) {
+            TimedTextObject tto = ttff.parseFile(file.getName(), is);
+            tto.stripTags();
+            tto.mergeSingleWords();
+            IOClass.writeFileTxt(outfile, tto.toSRT());
+        }
+        
+        String s = StringUtils.join(IOClass.readfileTxt(outfile.toString()), "\n").toLowerCase(Locale.ROOT);
+        assertTrue(s.contains("i am. why?"));
+    }
+
+    @Test
+    public void testSRTRemoveWords() throws Exception {
+        // To test the correct implementation of the SRT parser and writer.
+        TimedTextFileFormat ttff = new FormatSRT();
+        File file = new File("SRT/Avengers.2012.Eng.Subs.srt");
+        Path outfile = builddir.resolve("testRemoveWords.srt");
+        try (InputStream is = getClass().getResourceAsStream(file.getPath())) {
+            TimedTextObject tto = ttff.parseFile(file.getName(), is);
+            tto.removeWords("why,humans");
+            IOClass.writeFileTxt(outfile, tto.toSRT());
+        }
+        
+        String s = StringUtils.join(IOClass.readfileTxt(outfile.toString()), "\n").toLowerCase(Locale.ROOT);
+        assertFalse(s.contains("why"));
+        assertFalse(s.contains("humans"));
+    }
+
 }

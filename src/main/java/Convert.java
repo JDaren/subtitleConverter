@@ -29,7 +29,7 @@ public class Convert {
 		OutputStream output;
 
 		//this is in case anyone may want to use this as stand alone java executable
-		if (args != null && args.length == 4){
+		if (args != null && args.length >= 4){
 
 			try {
 
@@ -56,6 +56,15 @@ public class Convert {
 				InputStream is = new FileInputStream(file);
 				tto = ttff.parseFile(file.getName(), is);
 
+                if (args.length >= 6) {
+                    tto.removeWords(args[5]);
+                }
+                
+				if (args.length >= 5 && "merge".equals(args[4])) {
+				    tto.stripTags();
+				    tto.mergeSingleWords();
+				}
+				
 				if ("SRT".equalsIgnoreCase(outputFormat)){
 					IOClass.writeFileTxt(outputFile, tto.toSRT());
 				} else if ("STL".equalsIgnoreCase(outputFormat)){
@@ -78,7 +87,12 @@ public class Convert {
 
 			// normal test use
 		} else {
-                System.out.println("Usage: java Convert input-file input-format output-format output-file");
+                System.out.println("Usage: java Convert input-file input-format output-format output-file [merge] [delWords]");
+                System.out.println("The 'merge' option merges single words into the previous string.");
+                System.out.println("The 'merge' option will strip any <...>-tags.");
+                System.out.println("'delWords' is a an optional, comma-separated list of words to remove.");
+                System.out.println("Arguments are identified by their position. Use 'nomerge' if you want to remove words");
+                System.out.println("  without merging single words.");
 		}
 
 	}
