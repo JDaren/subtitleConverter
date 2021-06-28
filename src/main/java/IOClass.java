@@ -1,3 +1,5 @@
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -5,6 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.nio.file.Path;
 
 /**
  * 
@@ -30,7 +33,7 @@ public class IOClass {
 	    PrintWriter pw = null;
 	    try
 	    {
-	        file = new FileWriter(System.getProperty("user.dir")+"/"+fileName);
+	        file = new FileWriter(fileName, UTF_8);
 	        pw = new PrintWriter(file);
 	
 	        for (int i = 0; i < totalFile.length; i++)
@@ -57,6 +60,13 @@ public class IOClass {
 	}
 	
 	/**
+	 * Wrapper for {@link #writeFileTxt(String,String[])}.
+	 */
+    public static void writeFileTxt(Path file, String[] totalFile){
+        writeFileTxt(file.toString(), totalFile);
+    }
+    
+	/**
 	 * Method to get the file name (or path relative to the directory) and file to write to
 	 * in the form of an array of strings where each string represents a line
 	 * 
@@ -66,7 +76,7 @@ public class IOClass {
 	public static String[] readfileTxt(String fileName){
 		
 		String [] s = new String [0];
-		String direccion = System.getProperty("user.dir")+"/"+ fileName;
+		String direccion = fileName;
 		
 		// Try to load the file (archive)
 		File archive;
@@ -76,7 +86,7 @@ public class IOClass {
 	        // Open the file and create BufferedReader in order to
 	        // reading easier (disposing the method readLine()).
 	        archive = new File (direccion);
-	        fr = new FileReader (archive);
+	        fr = new FileReader (archive, UTF_8);
 	        br = new BufferedReader(fr);
 
 	        // Reading the file
